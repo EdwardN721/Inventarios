@@ -1,0 +1,28 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Inventarios.API", "Inventarios.API\Inventarios.API.csproj", "{80FFAA56-C191-4232-9521-CD80576B1E3F}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Inventarios.Entities", "Inventarios.Entities\Inventarios.Entities.csproj", "{A145E31B-28B2-4B6C-9BB6-984B14AABBA3}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Inventarios.Persistence", "Inventarios.Persistence\Inventarios.Persistence.csproj", "{7501B6E5-1286-4B8E-8A2B-9D719A82309C}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{80FFAA56-C191-4232-9521-CD80576B1E3F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{80FFAA56-C191-4232-9521-CD80576B1E3F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{80FFAA56-C191-4232-9521-CD80576B1E3F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{80FFAA56-C191-4232-9521-CD80576B1E3F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A145E31B-28B2-4B6C-9BB6-984B14AABBA3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A145E31B-28B2-4B6C-9BB6-984B14AABBA3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A145E31B-28B2-4B6C-9BB6-984B14AABBA3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A145E31B-28B2-4B6C-9BB6-984B14AABBA3}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7501B6E5-1286-4B8E-8A2B-9D719A82309C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7501B6E5-1286-4B8E-8A2B-9D719A82309C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7501B6E5-1286-4B8E-8A2B-9D719A82309C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7501B6E5-1286-4B8E-8A2B-9D719A82309C}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+EndGlobal
