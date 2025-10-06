@@ -13,7 +13,7 @@
     </ItemGroup>
 
     <ItemGroup>
-      <ProjectReference Include="..\Inventarios.Entities\Inventarios.Entities.csproj" />
+      <ProjectReference Include="..\Inventarios.Models\Inventarios.Models.csproj" />
       <ProjectReference Include="..\Inventarios.Persistence\Inventarios.Persistence.csproj" />
     </ItemGroup>
 </Project>
