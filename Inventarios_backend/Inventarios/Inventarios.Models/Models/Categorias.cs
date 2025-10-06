@@ -7,4 +7,7 @@ public class Categorias
     public string Descripcion { get; set; } = string.Empty;
     public DateTime Creado { get; set; } 
     public DateTime Modificado { get; set; }
+    
+    // Relación uno a muchos
+    public IEnumerable<Productos>? Productos { get; set; }
 } 

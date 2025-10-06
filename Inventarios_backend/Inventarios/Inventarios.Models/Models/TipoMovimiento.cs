@@ -10,4 +10,7 @@ public class TipoMovimiento
     public bool EsTransferenciaInterna { get; set; }
     public DateTime Creado { get; set; }
     public DateTime Modificado { get; set; }
+    
+    //Relación uno a muchos
+    public IEnumerable<InventarioMovimientos>?  InventarioMovimientos { get; set; } 
 }
