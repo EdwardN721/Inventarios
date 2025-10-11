@@ -14,6 +14,6 @@
 
     <ItemGroup>
       <ProjectReference Include="..\Inventarios.Models\Inventarios.Models.csproj" />
-      <ProjectReference Include="..\Inventarios.Persistence\Inventarios.Persistence.csproj" />
+      <ProjectReference Include="..\Inventarios.Infrastructure\Inventarios.Infrastructure.csproj" />
     </ItemGroup>
 </Project>

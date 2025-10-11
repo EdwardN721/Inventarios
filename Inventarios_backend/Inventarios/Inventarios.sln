@@ -4,7 +4,7 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Inventarios.API", "Inventar
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Inventarios.Models", "Inventarios.Models\Inventarios.Models.csproj", "{A145E31B-28B2-4B6C-9BB6-984B14AABBA3}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Inventarios.Persistence", "Inventarios.Persistence\Inventarios.Persistence.csproj", "{7501B6E5-1286-4B8E-8A2B-9D719A82309C}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Inventarios.Infrastructure", "Inventarios.Infrastructure\Inventarios.Infrastructure.csproj", "{7501B6E5-1286-4B8E-8A2B-9D719A82309C}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
