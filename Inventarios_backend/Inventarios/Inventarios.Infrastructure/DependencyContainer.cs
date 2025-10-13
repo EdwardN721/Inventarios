@@ -4,6 +4,7 @@ using Inventarios.Infrastructure.Repository;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
+using Microsoft.OpenApi.Models;
 
 namespace Inventarios.Infrastructure;
 
@@ -30,6 +31,16 @@ public static class DependencyContainer
         services.AddScoped<IProductosRepository, ProductosRepository>();
         services.AddScoped<IProveedorRepository, ProveedorRepository>();
         
+        return services;
+    }
+
+    public static IServiceCollection AddSwagger(
+        this IServiceCollection services)
+    {
+        services.AddSwaggerGen(options =>
+        {
+            options.SwaggerDoc("v1", new OpenApiInfo { Title = "Sistema Inventarios", Version = "v1" });
+        });
         return services;
     }
 }

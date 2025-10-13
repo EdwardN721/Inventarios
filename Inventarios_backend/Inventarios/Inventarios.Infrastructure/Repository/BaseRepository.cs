@@ -16,7 +16,7 @@ where T : class
         _dbSet = _context.Set<T>(); // Inicializa clases dentro del DbContext
     }
 
-    public async Task<IEnumerable<T>> OBtenerTodosAsync()
+    public async Task<IEnumerable<T>> ObtenerTodosAsync()
     {
         var items = await _dbSet.AsNoTracking().ToListAsync();
         return items;
@@ -27,8 +27,14 @@ where T : class
         var item = await _dbSet.FindAsync(id);
         return item;
     }
+    
+    public async Task<T?> ObtenerPorIdAsync(int id)
+    {
+        var item = await _dbSet.FindAsync(id);
+        return item;
+    }
 
-    public async Task<T> CrearRegistroAsync(T entidad)
+    public async Task<T> AgregarRegistroAsync(T entidad)
     {
         await _dbSet.AddAsync(entidad);
         await _context.SaveChangesAsync();
@@ -54,11 +60,23 @@ where T : class
         }
         return false;
     }
+    
+    public async Task<bool> ActualizarRegistroAsync(int id, T entidad)
+    {
+        var item = await _dbSet.FindAsync(id);
+        if (item != null)
+        {
+            _context.Update(item);
+            await _context.SaveChangesAsync();
+            return true;
+        }
+        return false;
+    }
 
     public async Task<bool> EliminarRegistroAsync(Guid id)
     {
         var item = await _dbSet.FindAsync(id);
-        if (item != null)
+        if (item is not null)
         {
             _dbSet.Remove(item);
             await _context.SaveChangesAsync();
@@ -66,6 +84,7 @@ where T : class
         }
         return false;
     }
+    
 
     public async Task<bool> EliminarRegistroAsync(T entidad)
     {

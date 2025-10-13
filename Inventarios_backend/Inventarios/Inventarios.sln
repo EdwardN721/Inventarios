@@ -6,6 +6,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Inventarios.Models", "Inven
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Inventarios.Infrastructure", "Inventarios.Infrastructure\Inventarios.Infrastructure.csproj", "{7501B6E5-1286-4B8E-8A2B-9D719A82309C}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Inventarios.DTOs", "Inventarios.DTOs\Inventarios.DTOs.csproj", "{C8A464BA-9EBE-49BF-99F0-D960AA7625A8}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -24,5 +26,9 @@ Global
 		{7501B6E5-1286-4B8E-8A2B-9D719A82309C}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{7501B6E5-1286-4B8E-8A2B-9D719A82309C}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{7501B6E5-1286-4B8E-8A2B-9D719A82309C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C8A464BA-9EBE-49BF-99F0-D960AA7625A8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C8A464BA-9EBE-49BF-99F0-D960AA7625A8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C8A464BA-9EBE-49BF-99F0-D960AA7625A8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C8A464BA-9EBE-49BF-99F0-D960AA7625A8}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 EndGlobal
