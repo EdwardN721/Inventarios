@@ -7,8 +7,4 @@
         <RootNamespace>Inventarios.Entities</RootNamespace>
     </PropertyGroup>
 
-    <ItemGroup>
-      <ProjectReference Include="..\Inventarios.Persistence\Inventarios.Persistence.csproj" />
-    </ItemGroup>
-
 </Project>
