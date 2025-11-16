@@ -8,6 +8,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Inventarios.Infrastructure"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Inventarios.DTOs", "Inventarios.DTOs\Inventarios.DTOs.csproj", "{C8A464BA-9EBE-49BF-99F0-D960AA7625A8}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Inventarios.Bussiness", "Inventarios.Bussiness\Inventarios.Bussiness.csproj", "{E11DC4A3-5B33-453D-BBD5-6A67D83BDEFB}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -30,5 +32,9 @@ Global
 		{C8A464BA-9EBE-49BF-99F0-D960AA7625A8}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{C8A464BA-9EBE-49BF-99F0-D960AA7625A8}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{C8A464BA-9EBE-49BF-99F0-D960AA7625A8}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E11DC4A3-5B33-453D-BBD5-6A67D83BDEFB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E11DC4A3-5B33-453D-BBD5-6A67D83BDEFB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E11DC4A3-5B33-453D-BBD5-6A67D83BDEFB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E11DC4A3-5B33-453D-BBD5-6A67D83BDEFB}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 EndGlobal

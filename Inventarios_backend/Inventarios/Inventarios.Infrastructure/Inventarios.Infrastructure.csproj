@@ -15,17 +15,17 @@
       </PackageReference>
       <PackageReference Include="Npgsql" Version="9.0.4" />
       <PackageReference Include="Npgsql.EntityFrameworkCore.PostgreSQL" Version="9.0.4" />
-      <PackageReference Include="Swashbuckle.AspNetCore" Version="9.0.6" />
-    </ItemGroup>
-
-    <ItemGroup>
-      <ProjectReference Include="..\Inventarios.Models\Inventarios.Models.csproj" />
     </ItemGroup>
 
     <ItemGroup>
       <Reference Include="Microsoft.Extensions.Configuration.Abstractions">
         <HintPath>..\..\..\..\..\..\.nuget\packages\microsoft.extensions.configuration.abstractions\9.0.8\lib\net9.0\Microsoft.Extensions.Configuration.Abstractions.dll</HintPath>
       </Reference>
+    </ItemGroup>
+
+    <ItemGroup>
+      <ProjectReference Include="..\Inventarios.Bussiness\Inventarios.Bussiness.csproj" />
+      <ProjectReference Include="..\Inventarios.Models\Inventarios.Models.csproj" />
     </ItemGroup>
 
 </Project>

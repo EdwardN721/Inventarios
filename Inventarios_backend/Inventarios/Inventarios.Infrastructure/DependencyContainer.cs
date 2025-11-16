@@ -1,10 +1,11 @@
+using System.Reflection;
+using Inventarios.Bussiness.Interface.Repository;
+using Inventarios.Bussiness.Service;
 using Inventarios.Infrastructure.Context;
-using Inventarios.Infrastructure.Interface;
 using Inventarios.Infrastructure.Repository;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
-using Microsoft.OpenApi.Models;
 
 namespace Inventarios.Infrastructure;
 
@@ -21,26 +22,15 @@ public static class DependencyContainer
         return services;
     }
 
-    public static IServiceCollection AddRepositories(
-        this IServiceCollection services)
+    public static IServiceCollection AddInfrastructure(this IServiceCollection services)
     {
-        services.AddScoped<ICategoriasRepository, CategoriasRepository>();
-        services.AddScoped<IInventarioMovimientosRepository, InventarioMovimientosRepository>();
-        services.AddScoped<IInventatioStockRepository, InventarioStockRepository>();
-        services.AddScoped<ITipoMovimientoRepository,TipoMovimientoRepository>();
-        services.AddScoped<IProductosRepository, ProductosRepository>();
-        services.AddScoped<IProveedorRepository, ProveedorRepository>();
-        
+        services.AddScoped<IUnitOfWork, UnitOfWork>();
         return services;
     }
 
-    public static IServiceCollection AddSwagger(
-        this IServiceCollection services)
+    public static IServiceCollection AddBusiness(this IServiceCollection services)
     {
-        services.AddSwaggerGen(options =>
-        {
-            options.SwaggerDoc("v1", new OpenApiInfo { Title = "Sistema Inventarios", Version = "v1" });
-        });
+        services.AddScoped<ICategoriaService, CategoriaService>();
         return services;
     }
 }

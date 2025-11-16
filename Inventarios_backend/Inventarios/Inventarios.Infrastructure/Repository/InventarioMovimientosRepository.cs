@@ -1,6 +1,6 @@
+using Inventarios.Bussiness.Interface.Repository;
 using Inventarios.Entities.Models;
 using Inventarios.Infrastructure.Context;
-using Inventarios.Infrastructure.Interface;
 
 namespace Inventarios.Infrastructure.Repository;
 

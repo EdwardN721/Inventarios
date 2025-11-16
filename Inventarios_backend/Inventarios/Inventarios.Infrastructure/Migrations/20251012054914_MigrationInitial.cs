@@ -20,7 +20,7 @@ namespace Inventarios.Infrastructure.Migrations
                         .Annotation("Npgsql:ValueGenerationStrategy", NpgsqlValueGenerationStrategy.IdentityByDefaultColumn),
                     Nombre = table.Column<string>(type: "text", nullable: false),
                     Descripcion = table.Column<string>(type: "text", nullable: true),
-                    CreatedAt = table.Column<DateTime>(type: "timestamp with time zone", nullable: false),
+                    CreatedAt = table.Column<DateTime>(type: "timestamp with time zone", nullable: false, defaultValueSql: "now()"),
                     UpdatedAt = table.Column<DateTime>(type: "timestamp with time zone", nullable: true)
                 },
                 constraints: table =>
@@ -32,13 +32,13 @@ namespace Inventarios.Infrastructure.Migrations
                 name: "Proveedores",
                 columns: table => new
                 {
-                    Id = table.Column<Guid>(type: "uuid", nullable: false),
+                    Id = table.Column<Guid>(type: "uuid", nullable: false, defaultValueSql: "gen_random_uuid()"),
                     Nombre = table.Column<string>(type: "text", nullable: false),
                     PersonaContacto = table.Column<string>(type: "text", nullable: false),
                     Telefono = table.Column<string>(type: "text", nullable: false),
                     Correo = table.Column<string>(type: "text", nullable: false),
                     Direccion = table.Column<string>(type: "text", nullable: false),
-                    CreatedAt = table.Column<DateTime>(type: "timestamp with time zone", nullable: false),
+                    CreatedAt = table.Column<DateTime>(type: "timestamp with time zone", defaultValueSql: "now()", nullable: false),
                     UpdatedAt = table.Column<DateTime>(type: "timestamp with time zone", nullable: false)
                 },
                 constraints: table =>
@@ -57,7 +57,7 @@ namespace Inventarios.Infrastructure.Migrations
                     EsEntrada = table.Column<bool>(type: "boolean", nullable: false),
                     EsSalida = table.Column<bool>(type: "boolean", nullable: false),
                     EsTransferenciaInterna = table.Column<bool>(type: "boolean", nullable: false),
-                    CreatedAt = table.Column<DateTime>(type: "timestamp with time zone", nullable: false),
+                    CreatedAt = table.Column<DateTime>(type: "timestamp with time zone", nullable: false, defaultValueSql: "now()"),
                     UpdatedAt = table.Column<DateTime>(type: "timestamp with time zone", nullable: true)
                 },
                 constraints: table =>
@@ -69,12 +69,12 @@ namespace Inventarios.Infrastructure.Migrations
                 name: "Productos",
                 columns: table => new
                 {
-                    Id = table.Column<Guid>(type: "uuid", nullable: false),
+                    Id = table.Column<Guid>(type: "uuid", nullable: false, defaultValueSql: "gen_random_uuid()"),
                     Nombre = table.Column<string>(type: "text", nullable: false),
                     Descripcion = table.Column<string>(type: "text", nullable: true),
                     Precio = table.Column<decimal>(type: "numeric", nullable: false),
                     CodigoBarras = table.Column<string>(type: "text", nullable: false),
-                    CreatedAt = table.Column<DateTime>(type: "timestamp with time zone", nullable: false),
+                    CreatedAt = table.Column<DateTime>(type: "timestamp with time zone", nullable: false, defaultValueSql: "now()"),
                     UpdatedAt = table.Column<DateTime>(type: "timestamp with time zone", nullable: true),
                     IdCategoria = table.Column<int>(type: "integer", nullable: false),
                     CategoriaId = table.Column<int>(type: "integer", nullable: true),
@@ -100,7 +100,7 @@ namespace Inventarios.Infrastructure.Migrations
                 name: "InventarioMovimientos",
                 columns: table => new
                 {
-                    Id = table.Column<Guid>(type: "uuid", nullable: false),
+                    Id = table.Column<Guid>(type: "uuid", nullable: false, defaultValueSql: "gen_random_uuid()"),
                     FechaMovimiento = table.Column<DateTime>(type: "timestamp with time zone", nullable: false),
                     Cantidad = table.Column<int>(type: "integer", nullable: false),
                     IdTipoMovimiento = table.Column<int>(type: "integer", nullable: false),
@@ -127,10 +127,10 @@ namespace Inventarios.Infrastructure.Migrations
                 name: "InventarioStock",
                 columns: table => new
                 {
-                    Id = table.Column<Guid>(type: "uuid", nullable: false),
+                    Id = table.Column<Guid>(type: "uuid", nullable: false, defaultValueSql: "gen_random_uuid()"),
                     Cantidad = table.Column<int>(type: "integer", nullable: false),
                     Ubicacion = table.Column<string>(type: "text", nullable: false),
-                    CreatedAt = table.Column<DateTime>(type: "timestamp with time zone", nullable: false),
+                    CreatedAt = table.Column<DateTime>(type: "timestamp with time zone", nullable: false, defaultValueSql: "now()"),
                     UpdatedAt = table.Column<DateTime>(type: "timestamp with time zone", nullable: true),
                     ProductoId = table.Column<Guid>(type: "uuid", nullable: false)
                 },

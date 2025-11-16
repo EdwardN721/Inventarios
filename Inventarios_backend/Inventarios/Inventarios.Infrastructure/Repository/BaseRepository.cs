@@ -4,7 +4,7 @@ using Microsoft.EntityFrameworkCore;
 
 namespace Inventarios.Infrastructure.Repository;
 
-public class BaseRepository<T> : IBaseRepository<T>, IDisposable
+public class BaseRepository<T> : IBaseRepository<T>
 where T : class 
 {
     private readonly InventariosDbContext _context;
@@ -16,86 +16,38 @@ where T : class
         _dbSet = _context.Set<T>(); // Inicializa clases dentro del DbContext
     }
 
+    public async Task<T?> ObtenerPorIdAsync(object id)
+    {
+        return await _dbSet.FindAsync(id);
+    }
+
     public async Task<IEnumerable<T>> ObtenerTodosAsync()
     {
-        var items = await _dbSet.AsNoTracking().ToListAsync();
-        return items;
+        return await _dbSet.AsNoTracking().ToListAsync();
     }
 
-    public async Task<T?> ObtenerPorIdAsync(Guid id)
+    public IQueryable<T> AsQueryable()
     {
-        var item = await _dbSet.FindAsync(id);
-        return item;
-    }
-    
-    public async Task<T?> ObtenerPorIdAsync(int id)
-    {
-        var item = await _dbSet.FindAsync(id);
-        return item;
+        return _dbSet.AsQueryable();
     }
 
-    public async Task<T> AgregarRegistroAsync(T entidad)
+    public async Task AgregarRegistro(T entidad)
     {
         await _dbSet.AddAsync(entidad);
-        await _context.SaveChangesAsync();
-        return entidad;
     }
 
-    public async Task<IEnumerable<T>> AgregarRegistrosAsync(IEnumerable<T> entidades)
+    public async Task AgregarRegistrosAsync(IEnumerable<T> registros)
     {
-        var items = entidades.ToList();
-        await _dbSet.AddRangeAsync(items);
-        await _context.SaveChangesAsync();
-        return items;
+        await _dbSet.AddRangeAsync(registros);
     }
 
-    public async Task<bool> ActualizarRegistroAsync(Guid id, T entidad)
+    public void ActualizarRegistro(T entidad)
     {
-        var item = await _dbSet.FindAsync(id);
-        if (item != null)
-        {
-            _context.Update(item);
-            await _context.SaveChangesAsync();
-            return true;
-        }
-        return false;
-    }
-    
-    public async Task<bool> ActualizarRegistroAsync(int id, T entidad)
-    {
-        var item = await _dbSet.FindAsync(id);
-        if (item != null)
-        {
-            _context.Update(item);
-            await _context.SaveChangesAsync();
-            return true;
-        }
-        return false;
+        _dbSet.Update(entidad);
     }
 
-    public async Task<bool> EliminarRegistroAsync(Guid id)
+    public void EliminarRegistro(T entidad)
     {
-        var item = await _dbSet.FindAsync(id);
-        if (item is not null)
-        {
-            _dbSet.Remove(item);
-            await _context.SaveChangesAsync();
-            return true;
-        }
-        return false;
-    }
-    
-
-    public async Task<bool> EliminarRegistroAsync(T entidad)
-    {
-        _context.Remove(entidad);
-        await _context.SaveChangesAsync();
-        return true;
-    }
-
-    public void Dispose()
-    {
-        _context.Dispose();
-        GC.SuppressFinalize(this);
+        _dbSet.Remove(entidad);
     }
 }
