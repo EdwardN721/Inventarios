@@ -8,18 +8,13 @@
     
 
     <ItemGroup>
-      <Folder Include="Exceptions\" />
-      <Folder Include="Validation\" />
-    </ItemGroup>
-    
-
-    <ItemGroup>
       <ProjectReference Include="..\Inventarios.DTOs\Inventarios.DTOs.csproj" />
       <ProjectReference Include="..\Inventarios.Models\Inventarios.Models.csproj" />
     </ItemGroup>
     
 
     <ItemGroup>
+      <PackageReference Include="FluentValidation" Version="12.1.0" />
       <PackageReference Include="Microsoft.Extensions.Logging.Abstractions" Version="10.0.0" />
     </ItemGroup>
 

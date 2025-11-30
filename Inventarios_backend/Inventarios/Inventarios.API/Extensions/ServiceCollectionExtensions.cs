@@ -1,10 +1,19 @@
 using System.Reflection;
 using Microsoft.OpenApi.Models;
+using FluentValidation;
+using Inventarios.Bussiness.Interface.Services;
+using Inventarios.Bussiness.Service;
 
 namespace Inventarios.Extensions;
 
+/// <summary>
+/// Contenedor de dependencia para el swagger
+/// </summary>
 public static class ServiceCollectionExtensions
 {
+    /// <summary>
+    /// Genera el swagger
+    /// </summary>
     public static IServiceCollection AddSwagger(
         this IServiceCollection services)
     {
@@ -48,6 +57,16 @@ public static class ServiceCollectionExtensions
             var xmlPath = Path.Combine(AppContext.BaseDirectory, xmlFilename);
             options.IncludeXmlComments(xmlPath);
         });
+        return services;
+    }
+
+    /// <summary>
+    /// Agregar validaciones
+    /// </summary>
+    public static IServiceCollection AddValidator(this IServiceCollection services)
+    {
+        services.AddValidatorsFromAssemblyContaining<ICategoriaService>();
+        
         return services;
     }
 }

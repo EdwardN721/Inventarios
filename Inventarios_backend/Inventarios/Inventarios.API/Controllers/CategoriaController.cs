@@ -1,4 +1,4 @@
-using Inventarios.Bussiness.Service;
+using Inventarios.Bussiness.Interface.Services;
 using Inventarios.DTOs.DTO.Request;
 using Inventarios.DTOs.DTO.Response;
 using Microsoft.AspNetCore.Http;

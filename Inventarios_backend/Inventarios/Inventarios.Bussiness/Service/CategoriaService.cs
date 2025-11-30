@@ -1,4 +1,6 @@
+using Inventarios.Bussiness.Exceptions;
 using Inventarios.Bussiness.Interface.Repository;
+using Inventarios.Bussiness.Interface.Services;
 using Inventarios.Bussiness.Mappers;
 using Inventarios.DTOs.DTO.Request;
 using Inventarios.DTOs.DTO.Response;
@@ -33,7 +35,7 @@ public class CategoriaService : ICategoriaService
         if (categoria == null)
         {
             _logger.LogWarning("Categoria no encontrada: {Id}", id);
-            throw new Exception("Categoria no encontrada");
+            throw new NotFoundException("Categoria no encontrada");
         }
         
         return ManualMapperCategorias.ToCategoriasResponse(categoria);
