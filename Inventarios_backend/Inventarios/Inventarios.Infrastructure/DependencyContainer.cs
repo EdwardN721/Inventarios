@@ -1,5 +1,5 @@
-using System.Reflection;
 using Inventarios.Bussiness.Interface.Repository;
+using Inventarios.Bussiness.Interface.Services;
 using Inventarios.Bussiness.Service;
 using Inventarios.Infrastructure.Context;
 using Inventarios.Infrastructure.Repository;
@@ -31,6 +31,8 @@ public static class DependencyContainer
     public static IServiceCollection AddBusiness(this IServiceCollection services)
     {
         services.AddScoped<ICategoriaService, CategoriaService>();
+        services.AddScoped<IInventarioStockService, InventarioStockService>();
+        
         return services;
     }
 }

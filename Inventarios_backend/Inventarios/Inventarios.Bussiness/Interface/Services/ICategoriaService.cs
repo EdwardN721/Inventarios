@@ -1,7 +1,7 @@
 using Inventarios.DTOs.DTO.Request;
 using Inventarios.DTOs.DTO.Response;
 
-namespace Inventarios.Bussiness.Service;
+namespace Inventarios.Bussiness.Interface.Services;
 
 public interface ICategoriaService
 {

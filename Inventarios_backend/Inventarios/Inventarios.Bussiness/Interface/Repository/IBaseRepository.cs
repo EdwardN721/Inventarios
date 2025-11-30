@@ -1,4 +1,4 @@
-namespace Inventarios.Infrastructure.Interface;
+namespace Inventarios.Bussiness.Interface.Repository;
 
 public interface IBaseRepository<T>
 where T : class // Donde T es una clase
@@ -38,17 +38,5 @@ where T : class // Donde T es una clase
     /// Marca una entidad para ser eliminada
     /// </summary>
     void EliminarRegistro(T entidad);
-    
-    
-    /*¨Task<IEnumerable<T>> ObtenerTodosAsync();
-    Task<T?> ObtenerPorIdAsync(Guid id);
-    Task<T?> ObtenerPorIdAsync(int id);
-    Task<T> AgregarRegistroAsync(T entidad);
-    Task<IEnumerable<T>> AgregarRegistrosAsync(IEnumerable<T> entidades);
-    Task<bool> ActualizarRegistroAsync(Guid id, T entidad);
-    Task<bool> ActualizarRegistroAsync(int id, T entidad);
-    Task<bool> EliminarRegistroAsync(Guid id);
-    Task<bool> EliminarRegistroAsync(T entidad);
-    Task<bool> ActualizarRegistroAsync(T entidad);*/
     
 }

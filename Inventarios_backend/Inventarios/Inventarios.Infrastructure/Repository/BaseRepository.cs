@@ -1,5 +1,5 @@
+using Inventarios.Bussiness.Interface.Repository;
 using Inventarios.Infrastructure.Context;
-using Inventarios.Infrastructure.Interface;
 using Microsoft.EntityFrameworkCore;
 
 namespace Inventarios.Infrastructure.Repository;
