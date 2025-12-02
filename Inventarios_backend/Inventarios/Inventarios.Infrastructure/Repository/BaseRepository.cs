@@ -21,7 +21,7 @@ where T : class
         return await _dbSet.FindAsync(id);
     }
 
-    public async Task<IEnumerable<T>> ObtenerTodosAsync()
+    public async Task<ICollection<T>> ObtenerTodosAsync()
     {
         return await _dbSet.AsNoTracking().ToListAsync();
     }

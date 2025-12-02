@@ -4,7 +4,7 @@ using Inventarios.Infrastructure.Context;
 
 namespace Inventarios.Infrastructure.Repository;
 
-public class CategoriasRepository : BaseRepository<Categorias>, ICategoriasRepository
+public class CategoriasRepository : BaseRepository<Categoria>, ICategoriasRepository
     
 {
     public CategoriasRepository(InventariosDbContext context) : base(context)

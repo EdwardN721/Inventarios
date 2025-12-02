@@ -1,0 +1,22 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+    <PropertyGroup>
+        <TargetFramework>net9.0</TargetFramework>
+        <ImplicitUsings>enable</ImplicitUsings>
+        <Nullable>enable</Nullable>
+        <RootNamespace>Inventarios.Business</RootNamespace>
+    </PropertyGroup>
+    
+
+    <ItemGroup>
+      <ProjectReference Include="..\Inventarios.DTOs\Inventarios.DTOs.csproj" />
+      <ProjectReference Include="..\Inventarios.Models\Inventarios.Models.csproj" />
+    </ItemGroup>
+    
+
+    <ItemGroup>
+      <PackageReference Include="FluentValidation" Version="12.1.0" />
+      <PackageReference Include="Microsoft.Extensions.Logging.Abstractions" Version="10.0.0" />
+    </ItemGroup>
+
+</Project>

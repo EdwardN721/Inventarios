@@ -1,8 +1,7 @@
 using System.Reflection;
 using Microsoft.OpenApi.Models;
 using FluentValidation;
-using Inventarios.Bussiness.Interface.Services;
-using Inventarios.Bussiness.Service;
+using Inventarios.Business.Interface.Services;
 
 namespace Inventarios.Extensions;
 
