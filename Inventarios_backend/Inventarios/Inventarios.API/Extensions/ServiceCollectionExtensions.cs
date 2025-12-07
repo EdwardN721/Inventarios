@@ -65,7 +65,11 @@ public static class ServiceCollectionExtensions
     public static IServiceCollection AddValidator(this IServiceCollection services)
     {
         services.AddValidatorsFromAssemblyContaining<ICategoriaService>();
-        
+        services.AddValidatorsFromAssemblyContaining<IInventarioMovimientoService>();
+        services.AddValidatorsFromAssemblyContaining<IInventarioStockService>();
+        services.AddValidatorsFromAssemblyContaining<IProductoService>();
+        services.AddValidatorsFromAssemblyContaining<IProveedorService>();
+        services.AddValidatorsFromAssemblyContaining<ITipoMovimientoService>();
         return services;
     }
 }

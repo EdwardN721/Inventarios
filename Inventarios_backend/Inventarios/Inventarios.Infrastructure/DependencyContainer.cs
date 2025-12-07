@@ -33,6 +33,9 @@ public static class DependencyContainer
         services.AddScoped<ICategoriaService, CategoriaService>();
         services.AddScoped<IInventarioStockService, InventarioStockService>();
         services.AddScoped<IInventarioMovimientoService, InventarioMovimientoService>();
+        services.AddScoped<IProductoService, ProductoService>();
+        services.AddScoped<IProveedorService, ProveedorService>();
+        services.AddScoped<ITipoMovimientoService, TipoMovimientoService>();
         
         return services;
     }

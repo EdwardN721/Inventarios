@@ -1,7 +1,7 @@
 using FluentValidation;
 using Inventarios.DTOs.DTO.Request;
 
-namespace Inventarios.Bussiness.Validation;
+namespace Inventarios.Business.Validation;
 
 public class CategoriaRequestDtoValidator : AbstractValidator<CategoriaRequestDto>
 {

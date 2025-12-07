@@ -60,12 +60,11 @@ public static class ManualMapperProducto
     /// </summary>
     /// <param name="productos">Lista de entidades existentes en la base de datos</param>
     /// <returns>Lista de productos.</returns>
-    public static IEnumerable<ProductoResponseDto> ToEntity(this IEnumerable<Producto>? productos)
+    public static IEnumerable<ProductoResponseDto> ToDto(this IEnumerable<Producto>? productos)
     {
         if (productos == null)
         {
             return [];
-            
         }
         return productos.Select(ToDto);
     }

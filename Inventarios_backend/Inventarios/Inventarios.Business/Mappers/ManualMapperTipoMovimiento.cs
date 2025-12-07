@@ -41,4 +41,9 @@ public static class ManualMapperTipoMovimiento
             entity.UpdatedAt
         );
     }
+
+    public static IEnumerable<TipoMovimientoResponseDto> ToDto(this IEnumerable<TipoMovimiento> entities)
+    {
+        return entities.Select(ToDto);
+    }
 }
