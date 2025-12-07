@@ -5,8 +5,8 @@ using Inventarios.Infrastructure;
 using Inventarios.Middleware;
 using Microsoft.AspNetCore.Builder;
 using Serilog;
-using Microsoft.Extensions.Hosting;
 
+// Configuración inicial del Logger
 Log.Logger = new LoggerConfiguration()
     .MinimumLevel.Debug()
     .WriteTo.Console()
@@ -17,37 +17,39 @@ try
 {
     var builder = WebApplication.CreateBuilder(args);
 
-    // 1. Configurar Serilog primero (Buena práctica)
+    // 1. Configurar Serilog como el Logger del Host
     builder.Host.UseSerilog();
 
-    // 2. Servicios (SIN DUPLICADOS)
+    // 2. Capa de Infraestructura (Base de Datos y Repositorios)
     builder.Services.AddContextPostgressServer(builder.Configuration, "DefaultConnection");
     builder.Services.AddInfrastructure();
-    builder.Services.AddBusiness();
     
-    builder.Services.AddControllers();
+    // 3. Capa de Negocio (Servicios)
+    builder.Services.AddBusiness();
 
-    // Swagger
+    // 4. Capa de Presentación (Controladores y Swagger)
+    builder.Services.AddControllers();
     builder.Services.AddSwagger();
     
-    // Validadores
+    // 5. Validaciones y Filtros
     builder.Services.AddValidator();
     builder.Services.AddFluentValidationAutoValidation();
     
-    // Filtros
     builder.Services.AddScoped<LogActionFilter>();
     builder.Services.AddControllers(opt =>
         opt.Filters.Add<LogActionFilter>());
     
     var app = builder.Build();
 
-    // Configuración del Pipeline HTTP
+    // --- Configuración del Pipeline HTTP ---
+
     if (app.Environment.IsDevelopment())
     {
         app.UseSwagger();
         app.UseSwaggerUI();
     }
 
+    // Middleware global de manejo de errores
     app.UseMiddleware<ExceptionHandlingMiddleware>();
     
     app.UseHttpsRedirection();
@@ -56,7 +58,6 @@ try
     
     app.Run();
 }
-// 3. CORRECCIÓN CLAVE: Ignorar HostAbortedException
 catch (Exception ex) when (ex is not HostAbortedException)
 {
     Log.Fatal(ex, "La aplicación falló al iniciar.");

@@ -19,6 +19,8 @@ public static class ManualMapperProducto
             Descripcion = requestDto.Descripcion,
             Precio = requestDto.Precio,
             CodigoBarras = requestDto.CodigoBarras,
+            CategoriaId = requestDto.CategoriaId,
+            ProveedorId = requestDto.ProveedorId, 
         };
     }
 
@@ -33,6 +35,9 @@ public static class ManualMapperProducto
         productoExistente.Descripcion = productoRequestDto.Descripcion;
         productoExistente.Precio = productoRequestDto.Precio;
         productoExistente.CodigoBarras = productoRequestDto.CodigoBarras;
+        productoExistente.CategoriaId = productoRequestDto.CategoriaId;
+        productoExistente.ProveedorId = productoRequestDto.ProveedorId;
+        
         productoExistente.UpdatedAt = DateTime.UtcNow;
     }
 
@@ -51,7 +56,9 @@ public static class ManualMapperProducto
             producto.Precio,
             producto.CodigoBarras,
             producto.CreatedAt,
-            producto.UpdatedAt
+            producto.UpdatedAt,
+            producto.CategoriaId,
+            producto.ProveedorId
         );
     }
 

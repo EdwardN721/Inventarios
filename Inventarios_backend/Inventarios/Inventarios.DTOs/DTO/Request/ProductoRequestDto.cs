@@ -4,5 +4,7 @@ public record ProductoRequestDto(
     string Nombre, 
     string? Descripcion,
     decimal Precio,
-    string CodigoBarras
+    string CodigoBarras,
+    int CategoriaId,
+    Guid ProveedorId
     );

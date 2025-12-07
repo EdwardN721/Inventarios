@@ -7,5 +7,7 @@ public record ProductoResponseDto(
     decimal Precio,
     string CodigoBarras,
     DateTime CreatedAt,
-    DateTime? UpdatedAt
+    DateTime? UpdatedAt,
+    int? CategoriaId,
+    Guid? ProveedorId
     );

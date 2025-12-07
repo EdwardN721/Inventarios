@@ -1,7 +1,9 @@
+using Npgsql;
 using System.Net;
 using System.Text.Json;
-using Inventarios.Business.Exceptions;
 using Microsoft.AspNetCore.Http;
+using Microsoft.EntityFrameworkCore;
+using Inventarios.Business.Exceptions;
 
 namespace Inventarios.Middleware;
 
@@ -58,6 +60,37 @@ public class ExceptionHandlingMiddleware
                 statusCode = HttpStatusCode.NotFound;
                 errorResponse = new { title = "No encontrado.", errors = notFoundException.Message };
                 break;
+            case DbUpdateException dbUpdateException:
+                statusCode = HttpStatusCode.BadRequest;
+                errorResponse = new { title = "Error interno.", errors = "No se pudieron guardar los cambios." };
+                if (dbUpdateException.InnerException is PostgresException postgresException)
+                {
+                    switch (postgresException.SqlState)
+                    {
+                        case "23505": 
+                            statusCode = HttpStatusCode.Conflict;
+                            errorResponse = new { title = "Conflicto.", errors = "Ya éxiste uin registro con estos datos." };
+                            break;
+                        case "23503":
+                            statusCode = HttpStatusCode.BadRequest;
+                            errorResponse = new
+                            {
+                                title = "Error de integridad.",
+                                errors = "Estás intentando relacionar un registro que no existe."
+                            };
+                            break;
+                        case "23502":
+                            statusCode = HttpStatusCode.BadRequest;
+                            errorResponse = new
+                            {
+                                title = "Datos incompletos.", 
+                                errors = $"El campo '{postgresException.ColumnName}' es obligatorio y no se envió."
+                            };
+                        break;
+                    }
+                }
+                break;
+            
             default:
                 statusCode = HttpStatusCode.InternalServerError;
                 errorResponse = new { title = "Error interno.", errors = "Ocurrio un error inesperado." };
