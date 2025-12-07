@@ -16,7 +16,9 @@ public static class ManualMapperInventarioMovimientos
         return new InventarioMovimiento()
         {
             FechaMovimiento = requestDto.FechaMovimiento,
-            Cantidad = requestDto.Cantidad
+            Cantidad = requestDto.Cantidad,
+            TipoMovimientoId = requestDto.TipoMovimientoId,
+            ProductoId = requestDto.ProductoId
         };
     }
 
@@ -30,6 +32,8 @@ public static class ManualMapperInventarioMovimientos
     {
         inventarioMovimientoExistente.FechaMovimiento = requestDto.FechaMovimiento;
         inventarioMovimientoExistente.Cantidad = requestDto.Cantidad;
+        inventarioMovimientoExistente.TipoMovimientoId = requestDto.TipoMovimientoId;
+        inventarioMovimientoExistente.ProductoId = requestDto.ProductoId;
     }
 
     /// <summary>
@@ -40,12 +44,13 @@ public static class ManualMapperInventarioMovimientos
     public static InventarioMovimientosResponseDto ToDto(this
         InventarioMovimiento inventarioMovimientoExistente)
     {
-        return new InventarioMovimientosResponseDto()
-        {
-            Id = inventarioMovimientoExistente.Id,
-            FechaMovimiento = inventarioMovimientoExistente.FechaMovimiento,
-            Cantidad = inventarioMovimientoExistente.Cantidad
-        };
+        return new InventarioMovimientosResponseDto(
+            inventarioMovimientoExistente.Id,
+            inventarioMovimientoExistente.FechaMovimiento,
+            inventarioMovimientoExistente.Cantidad,
+            inventarioMovimientoExistente.TipoMovimientoId,
+            inventarioMovimientoExistente.ProductoId
+            );
     }
 
     /// <summary>
