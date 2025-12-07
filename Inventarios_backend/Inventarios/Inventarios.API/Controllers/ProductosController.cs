@@ -33,7 +33,7 @@ public class ProductosController : ControllerBase
     /// </summary>
     /// <returns>Lista de productos</returns>
     [HttpGet]
-    [ProducesResponseType(StatusCodes.Status200OK, Type = typeof(IEnumerable<InventarioMovimientosResponseDto>))]
+    [ProducesResponseType(StatusCodes.Status200OK, Type = typeof(IEnumerable<ProductoResponseDto>))]
     public async Task<IActionResult> ObtenerProductos()
     {
         IEnumerable<ProductoResponseDto> productos = await _service.ObtenerProductos(); 
@@ -46,7 +46,7 @@ public class ProductosController : ControllerBase
     /// <param name="id">Id del producto</param>
     /// <returns>Producto</returns>
     [HttpGet("{id:guid}")]
-    [ProducesResponseType(StatusCodes.Status200OK, Type = typeof(InventarioMovimientosResponseDto))]
+    [ProducesResponseType(StatusCodes.Status200OK, Type = typeof(ProductoResponseDto))]
     [ProducesResponseType(StatusCodes.Status401Unauthorized)]
     [ProducesResponseType(StatusCodes.Status404NotFound)]
     [ProducesResponseType(StatusCodes.Status500InternalServerError)]
@@ -62,7 +62,7 @@ public class ProductosController : ControllerBase
     /// <param name="productoRequestDto">Dto de producto</param>
     /// <returns>Producto agregado</returns>
     [HttpPost]
-    [ProducesResponseType(StatusCodes.Status201Created, Type = typeof(InventarioMovimientosResponseDto))]
+    [ProducesResponseType(StatusCodes.Status201Created, Type = typeof(ProductoResponseDto))]
     [ProducesResponseType(StatusCodes.Status401Unauthorized)]
     [ProducesResponseType(StatusCodes.Status404NotFound)]
     [ProducesResponseType(StatusCodes.Status500InternalServerError)]
