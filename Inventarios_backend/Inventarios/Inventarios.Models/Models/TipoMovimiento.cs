@@ -3,7 +3,7 @@ namespace Inventarios.Entities.Models;
 public class TipoMovimiento
 {
     public int Id { get; set; }
-    public string Nombre { get; set; } = string.Empty;
+    public required string Nombre { get; set; } = string.Empty;
     public string? Descripcion { get; set; } = string.Empty;
     public bool EsEntrada { get; set; } =  false;
     public bool EsSalida { get; set; }  = false;
@@ -12,5 +12,5 @@ public class TipoMovimiento
     public DateTime? UpdatedAt { get; set; }
     
     //Relación uno a muchos
-    public IEnumerable<InventarioMovimientos>?  InventarioMovimientos { get; set; } 
+    public virtual ICollection<InventarioMovimiento>?  InventarioMovimientos { get; set; } = new List<InventarioMovimiento>(); 
 }

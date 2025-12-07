@@ -8,7 +8,7 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Inventarios.Infrastructure"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Inventarios.DTOs", "Inventarios.DTOs\Inventarios.DTOs.csproj", "{C8A464BA-9EBE-49BF-99F0-D960AA7625A8}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Inventarios.Bussiness", "Inventarios.Bussiness\Inventarios.Bussiness.csproj", "{E11DC4A3-5B33-453D-BBD5-6A67D83BDEFB}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Inventarios.Business", "Inventarios.Business\Inventarios.Business.csproj", "{E11DC4A3-5B33-453D-BBD5-6A67D83BDEFB}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

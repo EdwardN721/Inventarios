@@ -1,10 +1,10 @@
-using Inventarios.DTOs.DTO.Request;
-
 namespace Inventarios.DTOs.DTO.Response;
 
-public record CategoriaResponseDto : CategoriaRequestDto
+public record CategoriaResponseDto
 {
-    public int Id { get; set; }
-    public DateTime CreatedAt { get; set; } 
-    public DateTime? UpdatedAt { get; set; }
+    public int Id { get; init; }
+    public string Nombre { get; init; } = string.Empty;
+    public string? Descripcion { get; init; } = string.Empty;
+    public DateTime CreatedAt { get; init; }
+    public DateTime? UpdatedAt { get; init; }
 };

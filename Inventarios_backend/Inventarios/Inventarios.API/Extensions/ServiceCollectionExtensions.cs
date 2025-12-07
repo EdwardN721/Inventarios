@@ -1,8 +1,7 @@
 using System.Reflection;
 using Microsoft.OpenApi.Models;
 using FluentValidation;
-using Inventarios.Bussiness.Interface.Services;
-using Inventarios.Bussiness.Service;
+using Inventarios.Business.Interface.Services;
 
 namespace Inventarios.Extensions;
 
@@ -66,7 +65,11 @@ public static class ServiceCollectionExtensions
     public static IServiceCollection AddValidator(this IServiceCollection services)
     {
         services.AddValidatorsFromAssemblyContaining<ICategoriaService>();
-        
+        services.AddValidatorsFromAssemblyContaining<IInventarioMovimientoService>();
+        services.AddValidatorsFromAssemblyContaining<IInventarioStockService>();
+        services.AddValidatorsFromAssemblyContaining<IProductoService>();
+        services.AddValidatorsFromAssemblyContaining<IProveedorService>();
+        services.AddValidatorsFromAssemblyContaining<ITipoMovimientoService>();
         return services;
     }
 }

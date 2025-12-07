@@ -1,7 +1,7 @@
 using System.Net;
 using System.Text.Json;
+using Inventarios.Business.Exceptions;
 using Microsoft.AspNetCore.Http;
-using Inventarios.Bussiness.Exceptions;
 
 namespace Inventarios.Middleware;
 

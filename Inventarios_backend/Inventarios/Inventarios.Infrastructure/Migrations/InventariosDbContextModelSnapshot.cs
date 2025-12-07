@@ -22,7 +22,7 @@ namespace Inventarios.Infrastructure.Migrations
 
             NpgsqlModelBuilderExtensions.UseIdentityByDefaultColumns(modelBuilder);
 
-            modelBuilder.Entity("Inventarios.Entities.Models.Categorias", b =>
+            modelBuilder.Entity("Inventarios.Entities.Models.Categoria", b =>
                 {
                     b.Property<int>("Id")
                         .ValueGeneratedOnAdd()
@@ -31,42 +31,46 @@ namespace Inventarios.Infrastructure.Migrations
                     NpgsqlPropertyBuilderExtensions.UseIdentityByDefaultColumn(b.Property<int>("Id"));
 
                     b.Property<DateTime>("CreatedAt")
-                        .HasColumnType("timestamp with time zone");
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("timestamp with time zone")
+                        .HasDefaultValueSql("now()");
 
                     b.Property<string>("Descripcion")
-                        .HasColumnType("text");
+                        .HasMaxLength(250)
+                        .HasColumnType("character varying(250)");
 
                     b.Property<string>("Nombre")
                         .IsRequired()
-                        .HasColumnType("text");
+                        .HasMaxLength(50)
+                        .HasColumnType("character varying(50)");
 
                     b.Property<DateTime?>("UpdatedAt")
                         .HasColumnType("timestamp with time zone");
 
                     b.HasKey("Id");
 
-                    b.ToTable("Categorias");
+                    b.ToTable("Categorias", (string)null);
                 });
 
-            modelBuilder.Entity("Inventarios.Entities.Models.InventarioMovimientos", b =>
+            modelBuilder.Entity("Inventarios.Entities.Models.InventarioMovimiento", b =>
                 {
                     b.Property<Guid>("Id")
                         .ValueGeneratedOnAdd()
-                        .HasColumnType("uuid");
+                        .HasColumnType("uuid")
+                        .HasDefaultValueSql("gen_random_uuid()");
 
                     b.Property<int>("Cantidad")
                         .HasColumnType("integer");
 
                     b.Property<DateTime>("FechaMovimiento")
-                        .HasColumnType("timestamp with time zone");
-
-                    b.Property<int>("IdTipoMovimiento")
-                        .HasColumnType("integer");
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("timestamp with time zone")
+                        .HasDefaultValueSql("now()");
 
                     b.Property<Guid>("ProductoId")
                         .HasColumnType("uuid");
 
-                    b.Property<int?>("TipoMovimientoId")
+                    b.Property<int>("TipoMovimientoId")
                         .HasColumnType("integer");
 
                     b.HasKey("Id");
@@ -75,20 +79,23 @@ namespace Inventarios.Infrastructure.Migrations
 
                     b.HasIndex("TipoMovimientoId");
 
-                    b.ToTable("InventarioMovimientos");
+                    b.ToTable("InventarioMovimientos", (string)null);
                 });
 
             modelBuilder.Entity("Inventarios.Entities.Models.InventarioStock", b =>
                 {
                     b.Property<Guid>("Id")
                         .ValueGeneratedOnAdd()
-                        .HasColumnType("uuid");
+                        .HasColumnType("uuid")
+                        .HasDefaultValueSql("gen_random_uuid()");
 
                     b.Property<int>("Cantidad")
                         .HasColumnType("integer");
 
                     b.Property<DateTime>("CreatedAt")
-                        .HasColumnType("timestamp with time zone");
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("timestamp with time zone")
+                        .HasDefaultValueSql("now()");
 
                     b.Property<Guid>("ProductoId")
                         .HasColumnType("uuid");
@@ -104,42 +111,42 @@ namespace Inventarios.Infrastructure.Migrations
 
                     b.HasIndex("ProductoId");
 
-                    b.ToTable("InventarioStock");
+                    b.ToTable("InventarioStock", (string)null);
                 });
 
-            modelBuilder.Entity("Inventarios.Entities.Models.Productos", b =>
+            modelBuilder.Entity("Inventarios.Entities.Models.Producto", b =>
                 {
                     b.Property<Guid>("Id")
                         .ValueGeneratedOnAdd()
-                        .HasColumnType("uuid");
+                        .HasColumnType("uuid")
+                        .HasDefaultValueSql("gen_random_uuid()");
 
-                    b.Property<int?>("CategoriaId")
+                    b.Property<int>("CategoriaId")
                         .HasColumnType("integer");
 
                     b.Property<string>("CodigoBarras")
                         .IsRequired()
-                        .HasColumnType("text");
+                        .HasMaxLength(50)
+                        .HasColumnType("character varying(50)");
 
                     b.Property<DateTime>("CreatedAt")
-                        .HasColumnType("timestamp with time zone");
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("timestamp with time zone")
+                        .HasDefaultValueSql("now()");
 
                     b.Property<string>("Descripcion")
-                        .HasColumnType("text");
-
-                    b.Property<int>("IdCategoria")
-                        .HasColumnType("integer");
-
-                    b.Property<Guid>("IdProveedor")
-                        .HasColumnType("uuid");
+                        .HasMaxLength(250)
+                        .HasColumnType("character varying(250)");
 
                     b.Property<string>("Nombre")
                         .IsRequired()
-                        .HasColumnType("text");
+                        .HasMaxLength(100)
+                        .HasColumnType("character varying(100)");
 
                     b.Property<decimal>("Precio")
-                        .HasColumnType("numeric");
+                        .HasColumnType("decimal(18,2)");
 
-                    b.Property<Guid?>("ProveedorId")
+                    b.Property<Guid>("ProveedorId")
                         .HasColumnType("uuid");
 
                     b.Property<DateTime?>("UpdatedAt")
@@ -151,21 +158,24 @@ namespace Inventarios.Infrastructure.Migrations
 
                     b.HasIndex("ProveedorId");
 
-                    b.ToTable("Productos");
+                    b.ToTable("Productos", (string)null);
                 });
 
             modelBuilder.Entity("Inventarios.Entities.Models.Proveedor", b =>
                 {
                     b.Property<Guid>("Id")
                         .ValueGeneratedOnAdd()
-                        .HasColumnType("uuid");
+                        .HasColumnType("uuid")
+                        .HasDefaultValueSql("gen_random_uuid()");
 
                     b.Property<string>("Correo")
                         .IsRequired()
                         .HasColumnType("text");
 
                     b.Property<DateTime>("CreatedAt")
-                        .HasColumnType("timestamp with time zone");
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("timestamp with time zone")
+                        .HasDefaultValueSql("now()");
 
                     b.Property<string>("Direccion")
                         .IsRequired()
@@ -173,7 +183,8 @@ namespace Inventarios.Infrastructure.Migrations
 
                     b.Property<string>("Nombre")
                         .IsRequired()
-                        .HasColumnType("text");
+                        .HasMaxLength(100)
+                        .HasColumnType("character varying(100)");
 
                     b.Property<string>("PersonaContacto")
                         .IsRequired()
@@ -188,7 +199,7 @@ namespace Inventarios.Infrastructure.Migrations
 
                     b.HasKey("Id");
 
-                    b.ToTable("Proveedores");
+                    b.ToTable("Proveedores", (string)null);
                 });
 
             modelBuilder.Entity("Inventarios.Entities.Models.TipoMovimiento", b =>
@@ -223,12 +234,12 @@ namespace Inventarios.Infrastructure.Migrations
 
                     b.HasKey("Id");
 
-                    b.ToTable("TipoMovimiento");
+                    b.ToTable("TipoMovimientos");
                 });
 
-            modelBuilder.Entity("Inventarios.Entities.Models.InventarioMovimientos", b =>
+            modelBuilder.Entity("Inventarios.Entities.Models.InventarioMovimiento", b =>
                 {
-                    b.HasOne("Inventarios.Entities.Models.Productos", "Producto")
+                    b.HasOne("Inventarios.Entities.Models.Producto", "Producto")
                         .WithMany("InventarioMovimientos")
                         .HasForeignKey("ProductoId")
                         .OnDelete(DeleteBehavior.Cascade)
@@ -236,7 +247,9 @@ namespace Inventarios.Infrastructure.Migrations
 
                     b.HasOne("Inventarios.Entities.Models.TipoMovimiento", "TipoMovimiento")
                         .WithMany("InventarioMovimientos")
-                        .HasForeignKey("TipoMovimientoId");
+                        .HasForeignKey("TipoMovimientoId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
 
                     b.Navigation("Producto");
 
@@ -245,7 +258,7 @@ namespace Inventarios.Infrastructure.Migrations
 
             modelBuilder.Entity("Inventarios.Entities.Models.InventarioStock", b =>
                 {
-                    b.HasOne("Inventarios.Entities.Models.Productos", "Producto")
+                    b.HasOne("Inventarios.Entities.Models.Producto", "Producto")
                         .WithMany("InventarioStock")
                         .HasForeignKey("ProductoId")
                         .OnDelete(DeleteBehavior.Cascade)
@@ -254,27 +267,31 @@ namespace Inventarios.Infrastructure.Migrations
                     b.Navigation("Producto");
                 });
 
-            modelBuilder.Entity("Inventarios.Entities.Models.Productos", b =>
+            modelBuilder.Entity("Inventarios.Entities.Models.Producto", b =>
                 {
-                    b.HasOne("Inventarios.Entities.Models.Categorias", "Categoria")
+                    b.HasOne("Inventarios.Entities.Models.Categoria", "Categoria")
                         .WithMany("Productos")
-                        .HasForeignKey("CategoriaId");
+                        .HasForeignKey("CategoriaId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
 
                     b.HasOne("Inventarios.Entities.Models.Proveedor", "Proveedor")
                         .WithMany("Productos")
-                        .HasForeignKey("ProveedorId");
+                        .HasForeignKey("ProveedorId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
 
                     b.Navigation("Categoria");
 
                     b.Navigation("Proveedor");
                 });
 
-            modelBuilder.Entity("Inventarios.Entities.Models.Categorias", b =>
+            modelBuilder.Entity("Inventarios.Entities.Models.Categoria", b =>
                 {
                     b.Navigation("Productos");
                 });
 
-            modelBuilder.Entity("Inventarios.Entities.Models.Productos", b =>
+            modelBuilder.Entity("Inventarios.Entities.Models.Producto", b =>
                 {
                     b.Navigation("InventarioMovimientos");
 

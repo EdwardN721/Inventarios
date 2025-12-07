@@ -1,0 +1,1189 @@
+2025-12-07 00:40:57.524 -06:00 [DBG] Registered model binder providers, in the following order: ["Microsoft.AspNetCore.Mvc.ModelBinding.Binders.BinderTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ServicesModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.BodyModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.HeaderModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FloatingPointTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.EnumTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.DateTimeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.SimpleTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.TryParseModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.CancellationTokenModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ByteArrayModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FormFileModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FormCollectionModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.KeyValuePairModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.DictionaryModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ArrayModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.CollectionModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ComplexObjectModelBinderProvider"]
+2025-12-07 00:40:57.613 -06:00 [DBG] Hosting starting
+2025-12-07 00:40:57.662 -06:00 [DBG] Middleware configuration started with options: {AllowedHosts = *, AllowEmptyHosts = True, IncludeFailureMessage = True}
+2025-12-07 00:40:57.665 -06:00 [DBG] Wildcard detected, all requests with hosts will be allowed.
+2025-12-07 00:40:57.677 -06:00 [DBG] No listening endpoints were configured. Binding to http://localhost:5000 by default.
+2025-12-07 00:40:57.677 -06:00 [INF] Now listening on: http://localhost:5000
+2025-12-07 00:40:57.677 -06:00 [DBG] Loaded hosting startup assembly Inventarios.API
+2025-12-07 00:40:57.678 -06:00 [INF] Application started. Press Ctrl+C to shut down.
+2025-12-07 00:40:57.678 -06:00 [INF] Hosting environment: Development
+2025-12-07 00:40:57.678 -06:00 [INF] Content root path: /home/apolo/Escritorio/Programacion/Inventarios/Inventarios_backend/Inventarios/Inventarios.API
+2025-12-07 00:40:57.678 -06:00 [DBG] Hosting started
+2025-12-07 00:41:35.024 -06:00 [DBG] Connection id "0HNHLBEL6A00U" accepted.
+2025-12-07 00:41:35.025 -06:00 [DBG] Connection id "0HNHLBEL6A00U" started.
+2025-12-07 00:41:35.060 -06:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/swagger/index.html - null null
+2025-12-07 00:41:35.077 -06:00 [DBG] No candidates found for the request path '/swagger/index.html'
+2025-12-07 00:41:35.077 -06:00 [DBG] Request did not match any endpoints
+2025-12-07 00:41:35.170 -06:00 [DBG] Connection id "0HNHLBEL6A00U" completed keep alive response.
+2025-12-07 00:41:35.171 -06:00 [INF] Request finished HTTP/1.1 GET http://localhost:5000/swagger/index.html - 200 null text/html;charset=utf-8 111.386ms
+2025-12-07 00:41:35.232 -06:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/swagger/v1/swagger.json - null null
+2025-12-07 00:41:35.233 -06:00 [DBG] No candidates found for the request path '/swagger/v1/swagger.json'
+2025-12-07 00:41:35.233 -06:00 [DBG] Request did not match any endpoints
+2025-12-07 00:41:35.240 -06:00 [DBG] Executing API description provider 'DefaultApiDescriptionProvider' from assembly Microsoft.AspNetCore.Mvc.ApiExplorer v9.0.0.0.
+2025-12-07 00:41:35.374 -06:00 [DBG] Connection id "0HNHLBEL6A00U" completed keep alive response.
+2025-12-07 00:41:35.374 -06:00 [INF] Request finished HTTP/1.1 GET http://localhost:5000/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 141.9518ms
+2025-12-07 00:41:46.997 -06:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/api/Proveedor - null null
+2025-12-07 00:41:47.001 -06:00 [DBG] 1 candidate(s) found for the request path '/api/Proveedor'
+2025-12-07 00:41:47.002 -06:00 [DBG] Endpoint 'Inventarios.Controllers.ProveedorController.ObtenerProveedores (Inventarios.API)' with route pattern 'api/Proveedor' is valid for the request path '/api/Proveedor'
+2025-12-07 00:41:47.003 -06:00 [DBG] Request matched endpoint 'Inventarios.Controllers.ProveedorController.ObtenerProveedores (Inventarios.API)'
+2025-12-07 00:41:47.007 -06:00 [WRN] Failed to determine the https port for redirect.
+2025-12-07 00:41:47.009 -06:00 [INF] Executing endpoint 'Inventarios.Controllers.ProveedorController.ObtenerProveedores (Inventarios.API)'
+2025-12-07 00:41:47.020 -06:00 [INF] Route matched with {action = "ObtenerProveedores", controller = "Proveedor"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] ObtenerProveedores() on controller Inventarios.Controllers.ProveedorController (Inventarios.API).
+2025-12-07 00:41:47.023 -06:00 [DBG] Execution plan of authorization filters (in the following order): ["None"]
+2025-12-07 00:41:47.024 -06:00 [DBG] Execution plan of resource filters (in the following order): ["None"]
+2025-12-07 00:41:47.024 -06:00 [DBG] Execution plan of action filters (in the following order): ["Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter (Order: -3000)","Microsoft.AspNetCore.Mvc.Infrastructure.ModelStateInvalidFilter (Order: -2000)","Inventarios.Filters.LogActionFilter"]
+2025-12-07 00:41:47.024 -06:00 [DBG] Execution plan of exception filters (in the following order): ["None"]
+2025-12-07 00:41:47.024 -06:00 [DBG] Execution plan of result filters (in the following order): ["Microsoft.AspNetCore.Mvc.Infrastructure.ClientErrorResultFilter (Order: -2000)"]
+2025-12-07 00:41:47.025 -06:00 [DBG] Executing controller factory for controller Inventarios.Controllers.ProveedorController (Inventarios.API)
+2025-12-07 00:41:47.161 -06:00 [DBG] An 'IServiceProvider' was created for internal use by Entity Framework.
+2025-12-07 00:41:47.182 -06:00 [DBG] Executed controller factory for controller Inventarios.Controllers.ProveedorController (Inventarios.API)
+2025-12-07 00:41:47.183 -06:00 [INF] Ejecutando: Proveedor - ObtenerProveedores
+2025-12-07 00:41:47.190 -06:00 [INF] Executing action method Inventarios.Controllers.ProveedorController.ObtenerProveedores (Inventarios.API) - Validation state: "Valid"
+2025-12-07 00:41:47.191 -06:00 [INF] Obteniendo proveedores.
+2025-12-07 00:41:47.815 -06:00 [DBG] Entity Framework Core 9.0.9 initialized 'InventariosDbContext' using provider 'Npgsql.EntityFrameworkCore.PostgreSQL:9.0.4+fd2380957bee5cd86f336466af36b08c0163f1a5' with options: None
+2025-12-07 00:41:47.846 -06:00 [DBG] Compiling query expression: 
+'DbSet<Proveedor>()
+    .AsNoTracking()'
+2025-12-07 00:41:48.053 -06:00 [DBG] Generated query execution expression: 
+'queryContext => SingleQueryingEnumerable.Create<Proveedor>(
+    relationalQueryContext: (RelationalQueryContext)queryContext, 
+    relationalCommandResolver: parameters => [LIFTABLE Constant: RelationalCommandCache.QueryExpression(
+        Projection Mapping:
+            EmptyProjectionMember -> Dictionary<IProperty, int> { [Property: Proveedor.Id (Guid) Required PK AfterSave:Throw ValueGenerated.OnAdd, 0], [Property: Proveedor.Correo (string) Required, 1], [Property: Proveedor.CreatedAt (DateTime) Required ValueGenerated.OnAdd, 2], [Property: Proveedor.Direccion (string) Required, 3], [Property: Proveedor.Nombre (string) Required MaxLength(100), 4], [Property: Proveedor.PersonaContacto (string) Required, 5], [Property: Proveedor.Telefono (string) Required, 6], [Property: Proveedor.UpdatedAt (DateTime?), 7] }
+        SELECT p.Id, p.Correo, p.CreatedAt, p.Direccion, p.Nombre, p.PersonaContacto, p.Telefono, p.UpdatedAt
+        FROM Proveedores AS p) | Resolver: c => new RelationalCommandCache(
+        c.Dependencies.MemoryCache, 
+        c.RelationalDependencies.QuerySqlGeneratorFactory, 
+        c.RelationalDependencies.RelationalParameterBasedSqlProcessorFactory, 
+        Projection Mapping:
+            EmptyProjectionMember -> Dictionary<IProperty, int> { [Property: Proveedor.Id (Guid) Required PK AfterSave:Throw ValueGenerated.OnAdd, 0], [Property: Proveedor.Correo (string) Required, 1], [Property: Proveedor.CreatedAt (DateTime) Required ValueGenerated.OnAdd, 2], [Property: Proveedor.Direccion (string) Required, 3], [Property: Proveedor.Nombre (string) Required MaxLength(100), 4], [Property: Proveedor.PersonaContacto (string) Required, 5], [Property: Proveedor.Telefono (string) Required, 6], [Property: Proveedor.UpdatedAt (DateTime?), 7] }
+        SELECT p.Id, p.Correo, p.CreatedAt, p.Direccion, p.Nombre, p.PersonaContacto, p.Telefono, p.UpdatedAt
+        FROM Proveedores AS p, 
+        False, 
+        new HashSet<string>(
+            new string[]{ }, 
+            StringComparer.Ordinal
+        )
+    )].GetRelationalCommandTemplate(parameters), 
+    readerColumns: null, 
+    shaper: (queryContext, dataReader, resultContext, resultCoordinator) => 
+    {
+        Proveedor entity;
+        entity = 
+        {
+            MaterializationContext materializationContext1;
+            IEntityType entityType1;
+            Proveedor instance1;
+            materializationContext1 = new MaterializationContext(
+                [LIFTABLE Constant: ValueBuffer | Resolver: _ => (object)ValueBuffer.Empty], 
+                queryContext.Context
+            );
+            instance1 = default(Proveedor);
+            (object)dataReader.GetGuid(0) != null ? 
+            {
+                ISnapshot shadowSnapshot1;
+                shadowSnapshot1 = [LIFTABLE Constant: Snapshot | Resolver: _ => Snapshot.Empty];
+                entityType1 = [LIFTABLE Constant: EntityType: Proveedor | Resolver: namelessParameter{0} => namelessParameter{0}.Dependencies.Model.FindEntityType("Inventarios.Entities.Models.Proveedor")];
+                instance1 = switch (entityType1)
+                {
+                    case [LIFTABLE Constant: EntityType: Proveedor | Resolver: namelessParameter{1} => namelessParameter{1}.Dependencies.Model.FindEntityType("Inventarios.Entities.Models.Proveedor")]: 
+                        {
+                            return 
+                            {
+                                Proveedor instance;
+                                instance = new Proveedor();
+                                instance.<Id>k__BackingField = dataReader.GetGuid(0);
+                                instance.<Correo>k__BackingField = dataReader.GetString(1);
+                                instance.<CreatedAt>k__BackingField = dataReader.GetDateTime(2);
+                                instance.<Direccion>k__BackingField = dataReader.GetString(3);
+                                instance.<Nombre>k__BackingField = dataReader.GetString(4);
+                                instance.<PersonaContacto>k__BackingField = dataReader.GetString(5);
+                                instance.<Telefono>k__BackingField = dataReader.GetString(6);
+                                instance.<UpdatedAt>k__BackingField = dataReader.IsDBNull(7) ? default(DateTime?) : (DateTime?)dataReader.GetDateTime(7);
+                                (instance is IInjectableService) ? ((IInjectableService)instance).Injected(
+                                    context: materializationContext1.Context, 
+                                    entity: instance, 
+                                    queryTrackingBehavior: NoTracking, 
+                                    structuralType: [LIFTABLE Constant: EntityType: Proveedor | Resolver: namelessParameter{2} => namelessParameter{2}.Dependencies.Model.FindEntityType("Inventarios.Entities.Models.Proveedor")]) : default(void);
+                                return instance;
+                            }}
+                    default: 
+                        default(Proveedor)
+                }
+                ;
+                return instance1;
+            } : 
+            {
+                object[] keyValues1;
+                keyValues1 = new object[]{ (object)dataReader.GetGuid(0) };
+                return ShapedQueryCompilingExpressionVisitor.CreateNullKeyValueInNoTrackingQuery(
+                    entityType: [LIFTABLE Constant: EntityType: Proveedor | Resolver: namelessParameter{3} => namelessParameter{3}.Dependencies.Model.FindEntityType("Inventarios.Entities.Models.Proveedor")], 
+                    properties: [LIFTABLE Constant: List<RuntimeProperty> { Property: Proveedor.Id (Guid) Required PK AfterSave:Throw ValueGenerated.OnAdd } | Resolver: c => c.Dependencies.Model.FindEntityType("Inventarios.Entities.Models.Proveedor").FindPrimaryKey().Properties], 
+                    keyValues: keyValues1);
+            };
+            return instance1;
+        };
+        return entity;
+    }, 
+    contextType: Inventarios.Infrastructure.Context.InventariosDbContext, 
+    standAloneStateManager: False, 
+    detailedErrorsEnabled: False, 
+    threadSafetyChecksEnabled: True)'
+2025-12-07 00:41:48.102 -06:00 [DBG] Creating DbConnection.
+2025-12-07 00:41:48.141 -06:00 [DBG] Created DbConnection. (38ms).
+2025-12-07 00:41:48.144 -06:00 [DBG] Opening connection to database 'Inventarios' on server 'tcp://localhost:5432'.
+2025-12-07 00:41:48.342 -06:00 [DBG] Opened connection to database 'Inventarios' on server 'tcp://localhost:5432'.
+2025-12-07 00:41:48.348 -06:00 [DBG] Creating DbCommand for 'ExecuteReader'.
+2025-12-07 00:41:48.355 -06:00 [DBG] Created DbCommand for 'ExecuteReader' (4ms).
+2025-12-07 00:41:48.356 -06:00 [DBG] Initialized DbCommand for 'ExecuteReader' (9ms).
+2025-12-07 00:41:48.363 -06:00 [DBG] Executing DbCommand [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT p."Id", p."Correo", p."CreatedAt", p."Direccion", p."Nombre", p."PersonaContacto", p."Telefono", p."UpdatedAt"
+FROM "Proveedores" AS p
+2025-12-07 00:41:48.394 -06:00 [INF] Executed DbCommand (31ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT p."Id", p."Correo", p."CreatedAt", p."Direccion", p."Nombre", p."PersonaContacto", p."Telefono", p."UpdatedAt"
+FROM "Proveedores" AS p
+2025-12-07 00:41:48.403 -06:00 [DBG] Closing data reader to 'Inventarios' on server 'tcp://localhost:5432'.
+2025-12-07 00:41:48.416 -06:00 [DBG] A data reader for 'Inventarios' on server 'tcp://localhost:5432' is being disposed after spending 12ms reading results.
+2025-12-07 00:41:48.422 -06:00 [DBG] Closing connection to database 'Inventarios' on server 'tcp://localhost:5432'.
+2025-12-07 00:41:48.427 -06:00 [DBG] Closed connection to database 'Inventarios' on server 'tcp://localhost:5432' (5ms).
+2025-12-07 00:41:48.428 -06:00 [INF] Proveedores encontrados: {}
+2025-12-07 00:41:48.433 -06:00 [INF] Executed action method Inventarios.Controllers.ProveedorController.ObtenerProveedores (Inventarios.API), returned result Microsoft.AspNetCore.Mvc.OkObjectResult in 1239.7242ms.
+2025-12-07 00:41:48.441 -06:00 [INF]  --- Completado: Proveedor - ObtenerProveedores ---
+2025-12-07 00:41:48.444 -06:00 [DBG] List of registered output formatters, in the following order: ["Microsoft.AspNetCore.Mvc.Formatters.HttpNoContentOutputFormatter","Microsoft.AspNetCore.Mvc.Formatters.StringOutputFormatter","Microsoft.AspNetCore.Mvc.Formatters.StreamOutputFormatter","Microsoft.AspNetCore.Mvc.Formatters.SystemTextJsonOutputFormatter"]
+2025-12-07 00:41:48.449 -06:00 [DBG] Attempting to select an output formatter based on Accept header '["text/plain"]'.
+2025-12-07 00:41:48.449 -06:00 [DBG] Could not find an output formatter based on content negotiation. Accepted types were (["text/plain"])
+2025-12-07 00:41:48.450 -06:00 [DBG] Attempting to select an output formatter without using a content type as no explicit content types were specified for the response.
+2025-12-07 00:41:48.450 -06:00 [DBG] Attempting to select the first formatter in the output formatters list which can write the result.
+2025-12-07 00:41:48.451 -06:00 [DBG] Selected output formatter 'Microsoft.AspNetCore.Mvc.Formatters.SystemTextJsonOutputFormatter' and content type 'application/json' to write the response.
+2025-12-07 00:41:48.451 -06:00 [INF] Executing OkObjectResult, writing value of type 'System.Linq.Enumerable+ListSelectIterator`2[[Inventarios.Entities.Models.Proveedor, Inventarios.Models, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null],[Inventarios.DTOs.DTO.Response.ProveedorResponseDto, Inventarios.DTOs, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2025-12-07 00:41:48.502 -06:00 [INF] Executed action Inventarios.Controllers.ProveedorController.ObtenerProveedores (Inventarios.API) in 1474.3794ms
+2025-12-07 00:41:48.503 -06:00 [INF] Executed endpoint 'Inventarios.Controllers.ProveedorController.ObtenerProveedores (Inventarios.API)'
+2025-12-07 00:41:48.505 -06:00 [DBG] Connection id "0HNHLBEL6A00U" completed keep alive response.
+2025-12-07 00:41:48.507 -06:00 [DBG] 'InventariosDbContext' disposed.
+2025-12-07 00:41:48.511 -06:00 [DBG] Disposing connection to database 'Inventarios' on server 'tcp://localhost:5432'.
+2025-12-07 00:41:48.514 -06:00 [DBG] Disposed connection to database 'Inventarios' on server 'tcp://localhost:5432' (1ms).
+2025-12-07 00:41:48.516 -06:00 [INF] Request finished HTTP/1.1 GET http://localhost:5000/api/Proveedor - 200 null application/json; charset=utf-8 1518.8217ms
+2025-12-07 00:41:55.360 -06:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/api/TipoMovimiento - null null
+2025-12-07 00:41:55.361 -06:00 [DBG] 1 candidate(s) found for the request path '/api/TipoMovimiento'
+2025-12-07 00:41:55.361 -06:00 [DBG] Endpoint 'Inventarios.Controllers.TipoMovimientoController.ObtenerTipoMovimientos (Inventarios.API)' with route pattern 'api/TipoMovimiento' is valid for the request path '/api/TipoMovimiento'
+2025-12-07 00:41:55.362 -06:00 [DBG] Request matched endpoint 'Inventarios.Controllers.TipoMovimientoController.ObtenerTipoMovimientos (Inventarios.API)'
+2025-12-07 00:41:55.362 -06:00 [INF] Executing endpoint 'Inventarios.Controllers.TipoMovimientoController.ObtenerTipoMovimientos (Inventarios.API)'
+2025-12-07 00:41:55.365 -06:00 [INF] Route matched with {action = "ObtenerTipoMovimientos", controller = "TipoMovimiento"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] ObtenerTipoMovimientos() on controller Inventarios.Controllers.TipoMovimientoController (Inventarios.API).
+2025-12-07 00:41:55.365 -06:00 [DBG] Execution plan of authorization filters (in the following order): ["None"]
+2025-12-07 00:41:55.365 -06:00 [DBG] Execution plan of resource filters (in the following order): ["None"]
+2025-12-07 00:41:55.366 -06:00 [DBG] Execution plan of action filters (in the following order): ["Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter (Order: -3000)","Microsoft.AspNetCore.Mvc.Infrastructure.ModelStateInvalidFilter (Order: -2000)","Inventarios.Filters.LogActionFilter"]
+2025-12-07 00:41:55.366 -06:00 [DBG] Execution plan of exception filters (in the following order): ["None"]
+2025-12-07 00:41:55.366 -06:00 [DBG] Execution plan of result filters (in the following order): ["Microsoft.AspNetCore.Mvc.Infrastructure.ClientErrorResultFilter (Order: -2000)"]
+2025-12-07 00:41:55.366 -06:00 [DBG] Executing controller factory for controller Inventarios.Controllers.TipoMovimientoController (Inventarios.API)
+2025-12-07 00:41:55.367 -06:00 [DBG] Executed controller factory for controller Inventarios.Controllers.TipoMovimientoController (Inventarios.API)
+2025-12-07 00:41:55.367 -06:00 [INF] Ejecutando: TipoMovimiento - ObtenerTipoMovimientos
+2025-12-07 00:41:55.368 -06:00 [INF] Executing action method Inventarios.Controllers.TipoMovimientoController.ObtenerTipoMovimientos (Inventarios.API) - Validation state: "Valid"
+2025-12-07 00:41:55.368 -06:00 [INF] Obteniendo tipo de Movimientos
+2025-12-07 00:41:55.404 -06:00 [DBG] Entity Framework Core 9.0.9 initialized 'InventariosDbContext' using provider 'Npgsql.EntityFrameworkCore.PostgreSQL:9.0.4+fd2380957bee5cd86f336466af36b08c0163f1a5' with options: None
+2025-12-07 00:41:55.405 -06:00 [DBG] Compiling query expression: 
+'DbSet<TipoMovimiento>()
+    .AsNoTracking()'
+2025-12-07 00:41:55.413 -06:00 [DBG] Generated query execution expression: 
+'queryContext => SingleQueryingEnumerable.Create<TipoMovimiento>(
+    relationalQueryContext: (RelationalQueryContext)queryContext, 
+    relationalCommandResolver: parameters => [LIFTABLE Constant: RelationalCommandCache.QueryExpression(
+        Projection Mapping:
+            EmptyProjectionMember -> Dictionary<IProperty, int> { [Property: TipoMovimiento.Id (int) Required PK AfterSave:Throw ValueGenerated.OnAdd, 0], [Property: TipoMovimiento.CreatedAt (DateTime) Required, 1], [Property: TipoMovimiento.Descripcion (string), 2], [Property: TipoMovimiento.EsEntrada (bool) Required, 3], [Property: TipoMovimiento.EsSalida (bool) Required, 4], [Property: TipoMovimiento.EsTransferenciaInterna (bool) Required, 5], [Property: TipoMovimiento.Nombre (string) Required, 6], [Property: TipoMovimiento.UpdatedAt (DateTime?), 7] }
+        SELECT t.Id, t.CreatedAt, t.Descripcion, t.EsEntrada, t.EsSalida, t.EsTransferenciaInterna, t.Nombre, t.UpdatedAt
+        FROM TipoMovimientos AS t) | Resolver: c => new RelationalCommandCache(
+        c.Dependencies.MemoryCache, 
+        c.RelationalDependencies.QuerySqlGeneratorFactory, 
+        c.RelationalDependencies.RelationalParameterBasedSqlProcessorFactory, 
+        Projection Mapping:
+            EmptyProjectionMember -> Dictionary<IProperty, int> { [Property: TipoMovimiento.Id (int) Required PK AfterSave:Throw ValueGenerated.OnAdd, 0], [Property: TipoMovimiento.CreatedAt (DateTime) Required, 1], [Property: TipoMovimiento.Descripcion (string), 2], [Property: TipoMovimiento.EsEntrada (bool) Required, 3], [Property: TipoMovimiento.EsSalida (bool) Required, 4], [Property: TipoMovimiento.EsTransferenciaInterna (bool) Required, 5], [Property: TipoMovimiento.Nombre (string) Required, 6], [Property: TipoMovimiento.UpdatedAt (DateTime?), 7] }
+        SELECT t.Id, t.CreatedAt, t.Descripcion, t.EsEntrada, t.EsSalida, t.EsTransferenciaInterna, t.Nombre, t.UpdatedAt
+        FROM TipoMovimientos AS t, 
+        False, 
+        new HashSet<string>(
+            new string[]{ }, 
+            StringComparer.Ordinal
+        )
+    )].GetRelationalCommandTemplate(parameters), 
+    readerColumns: null, 
+    shaper: (queryContext, dataReader, resultContext, resultCoordinator) => 
+    {
+        TipoMovimiento entity;
+        entity = 
+        {
+            MaterializationContext materializationContext1;
+            IEntityType entityType1;
+            TipoMovimiento instance1;
+            materializationContext1 = new MaterializationContext(
+                [LIFTABLE Constant: ValueBuffer | Resolver: _ => (object)ValueBuffer.Empty], 
+                queryContext.Context
+            );
+            instance1 = default(TipoMovimiento);
+            (object)dataReader.GetInt32(0) != null ? 
+            {
+                ISnapshot shadowSnapshot1;
+                shadowSnapshot1 = [LIFTABLE Constant: Snapshot | Resolver: _ => Snapshot.Empty];
+                entityType1 = [LIFTABLE Constant: EntityType: TipoMovimiento | Resolver: namelessParameter{0} => namelessParameter{0}.Dependencies.Model.FindEntityType("Inventarios.Entities.Models.TipoMovimiento")];
+                instance1 = switch (entityType1)
+                {
+                    case [LIFTABLE Constant: EntityType: TipoMovimiento | Resolver: namelessParameter{1} => namelessParameter{1}.Dependencies.Model.FindEntityType("Inventarios.Entities.Models.TipoMovimiento")]: 
+                        {
+                            return 
+                            {
+                                TipoMovimiento instance;
+                                instance = new TipoMovimiento();
+                                instance.<Id>k__BackingField = dataReader.GetInt32(0);
+                                instance.<CreatedAt>k__BackingField = dataReader.GetDateTime(1);
+                                instance.<Descripcion>k__BackingField = dataReader.IsDBNull(2) ? default(string) : dataReader.GetString(2);
+                                instance.<EsEntrada>k__BackingField = dataReader.GetBoolean(3);
+                                instance.<EsSalida>k__BackingField = dataReader.GetBoolean(4);
+                                instance.<EsTransferenciaInterna>k__BackingField = dataReader.GetBoolean(5);
+                                instance.<Nombre>k__BackingField = dataReader.GetString(6);
+                                instance.<UpdatedAt>k__BackingField = dataReader.IsDBNull(7) ? default(DateTime?) : (DateTime?)dataReader.GetDateTime(7);
+                                (instance is IInjectableService) ? ((IInjectableService)instance).Injected(
+                                    context: materializationContext1.Context, 
+                                    entity: instance, 
+                                    queryTrackingBehavior: NoTracking, 
+                                    structuralType: [LIFTABLE Constant: EntityType: TipoMovimiento | Resolver: namelessParameter{2} => namelessParameter{2}.Dependencies.Model.FindEntityType("Inventarios.Entities.Models.TipoMovimiento")]) : default(void);
+                                return instance;
+                            }}
+                    default: 
+                        default(TipoMovimiento)
+                }
+                ;
+                return instance1;
+            } : 
+            {
+                object[] keyValues1;
+                keyValues1 = new object[]{ (object)dataReader.GetInt32(0) };
+                return ShapedQueryCompilingExpressionVisitor.CreateNullKeyValueInNoTrackingQuery(
+                    entityType: [LIFTABLE Constant: EntityType: TipoMovimiento | Resolver: namelessParameter{3} => namelessParameter{3}.Dependencies.Model.FindEntityType("Inventarios.Entities.Models.TipoMovimiento")], 
+                    properties: [LIFTABLE Constant: List<RuntimeProperty> { Property: TipoMovimiento.Id (int) Required PK AfterSave:Throw ValueGenerated.OnAdd } | Resolver: c => c.Dependencies.Model.FindEntityType("Inventarios.Entities.Models.TipoMovimiento").FindPrimaryKey().Properties], 
+                    keyValues: keyValues1);
+            };
+            return instance1;
+        };
+        return entity;
+    }, 
+    contextType: Inventarios.Infrastructure.Context.InventariosDbContext, 
+    standAloneStateManager: False, 
+    detailedErrorsEnabled: False, 
+    threadSafetyChecksEnabled: True)'
+2025-12-07 00:41:55.414 -06:00 [DBG] Creating DbConnection.
+2025-12-07 00:41:55.415 -06:00 [DBG] Created DbConnection. (0ms).
+2025-12-07 00:41:55.415 -06:00 [DBG] Opening connection to database 'Inventarios' on server 'tcp://localhost:5432'.
+2025-12-07 00:41:55.415 -06:00 [DBG] Opened connection to database 'Inventarios' on server 'tcp://localhost:5432'.
+2025-12-07 00:41:55.415 -06:00 [DBG] Creating DbCommand for 'ExecuteReader'.
+2025-12-07 00:41:55.416 -06:00 [DBG] Created DbCommand for 'ExecuteReader' (0ms).
+2025-12-07 00:41:55.416 -06:00 [DBG] Initialized DbCommand for 'ExecuteReader' (0ms).
+2025-12-07 00:41:55.416 -06:00 [DBG] Executing DbCommand [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT t."Id", t."CreatedAt", t."Descripcion", t."EsEntrada", t."EsSalida", t."EsTransferenciaInterna", t."Nombre", t."UpdatedAt"
+FROM "TipoMovimientos" AS t
+2025-12-07 00:41:55.420 -06:00 [INF] Executed DbCommand (4ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT t."Id", t."CreatedAt", t."Descripcion", t."EsEntrada", t."EsSalida", t."EsTransferenciaInterna", t."Nombre", t."UpdatedAt"
+FROM "TipoMovimientos" AS t
+2025-12-07 00:41:55.420 -06:00 [DBG] Closing data reader to 'Inventarios' on server 'tcp://localhost:5432'.
+2025-12-07 00:41:55.420 -06:00 [DBG] A data reader for 'Inventarios' on server 'tcp://localhost:5432' is being disposed after spending 0ms reading results.
+2025-12-07 00:41:55.420 -06:00 [DBG] Closing connection to database 'Inventarios' on server 'tcp://localhost:5432'.
+2025-12-07 00:41:55.421 -06:00 [DBG] Closed connection to database 'Inventarios' on server 'tcp://localhost:5432' (0ms).
+2025-12-07 00:41:55.421 -06:00 [INF] Tipos movimientos obtenidos 0
+2025-12-07 00:41:55.421 -06:00 [INF] Executed action method Inventarios.Controllers.TipoMovimientoController.ObtenerTipoMovimientos (Inventarios.API), returned result Microsoft.AspNetCore.Mvc.OkObjectResult in 53.6343ms.
+2025-12-07 00:41:55.422 -06:00 [INF]  --- Completado: TipoMovimiento - ObtenerTipoMovimientos ---
+2025-12-07 00:41:55.422 -06:00 [DBG] List of registered output formatters, in the following order: ["Microsoft.AspNetCore.Mvc.Formatters.HttpNoContentOutputFormatter","Microsoft.AspNetCore.Mvc.Formatters.StringOutputFormatter","Microsoft.AspNetCore.Mvc.Formatters.StreamOutputFormatter","Microsoft.AspNetCore.Mvc.Formatters.SystemTextJsonOutputFormatter"]
+2025-12-07 00:41:55.422 -06:00 [DBG] Attempting to select an output formatter based on Accept header '["text/plain"]'.
+2025-12-07 00:41:55.422 -06:00 [DBG] Could not find an output formatter based on content negotiation. Accepted types were (["text/plain"])
+2025-12-07 00:41:55.422 -06:00 [DBG] Attempting to select an output formatter without using a content type as no explicit content types were specified for the response.
+2025-12-07 00:41:55.422 -06:00 [DBG] Attempting to select the first formatter in the output formatters list which can write the result.
+2025-12-07 00:41:55.422 -06:00 [DBG] Selected output formatter 'Microsoft.AspNetCore.Mvc.Formatters.SystemTextJsonOutputFormatter' and content type 'application/json' to write the response.
+2025-12-07 00:41:55.422 -06:00 [INF] Executing OkObjectResult, writing value of type 'System.Linq.Enumerable+ListSelectIterator`2[[Inventarios.Entities.Models.TipoMovimiento, Inventarios.Models, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null],[Inventarios.DTOs.DTO.Response.TipoMovimientoResponseDto, Inventarios.DTOs, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2025-12-07 00:41:55.436 -06:00 [INF] Executed action Inventarios.Controllers.TipoMovimientoController.ObtenerTipoMovimientos (Inventarios.API) in 69.8068ms
+2025-12-07 00:41:55.436 -06:00 [INF] Executed endpoint 'Inventarios.Controllers.TipoMovimientoController.ObtenerTipoMovimientos (Inventarios.API)'
+2025-12-07 00:41:55.436 -06:00 [DBG] Connection id "0HNHLBEL6A00U" completed keep alive response.
+2025-12-07 00:41:55.436 -06:00 [DBG] 'InventariosDbContext' disposed.
+2025-12-07 00:41:55.436 -06:00 [DBG] Disposing connection to database 'Inventarios' on server 'tcp://localhost:5432'.
+2025-12-07 00:41:55.436 -06:00 [DBG] Disposed connection to database 'Inventarios' on server 'tcp://localhost:5432' (0ms).
+2025-12-07 00:41:55.436 -06:00 [INF] Request finished HTTP/1.1 GET http://localhost:5000/api/TipoMovimiento - 200 null application/json; charset=utf-8 76.6147ms
+2025-12-07 00:43:40.150 -06:00 [INF] Request starting HTTP/1.1 POST http://localhost:5000/api/Proveedor - application/json 166
+2025-12-07 00:43:40.151 -06:00 [DBG] 1 candidate(s) found for the request path '/api/Proveedor'
+2025-12-07 00:43:40.151 -06:00 [DBG] Endpoint 'Inventarios.Controllers.ProveedorController.CrearProveedor (Inventarios.API)' with route pattern 'api/Proveedor' is valid for the request path '/api/Proveedor'
+2025-12-07 00:43:40.151 -06:00 [DBG] Request matched endpoint 'Inventarios.Controllers.ProveedorController.CrearProveedor (Inventarios.API)'
+2025-12-07 00:43:40.151 -06:00 [INF] Executing endpoint 'Inventarios.Controllers.ProveedorController.CrearProveedor (Inventarios.API)'
+2025-12-07 00:43:40.158 -06:00 [INF] Route matched with {action = "CrearProveedor", controller = "Proveedor"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] CrearProveedor(Inventarios.DTOs.DTO.Request.ProveedorRequestDto) on controller Inventarios.Controllers.ProveedorController (Inventarios.API).
+2025-12-07 00:43:40.158 -06:00 [DBG] Execution plan of authorization filters (in the following order): ["None"]
+2025-12-07 00:43:40.158 -06:00 [DBG] Execution plan of resource filters (in the following order): ["None"]
+2025-12-07 00:43:40.158 -06:00 [DBG] Execution plan of action filters (in the following order): ["Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter (Order: -3000)","Microsoft.AspNetCore.Mvc.Infrastructure.ModelStateInvalidFilter (Order: -2000)","Inventarios.Filters.LogActionFilter"]
+2025-12-07 00:43:40.158 -06:00 [DBG] Execution plan of exception filters (in the following order): ["None"]
+2025-12-07 00:43:40.159 -06:00 [DBG] Execution plan of result filters (in the following order): ["Microsoft.AspNetCore.Mvc.Infrastructure.ClientErrorResultFilter (Order: -2000)"]
+2025-12-07 00:43:40.159 -06:00 [DBG] Executing controller factory for controller Inventarios.Controllers.ProveedorController (Inventarios.API)
+2025-12-07 00:43:40.160 -06:00 [DBG] Executed controller factory for controller Inventarios.Controllers.ProveedorController (Inventarios.API)
+2025-12-07 00:43:40.164 -06:00 [DBG] Attempting to bind parameter 'proveedorDto' of type 'Inventarios.DTOs.DTO.Request.ProveedorRequestDto' ...
+2025-12-07 00:43:40.165 -06:00 [DBG] Attempting to bind parameter 'proveedorDto' of type 'Inventarios.DTOs.DTO.Request.ProveedorRequestDto' using the name '' in request data ...
+2025-12-07 00:43:40.165 -06:00 [DBG] Selected input formatter 'Microsoft.AspNetCore.Mvc.Formatters.SystemTextJsonInputFormatter' for content type 'application/json'.
+2025-12-07 00:43:40.169 -06:00 [DBG] Connection id "0HNHLBEL6A00U", Request id "0HNHLBEL6A00U:00000005": started reading request body.
+2025-12-07 00:43:40.169 -06:00 [DBG] Connection id "0HNHLBEL6A00U", Request id "0HNHLBEL6A00U:00000005": done reading request body.
+2025-12-07 00:43:40.177 -06:00 [DBG] JSON input formatter succeeded, deserializing to type 'Inventarios.DTOs.DTO.Request.ProveedorRequestDto'
+2025-12-07 00:43:40.177 -06:00 [DBG] Done attempting to bind parameter 'proveedorDto' of type 'Inventarios.DTOs.DTO.Request.ProveedorRequestDto'.
+2025-12-07 00:43:40.177 -06:00 [DBG] Done attempting to bind parameter 'proveedorDto' of type 'Inventarios.DTOs.DTO.Request.ProveedorRequestDto'.
+2025-12-07 00:43:40.178 -06:00 [DBG] Attempting to validate the bound parameter 'proveedorDto' of type 'Inventarios.DTOs.DTO.Request.ProveedorRequestDto' ...
+2025-12-07 00:43:40.209 -06:00 [DBG] Done attempting to validate the bound parameter 'proveedorDto' of type 'Inventarios.DTOs.DTO.Request.ProveedorRequestDto'.
+2025-12-07 00:43:40.210 -06:00 [INF] Ejecutando: Proveedor - CrearProveedor
+2025-12-07 00:43:40.210 -06:00 [INF] Executing action method Inventarios.Controllers.ProveedorController.CrearProveedor (Inventarios.API) - Validation state: "Valid"
+2025-12-07 00:43:40.211 -06:00 [INF] Creando proveedor Sony México.
+2025-12-07 00:43:40.219 -06:00 [DBG] Entity Framework Core 9.0.9 initialized 'InventariosDbContext' using provider 'Npgsql.EntityFrameworkCore.PostgreSQL:9.0.4+fd2380957bee5cd86f336466af36b08c0163f1a5' with options: None
+2025-12-07 00:43:40.252 -06:00 [DBG] 'InventariosDbContext' generated a temporary value for the property 'Proveedor.Id'. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2025-12-07 00:43:40.301 -06:00 [DBG] Context 'InventariosDbContext' started tracking 'Proveedor' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2025-12-07 00:43:40.305 -06:00 [DBG] SaveChanges starting for 'InventariosDbContext'.
+2025-12-07 00:43:40.308 -06:00 [DBG] DetectChanges starting for 'InventariosDbContext'.
+2025-12-07 00:43:40.321 -06:00 [DBG] DetectChanges completed for 'InventariosDbContext'.
+2025-12-07 00:43:40.377 -06:00 [DBG] Creating DbConnection.
+2025-12-07 00:43:40.377 -06:00 [DBG] Created DbConnection. (0ms).
+2025-12-07 00:43:40.377 -06:00 [DBG] Opening connection to database 'Inventarios' on server 'tcp://localhost:5432'.
+2025-12-07 00:43:40.377 -06:00 [DBG] Opened connection to database 'Inventarios' on server 'tcp://localhost:5432'.
+2025-12-07 00:43:40.378 -06:00 [DBG] Creating DbCommand for 'ExecuteReader'.
+2025-12-07 00:43:40.379 -06:00 [DBG] Created DbCommand for 'ExecuteReader' (0ms).
+2025-12-07 00:43:40.385 -06:00 [DBG] Initialized DbCommand for 'ExecuteReader' (6ms).
+2025-12-07 00:43:40.387 -06:00 [DBG] Executing DbCommand [Parameters=[@p0='?', @p1='?' (DbType = DateTime), @p2='?', @p3='?', @p4='?', @p5='?', @p6='?' (DbType = DateTime)], CommandType='"Text"', CommandTimeout='30']
+INSERT INTO "Proveedores" ("Correo", "CreatedAt", "Direccion", "Nombre", "PersonaContacto", "Telefono", "UpdatedAt")
+VALUES (@p0, @p1, @p2, @p3, @p4, @p5, @p6)
+RETURNING "Id";
+2025-12-07 00:43:40.462 -06:00 [ERR] Failed executing DbCommand (76ms) [Parameters=[@p0='?', @p1='?' (DbType = DateTime), @p2='?', @p3='?', @p4='?', @p5='?', @p6='?' (DbType = DateTime)], CommandType='"Text"', CommandTimeout='30']
+INSERT INTO "Proveedores" ("Correo", "CreatedAt", "Direccion", "Nombre", "PersonaContacto", "Telefono", "UpdatedAt")
+VALUES (@p0, @p1, @p2, @p3, @p4, @p5, @p6)
+RETURNING "Id";
+2025-12-07 00:43:40.465 -06:00 [DBG] Closing connection to database 'Inventarios' on server 'tcp://localhost:5432'.
+2025-12-07 00:43:40.466 -06:00 [DBG] Closed connection to database 'Inventarios' on server 'tcp://localhost:5432' (0ms).
+2025-12-07 00:43:40.489 -06:00 [ERR] An exception occurred in the database while saving changes for context type 'Inventarios.Infrastructure.Context.InventariosDbContext'.
+Microsoft.EntityFrameworkCore.DbUpdateException: An error occurred while saving the entity changes. See the inner exception for details.
+ ---> Npgsql.PostgresException (0x80004005): 23502: null value in column "UpdatedAt" of relation "Proveedores" violates not-null constraint
+
+DETAIL: Detail redacted as it may contain sensitive data. Specify 'Include Error Detail' in the connection string to include this information.
+   at Npgsql.Internal.NpgsqlConnector.ReadMessageLong(Boolean async, DataRowLoadingMode dataRowLoadingMode, Boolean readingNotifications, Boolean isReadingPrependedMessage)
+   at System.Runtime.CompilerServices.PoolingAsyncValueTaskMethodBuilder`1.StateMachineBox`1.System.Threading.Tasks.Sources.IValueTaskSource<TResult>.GetResult(Int16 token)
+   at Npgsql.NpgsqlDataReader.NextResult(Boolean async, Boolean isConsuming, CancellationToken cancellationToken)
+   at Npgsql.NpgsqlDataReader.NextResult(Boolean async, Boolean isConsuming, CancellationToken cancellationToken)
+   at Npgsql.NpgsqlCommand.ExecuteReader(Boolean async, CommandBehavior behavior, CancellationToken cancellationToken)
+   at Npgsql.NpgsqlCommand.ExecuteReader(Boolean async, CommandBehavior behavior, CancellationToken cancellationToken)
+   at Npgsql.NpgsqlCommand.ExecuteDbDataReaderAsync(CommandBehavior behavior, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+  Exception data:
+    Severity: ERROR
+    SqlState: 23502
+    MessageText: null value in column "UpdatedAt" of relation "Proveedores" violates not-null constraint
+    Detail: Detail redacted as it may contain sensitive data. Specify 'Include Error Detail' in the connection string to include this information.
+    SchemaName: public
+    TableName: Proveedores
+    ColumnName: UpdatedAt
+    File: execMain.c
+    Line: 2005
+    Routine: ExecConstraints
+   --- End of inner exception stack trace ---
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalDatabase.SaveChangesAsync(IList`1 entries, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(IList`1 entriesToSave, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(StateManager stateManager, Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+   at Npgsql.EntityFrameworkCore.PostgreSQL.Storage.Internal.NpgsqlExecutionStrategy.ExecuteAsync[TState,TResult](TState state, Func`4 operation, Func`4 verifySucceeded, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.DbContext.SaveChangesAsync(Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+Microsoft.EntityFrameworkCore.DbUpdateException: An error occurred while saving the entity changes. See the inner exception for details.
+ ---> Npgsql.PostgresException (0x80004005): 23502: null value in column "UpdatedAt" of relation "Proveedores" violates not-null constraint
+
+DETAIL: Detail redacted as it may contain sensitive data. Specify 'Include Error Detail' in the connection string to include this information.
+   at Npgsql.Internal.NpgsqlConnector.ReadMessageLong(Boolean async, DataRowLoadingMode dataRowLoadingMode, Boolean readingNotifications, Boolean isReadingPrependedMessage)
+   at System.Runtime.CompilerServices.PoolingAsyncValueTaskMethodBuilder`1.StateMachineBox`1.System.Threading.Tasks.Sources.IValueTaskSource<TResult>.GetResult(Int16 token)
+   at Npgsql.NpgsqlDataReader.NextResult(Boolean async, Boolean isConsuming, CancellationToken cancellationToken)
+   at Npgsql.NpgsqlDataReader.NextResult(Boolean async, Boolean isConsuming, CancellationToken cancellationToken)
+   at Npgsql.NpgsqlCommand.ExecuteReader(Boolean async, CommandBehavior behavior, CancellationToken cancellationToken)
+   at Npgsql.NpgsqlCommand.ExecuteReader(Boolean async, CommandBehavior behavior, CancellationToken cancellationToken)
+   at Npgsql.NpgsqlCommand.ExecuteDbDataReaderAsync(CommandBehavior behavior, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+  Exception data:
+    Severity: ERROR
+    SqlState: 23502
+    MessageText: null value in column "UpdatedAt" of relation "Proveedores" violates not-null constraint
+    Detail: Detail redacted as it may contain sensitive data. Specify 'Include Error Detail' in the connection string to include this information.
+    SchemaName: public
+    TableName: Proveedores
+    ColumnName: UpdatedAt
+    File: execMain.c
+    Line: 2005
+    Routine: ExecConstraints
+   --- End of inner exception stack trace ---
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalDatabase.SaveChangesAsync(IList`1 entries, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(IList`1 entriesToSave, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(StateManager stateManager, Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+   at Npgsql.EntityFrameworkCore.PostgreSQL.Storage.Internal.NpgsqlExecutionStrategy.ExecuteAsync[TState,TResult](TState state, Func`4 operation, Func`4 verifySucceeded, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.DbContext.SaveChangesAsync(Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+2025-12-07 00:43:40.493 -06:00 [WRN]  --- Falló: Proveedor - CrearProveedor ---
+Microsoft.EntityFrameworkCore.DbUpdateException: An error occurred while saving the entity changes. See the inner exception for details.
+ ---> Npgsql.PostgresException (0x80004005): 23502: null value in column "UpdatedAt" of relation "Proveedores" violates not-null constraint
+
+DETAIL: Detail redacted as it may contain sensitive data. Specify 'Include Error Detail' in the connection string to include this information.
+   at Npgsql.Internal.NpgsqlConnector.ReadMessageLong(Boolean async, DataRowLoadingMode dataRowLoadingMode, Boolean readingNotifications, Boolean isReadingPrependedMessage)
+   at System.Runtime.CompilerServices.PoolingAsyncValueTaskMethodBuilder`1.StateMachineBox`1.System.Threading.Tasks.Sources.IValueTaskSource<TResult>.GetResult(Int16 token)
+   at Npgsql.NpgsqlDataReader.NextResult(Boolean async, Boolean isConsuming, CancellationToken cancellationToken)
+   at Npgsql.NpgsqlDataReader.NextResult(Boolean async, Boolean isConsuming, CancellationToken cancellationToken)
+   at Npgsql.NpgsqlCommand.ExecuteReader(Boolean async, CommandBehavior behavior, CancellationToken cancellationToken)
+   at Npgsql.NpgsqlCommand.ExecuteReader(Boolean async, CommandBehavior behavior, CancellationToken cancellationToken)
+   at Npgsql.NpgsqlCommand.ExecuteDbDataReaderAsync(CommandBehavior behavior, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+  Exception data:
+    Severity: ERROR
+    SqlState: 23502
+    MessageText: null value in column "UpdatedAt" of relation "Proveedores" violates not-null constraint
+    Detail: Detail redacted as it may contain sensitive data. Specify 'Include Error Detail' in the connection string to include this information.
+    SchemaName: public
+    TableName: Proveedores
+    ColumnName: UpdatedAt
+    File: execMain.c
+    Line: 2005
+    Routine: ExecConstraints
+   --- End of inner exception stack trace ---
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalDatabase.SaveChangesAsync(IList`1 entries, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(IList`1 entriesToSave, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(StateManager stateManager, Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+   at Npgsql.EntityFrameworkCore.PostgreSQL.Storage.Internal.NpgsqlExecutionStrategy.ExecuteAsync[TState,TResult](TState state, Func`4 operation, Func`4 verifySucceeded, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.DbContext.SaveChangesAsync(Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.DbContext.SaveChangesAsync(Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+   at Inventarios.Infrastructure.Repository.UnitOfWork.SaveChangesAsync() in /home/apolo/Escritorio/Programacion/Inventarios/Inventarios_backend/Inventarios/Inventarios.Infrastructure/Repository/UnitOfWork.cs:line 44
+   at Inventarios.Business.Service.ProveedorService.GuardarProveedor(ProveedorRequestDto proveedorDto) in /home/apolo/Escritorio/Programacion/Inventarios/Inventarios_backend/Inventarios/Inventarios.Business/Service/ProveedorService.cs:line 45
+   at Inventarios.Controllers.ProveedorController.CrearProveedor(ProveedorRequestDto proveedorDto) in /home/apolo/Escritorio/Programacion/Inventarios/Inventarios_backend/Inventarios/Inventarios.API/Controllers/ProveedorController.cs:line 74
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.TaskOfIActionResultExecutor.Execute(ActionContext actionContext, IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Logged|12_1(ControllerActionInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+2025-12-07 00:43:40.499 -06:00 [INF] Executed action Inventarios.Controllers.ProveedorController.CrearProveedor (Inventarios.API) in 340.8207ms
+2025-12-07 00:43:40.500 -06:00 [INF] Executed endpoint 'Inventarios.Controllers.ProveedorController.CrearProveedor (Inventarios.API)'
+2025-12-07 00:43:40.500 -06:00 [ERR] Ocurrió una excepción no controlada.
+Microsoft.EntityFrameworkCore.DbUpdateException: An error occurred while saving the entity changes. See the inner exception for details.
+ ---> Npgsql.PostgresException (0x80004005): 23502: null value in column "UpdatedAt" of relation "Proveedores" violates not-null constraint
+
+DETAIL: Detail redacted as it may contain sensitive data. Specify 'Include Error Detail' in the connection string to include this information.
+   at Npgsql.Internal.NpgsqlConnector.ReadMessageLong(Boolean async, DataRowLoadingMode dataRowLoadingMode, Boolean readingNotifications, Boolean isReadingPrependedMessage)
+   at System.Runtime.CompilerServices.PoolingAsyncValueTaskMethodBuilder`1.StateMachineBox`1.System.Threading.Tasks.Sources.IValueTaskSource<TResult>.GetResult(Int16 token)
+   at Npgsql.NpgsqlDataReader.NextResult(Boolean async, Boolean isConsuming, CancellationToken cancellationToken)
+   at Npgsql.NpgsqlDataReader.NextResult(Boolean async, Boolean isConsuming, CancellationToken cancellationToken)
+   at Npgsql.NpgsqlCommand.ExecuteReader(Boolean async, CommandBehavior behavior, CancellationToken cancellationToken)
+   at Npgsql.NpgsqlCommand.ExecuteReader(Boolean async, CommandBehavior behavior, CancellationToken cancellationToken)
+   at Npgsql.NpgsqlCommand.ExecuteDbDataReaderAsync(CommandBehavior behavior, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+  Exception data:
+    Severity: ERROR
+    SqlState: 23502
+    MessageText: null value in column "UpdatedAt" of relation "Proveedores" violates not-null constraint
+    Detail: Detail redacted as it may contain sensitive data. Specify 'Include Error Detail' in the connection string to include this information.
+    SchemaName: public
+    TableName: Proveedores
+    ColumnName: UpdatedAt
+    File: execMain.c
+    Line: 2005
+    Routine: ExecConstraints
+   --- End of inner exception stack trace ---
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalDatabase.SaveChangesAsync(IList`1 entries, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(IList`1 entriesToSave, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(StateManager stateManager, Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+   at Npgsql.EntityFrameworkCore.PostgreSQL.Storage.Internal.NpgsqlExecutionStrategy.ExecuteAsync[TState,TResult](TState state, Func`4 operation, Func`4 verifySucceeded, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.DbContext.SaveChangesAsync(Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.DbContext.SaveChangesAsync(Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+   at Inventarios.Infrastructure.Repository.UnitOfWork.SaveChangesAsync() in /home/apolo/Escritorio/Programacion/Inventarios/Inventarios_backend/Inventarios/Inventarios.Infrastructure/Repository/UnitOfWork.cs:line 44
+   at Inventarios.Business.Service.ProveedorService.GuardarProveedor(ProveedorRequestDto proveedorDto) in /home/apolo/Escritorio/Programacion/Inventarios/Inventarios_backend/Inventarios/Inventarios.Business/Service/ProveedorService.cs:line 45
+   at Inventarios.Controllers.ProveedorController.CrearProveedor(ProveedorRequestDto proveedorDto) in /home/apolo/Escritorio/Programacion/Inventarios/Inventarios_backend/Inventarios/Inventarios.API/Controllers/ProveedorController.cs:line 74
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.TaskOfIActionResultExecutor.Execute(ActionContext actionContext, IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Logged|12_1(ControllerActionInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeInnerFilterAsync>g__Awaited|13_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|7_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Inventarios.Middleware.ExceptionHandlingMiddleware.InvokeAsync(HttpContext httpContext) in /home/apolo/Escritorio/Programacion/Inventarios/Inventarios_backend/Inventarios/Inventarios.API/Middleware/ExceptionHandlingMiddleware.cs:line 33
+2025-12-07 00:43:40.507 -06:00 [DBG] Connection id "0HNHLBEL6A00U" completed keep alive response.
+2025-12-07 00:43:40.507 -06:00 [DBG] 'InventariosDbContext' disposed.
+2025-12-07 00:43:40.507 -06:00 [DBG] Disposing connection to database 'Inventarios' on server 'tcp://localhost:5432'.
+2025-12-07 00:43:40.507 -06:00 [DBG] Disposed connection to database 'Inventarios' on server 'tcp://localhost:5432' (0ms).
+2025-12-07 00:43:40.507 -06:00 [INF] Request finished HTTP/1.1 POST http://localhost:5000/api/Proveedor - 500 null application/json 356.9796ms
+2025-12-07 00:44:41.435 -06:00 [DBG] Connection id "0HNHLBEL6A00U" received FIN.
+2025-12-07 00:44:41.436 -06:00 [DBG] Connection id "0HNHLBEL6A00U" sending FIN because: "The Socket transport's send loop completed gracefully."
+2025-12-07 00:44:41.437 -06:00 [DBG] Connection id "0HNHLBEL6A00U" disconnecting.
+2025-12-07 00:44:41.439 -06:00 [DBG] Connection id "0HNHLBEL6A00U" stopped.
+2025-12-07 00:46:57.767 -06:00 [DBG] Connection id "0HNHLBEL6A00V" accepted.
+2025-12-07 00:46:57.768 -06:00 [DBG] Connection id "0HNHLBEL6A00V" started.
+2025-12-07 00:46:57.768 -06:00 [INF] Request starting HTTP/1.1 POST http://localhost:5000/api/Proveedor - application/json 166
+2025-12-07 00:46:57.768 -06:00 [DBG] 1 candidate(s) found for the request path '/api/Proveedor'
+2025-12-07 00:46:57.768 -06:00 [DBG] Endpoint 'Inventarios.Controllers.ProveedorController.CrearProveedor (Inventarios.API)' with route pattern 'api/Proveedor' is valid for the request path '/api/Proveedor'
+2025-12-07 00:46:57.769 -06:00 [DBG] Request matched endpoint 'Inventarios.Controllers.ProveedorController.CrearProveedor (Inventarios.API)'
+2025-12-07 00:46:57.769 -06:00 [INF] Executing endpoint 'Inventarios.Controllers.ProveedorController.CrearProveedor (Inventarios.API)'
+2025-12-07 00:46:57.769 -06:00 [INF] Route matched with {action = "CrearProveedor", controller = "Proveedor"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] CrearProveedor(Inventarios.DTOs.DTO.Request.ProveedorRequestDto) on controller Inventarios.Controllers.ProveedorController (Inventarios.API).
+2025-12-07 00:46:57.769 -06:00 [DBG] Execution plan of authorization filters (in the following order): ["None"]
+2025-12-07 00:46:57.769 -06:00 [DBG] Execution plan of resource filters (in the following order): ["None"]
+2025-12-07 00:46:57.769 -06:00 [DBG] Execution plan of action filters (in the following order): ["Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter (Order: -3000)","Microsoft.AspNetCore.Mvc.Infrastructure.ModelStateInvalidFilter (Order: -2000)","Inventarios.Filters.LogActionFilter"]
+2025-12-07 00:46:57.769 -06:00 [DBG] Execution plan of exception filters (in the following order): ["None"]
+2025-12-07 00:46:57.769 -06:00 [DBG] Execution plan of result filters (in the following order): ["Microsoft.AspNetCore.Mvc.Infrastructure.ClientErrorResultFilter (Order: -2000)"]
+2025-12-07 00:46:57.770 -06:00 [DBG] Executing controller factory for controller Inventarios.Controllers.ProveedorController (Inventarios.API)
+2025-12-07 00:46:57.772 -06:00 [DBG] Executed controller factory for controller Inventarios.Controllers.ProveedorController (Inventarios.API)
+2025-12-07 00:46:57.772 -06:00 [DBG] Attempting to bind parameter 'proveedorDto' of type 'Inventarios.DTOs.DTO.Request.ProveedorRequestDto' ...
+2025-12-07 00:46:57.772 -06:00 [DBG] Attempting to bind parameter 'proveedorDto' of type 'Inventarios.DTOs.DTO.Request.ProveedorRequestDto' using the name '' in request data ...
+2025-12-07 00:46:57.772 -06:00 [DBG] Selected input formatter 'Microsoft.AspNetCore.Mvc.Formatters.SystemTextJsonInputFormatter' for content type 'application/json'.
+2025-12-07 00:46:57.772 -06:00 [DBG] Connection id "0HNHLBEL6A00V", Request id "0HNHLBEL6A00V:00000001": started reading request body.
+2025-12-07 00:46:57.773 -06:00 [DBG] Connection id "0HNHLBEL6A00V", Request id "0HNHLBEL6A00V:00000001": done reading request body.
+2025-12-07 00:46:57.773 -06:00 [DBG] JSON input formatter succeeded, deserializing to type 'Inventarios.DTOs.DTO.Request.ProveedorRequestDto'
+2025-12-07 00:46:57.773 -06:00 [DBG] Done attempting to bind parameter 'proveedorDto' of type 'Inventarios.DTOs.DTO.Request.ProveedorRequestDto'.
+2025-12-07 00:46:57.773 -06:00 [DBG] Done attempting to bind parameter 'proveedorDto' of type 'Inventarios.DTOs.DTO.Request.ProveedorRequestDto'.
+2025-12-07 00:46:57.773 -06:00 [DBG] Attempting to validate the bound parameter 'proveedorDto' of type 'Inventarios.DTOs.DTO.Request.ProveedorRequestDto' ...
+2025-12-07 00:46:57.773 -06:00 [DBG] Done attempting to validate the bound parameter 'proveedorDto' of type 'Inventarios.DTOs.DTO.Request.ProveedorRequestDto'.
+2025-12-07 00:46:57.774 -06:00 [INF] Ejecutando: Proveedor - CrearProveedor
+2025-12-07 00:46:57.774 -06:00 [INF] Executing action method Inventarios.Controllers.ProveedorController.CrearProveedor (Inventarios.API) - Validation state: "Valid"
+2025-12-07 00:46:57.774 -06:00 [INF] Creando proveedor Sony México.
+2025-12-07 00:46:57.774 -06:00 [DBG] Entity Framework Core 9.0.9 initialized 'InventariosDbContext' using provider 'Npgsql.EntityFrameworkCore.PostgreSQL:9.0.4+fd2380957bee5cd86f336466af36b08c0163f1a5' with options: None
+2025-12-07 00:46:57.775 -06:00 [DBG] 'InventariosDbContext' generated a temporary value for the property 'Proveedor.Id'. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2025-12-07 00:46:57.776 -06:00 [DBG] Context 'InventariosDbContext' started tracking 'Proveedor' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2025-12-07 00:46:57.776 -06:00 [DBG] SaveChanges starting for 'InventariosDbContext'.
+2025-12-07 00:46:57.776 -06:00 [DBG] DetectChanges starting for 'InventariosDbContext'.
+2025-12-07 00:46:57.776 -06:00 [DBG] DetectChanges completed for 'InventariosDbContext'.
+2025-12-07 00:46:57.777 -06:00 [DBG] Creating DbConnection.
+2025-12-07 00:46:57.777 -06:00 [DBG] Created DbConnection. (0ms).
+2025-12-07 00:46:57.777 -06:00 [DBG] Opening connection to database 'Inventarios' on server 'tcp://localhost:5432'.
+2025-12-07 00:46:57.844 -06:00 [DBG] Opened connection to database 'Inventarios' on server 'tcp://localhost:5432'.
+2025-12-07 00:46:57.844 -06:00 [DBG] Creating DbCommand for 'ExecuteReader'.
+2025-12-07 00:46:57.844 -06:00 [DBG] Created DbCommand for 'ExecuteReader' (0ms).
+2025-12-07 00:46:57.845 -06:00 [DBG] Initialized DbCommand for 'ExecuteReader' (0ms).
+2025-12-07 00:46:57.845 -06:00 [DBG] Executing DbCommand [Parameters=[@p0='?', @p1='?' (DbType = DateTime), @p2='?', @p3='?', @p4='?', @p5='?', @p6='?' (DbType = DateTime)], CommandType='"Text"', CommandTimeout='30']
+INSERT INTO "Proveedores" ("Correo", "CreatedAt", "Direccion", "Nombre", "PersonaContacto", "Telefono", "UpdatedAt")
+VALUES (@p0, @p1, @p2, @p3, @p4, @p5, @p6)
+RETURNING "Id";
+2025-12-07 00:46:57.847 -06:00 [INF] Executed DbCommand (2ms) [Parameters=[@p0='?', @p1='?' (DbType = DateTime), @p2='?', @p3='?', @p4='?', @p5='?', @p6='?' (DbType = DateTime)], CommandType='"Text"', CommandTimeout='30']
+INSERT INTO "Proveedores" ("Correo", "CreatedAt", "Direccion", "Nombre", "PersonaContacto", "Telefono", "UpdatedAt")
+VALUES (@p0, @p1, @p2, @p3, @p4, @p5, @p6)
+RETURNING "Id";
+2025-12-07 00:46:57.861 -06:00 [DBG] The foreign key property 'Proveedor.Id' was detected as changed. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see property values.
+2025-12-07 00:46:57.866 -06:00 [DBG] Closing data reader to 'Inventarios' on server 'tcp://localhost:5432'.
+2025-12-07 00:46:57.866 -06:00 [DBG] A data reader for 'Inventarios' on server 'tcp://localhost:5432' is being disposed after spending 18ms reading results.
+2025-12-07 00:46:57.866 -06:00 [DBG] Closing connection to database 'Inventarios' on server 'tcp://localhost:5432'.
+2025-12-07 00:46:57.866 -06:00 [DBG] Closed connection to database 'Inventarios' on server 'tcp://localhost:5432' (0ms).
+2025-12-07 00:46:57.875 -06:00 [DBG] An entity of type 'Proveedor' tracked by 'InventariosDbContext' changed state from '"Added"' to '"Unchanged"'. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2025-12-07 00:46:57.876 -06:00 [DBG] SaveChanges completed for 'InventariosDbContext' with 1 entities written to the database.
+2025-12-07 00:46:57.876 -06:00 [INF] Proveedor agregado: {}
+2025-12-07 00:46:57.878 -06:00 [INF] Executed action method Inventarios.Controllers.ProveedorController.CrearProveedor (Inventarios.API), returned result Microsoft.AspNetCore.Mvc.CreatedAtActionResult in 104.2808ms.
+2025-12-07 00:46:57.878 -06:00 [INF]  --- Completado: Proveedor - CrearProveedor ---
+2025-12-07 00:46:57.879 -06:00 [DBG] List of registered output formatters, in the following order: ["Microsoft.AspNetCore.Mvc.Formatters.HttpNoContentOutputFormatter","Microsoft.AspNetCore.Mvc.Formatters.StringOutputFormatter","Microsoft.AspNetCore.Mvc.Formatters.StreamOutputFormatter","Microsoft.AspNetCore.Mvc.Formatters.SystemTextJsonOutputFormatter"]
+2025-12-07 00:46:57.879 -06:00 [DBG] Attempting to select an output formatter based on Accept header '["text/plain"]'.
+2025-12-07 00:46:57.879 -06:00 [DBG] Could not find an output formatter based on content negotiation. Accepted types were (["text/plain"])
+2025-12-07 00:46:57.879 -06:00 [DBG] Attempting to select an output formatter without using a content type as no explicit content types were specified for the response.
+2025-12-07 00:46:57.879 -06:00 [DBG] Attempting to select the first formatter in the output formatters list which can write the result.
+2025-12-07 00:46:57.879 -06:00 [DBG] Selected output formatter 'Microsoft.AspNetCore.Mvc.Formatters.SystemTextJsonOutputFormatter' and content type 'application/json' to write the response.
+2025-12-07 00:46:57.879 -06:00 [INF] Executing CreatedAtActionResult, writing value of type 'Inventarios.DTOs.DTO.Response.ProveedorResponseDto'.
+2025-12-07 00:46:57.899 -06:00 [DBG] Found the endpoints ["Inventarios.Controllers.ProveedorController.ObtenerProveedorPorId (Inventarios.API)"] for address (id=[7c62f26a-77c9-43d7-9986-e6386ffc5573],action=[ObtenerProveedorPorId],controller=[Proveedor])
+2025-12-07 00:46:57.901 -06:00 [DBG] Successfully processed template api/Proveedor/{id:guid} for Inventarios.Controllers.ProveedorController.ObtenerProveedorPorId (Inventarios.API) resulting in /api/Proveedor/7c62f26a-77c9-43d7-9986-e6386ffc5573 and 
+2025-12-07 00:46:57.902 -06:00 [DBG] Link generation succeeded for endpoints ["Inventarios.Controllers.ProveedorController.ObtenerProveedorPorId (Inventarios.API)"] with result /api/Proveedor/7c62f26a-77c9-43d7-9986-e6386ffc5573
+2025-12-07 00:46:57.907 -06:00 [INF] Executed action Inventarios.Controllers.ProveedorController.CrearProveedor (Inventarios.API) in 137.4498ms
+2025-12-07 00:46:57.907 -06:00 [INF] Executed endpoint 'Inventarios.Controllers.ProveedorController.CrearProveedor (Inventarios.API)'
+2025-12-07 00:46:57.907 -06:00 [DBG] Connection id "0HNHLBEL6A00V" completed keep alive response.
+2025-12-07 00:46:57.907 -06:00 [DBG] 'InventariosDbContext' disposed.
+2025-12-07 00:46:57.908 -06:00 [DBG] Disposing connection to database 'Inventarios' on server 'tcp://localhost:5432'.
+2025-12-07 00:46:57.908 -06:00 [DBG] Disposed connection to database 'Inventarios' on server 'tcp://localhost:5432' (0ms).
+2025-12-07 00:46:57.908 -06:00 [INF] Request finished HTTP/1.1 POST http://localhost:5000/api/Proveedor - 201 null application/json; charset=utf-8 139.7352ms
+2025-12-07 00:47:13.551 -06:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/api/Proveedor - null null
+2025-12-07 00:47:13.552 -06:00 [DBG] 1 candidate(s) found for the request path '/api/Proveedor'
+2025-12-07 00:47:13.552 -06:00 [DBG] Endpoint 'Inventarios.Controllers.ProveedorController.ObtenerProveedores (Inventarios.API)' with route pattern 'api/Proveedor' is valid for the request path '/api/Proveedor'
+2025-12-07 00:47:13.552 -06:00 [DBG] Request matched endpoint 'Inventarios.Controllers.ProveedorController.ObtenerProveedores (Inventarios.API)'
+2025-12-07 00:47:13.552 -06:00 [INF] Executing endpoint 'Inventarios.Controllers.ProveedorController.ObtenerProveedores (Inventarios.API)'
+2025-12-07 00:47:13.552 -06:00 [INF] Route matched with {action = "ObtenerProveedores", controller = "Proveedor"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] ObtenerProveedores() on controller Inventarios.Controllers.ProveedorController (Inventarios.API).
+2025-12-07 00:47:13.552 -06:00 [DBG] Execution plan of authorization filters (in the following order): ["None"]
+2025-12-07 00:47:13.552 -06:00 [DBG] Execution plan of resource filters (in the following order): ["None"]
+2025-12-07 00:47:13.553 -06:00 [DBG] Execution plan of action filters (in the following order): ["Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter (Order: -3000)","Microsoft.AspNetCore.Mvc.Infrastructure.ModelStateInvalidFilter (Order: -2000)","Inventarios.Filters.LogActionFilter"]
+2025-12-07 00:47:13.553 -06:00 [DBG] Execution plan of exception filters (in the following order): ["None"]
+2025-12-07 00:47:13.553 -06:00 [DBG] Execution plan of result filters (in the following order): ["Microsoft.AspNetCore.Mvc.Infrastructure.ClientErrorResultFilter (Order: -2000)"]
+2025-12-07 00:47:13.553 -06:00 [DBG] Executing controller factory for controller Inventarios.Controllers.ProveedorController (Inventarios.API)
+2025-12-07 00:47:13.553 -06:00 [DBG] Executed controller factory for controller Inventarios.Controllers.ProveedorController (Inventarios.API)
+2025-12-07 00:47:13.553 -06:00 [INF] Ejecutando: Proveedor - ObtenerProveedores
+2025-12-07 00:47:13.553 -06:00 [INF] Executing action method Inventarios.Controllers.ProveedorController.ObtenerProveedores (Inventarios.API) - Validation state: "Valid"
+2025-12-07 00:47:13.554 -06:00 [INF] Obteniendo proveedores.
+2025-12-07 00:47:13.554 -06:00 [DBG] Entity Framework Core 9.0.9 initialized 'InventariosDbContext' using provider 'Npgsql.EntityFrameworkCore.PostgreSQL:9.0.4+fd2380957bee5cd86f336466af36b08c0163f1a5' with options: None
+2025-12-07 00:47:13.556 -06:00 [DBG] Creating DbConnection.
+2025-12-07 00:47:13.556 -06:00 [DBG] Created DbConnection. (0ms).
+2025-12-07 00:47:13.556 -06:00 [DBG] Opening connection to database 'Inventarios' on server 'tcp://localhost:5432'.
+2025-12-07 00:47:13.556 -06:00 [DBG] Opened connection to database 'Inventarios' on server 'tcp://localhost:5432'.
+2025-12-07 00:47:13.556 -06:00 [DBG] Creating DbCommand for 'ExecuteReader'.
+2025-12-07 00:47:13.556 -06:00 [DBG] Created DbCommand for 'ExecuteReader' (0ms).
+2025-12-07 00:47:13.556 -06:00 [DBG] Initialized DbCommand for 'ExecuteReader' (0ms).
+2025-12-07 00:47:13.556 -06:00 [DBG] Executing DbCommand [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT p."Id", p."Correo", p."CreatedAt", p."Direccion", p."Nombre", p."PersonaContacto", p."Telefono", p."UpdatedAt"
+FROM "Proveedores" AS p
+2025-12-07 00:47:13.557 -06:00 [INF] Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT p."Id", p."Correo", p."CreatedAt", p."Direccion", p."Nombre", p."PersonaContacto", p."Telefono", p."UpdatedAt"
+FROM "Proveedores" AS p
+2025-12-07 00:47:13.561 -06:00 [DBG] Closing data reader to 'Inventarios' on server 'tcp://localhost:5432'.
+2025-12-07 00:47:13.562 -06:00 [DBG] A data reader for 'Inventarios' on server 'tcp://localhost:5432' is being disposed after spending 4ms reading results.
+2025-12-07 00:47:13.562 -06:00 [DBG] Closing connection to database 'Inventarios' on server 'tcp://localhost:5432'.
+2025-12-07 00:47:13.562 -06:00 [DBG] Closed connection to database 'Inventarios' on server 'tcp://localhost:5432' (0ms).
+2025-12-07 00:47:13.562 -06:00 [INF] Proveedores encontrados: {}
+2025-12-07 00:47:13.562 -06:00 [INF] Executed action method Inventarios.Controllers.ProveedorController.ObtenerProveedores (Inventarios.API), returned result Microsoft.AspNetCore.Mvc.OkObjectResult in 8.5951ms.
+2025-12-07 00:47:13.562 -06:00 [INF]  --- Completado: Proveedor - ObtenerProveedores ---
+2025-12-07 00:47:13.564 -06:00 [DBG] List of registered output formatters, in the following order: ["Microsoft.AspNetCore.Mvc.Formatters.HttpNoContentOutputFormatter","Microsoft.AspNetCore.Mvc.Formatters.StringOutputFormatter","Microsoft.AspNetCore.Mvc.Formatters.StreamOutputFormatter","Microsoft.AspNetCore.Mvc.Formatters.SystemTextJsonOutputFormatter"]
+2025-12-07 00:47:13.564 -06:00 [DBG] Attempting to select an output formatter based on Accept header '["text/plain"]'.
+2025-12-07 00:47:13.564 -06:00 [DBG] Could not find an output formatter based on content negotiation. Accepted types were (["text/plain"])
+2025-12-07 00:47:13.564 -06:00 [DBG] Attempting to select an output formatter without using a content type as no explicit content types were specified for the response.
+2025-12-07 00:47:13.564 -06:00 [DBG] Attempting to select the first formatter in the output formatters list which can write the result.
+2025-12-07 00:47:13.564 -06:00 [DBG] Selected output formatter 'Microsoft.AspNetCore.Mvc.Formatters.SystemTextJsonOutputFormatter' and content type 'application/json' to write the response.
+2025-12-07 00:47:13.564 -06:00 [INF] Executing OkObjectResult, writing value of type 'System.Linq.Enumerable+ListSelectIterator`2[[Inventarios.Entities.Models.Proveedor, Inventarios.Models, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null],[Inventarios.DTOs.DTO.Response.ProveedorResponseDto, Inventarios.DTOs, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2025-12-07 00:47:13.565 -06:00 [INF] Executed action Inventarios.Controllers.ProveedorController.ObtenerProveedores (Inventarios.API) in 12.3501ms
+2025-12-07 00:47:13.565 -06:00 [INF] Executed endpoint 'Inventarios.Controllers.ProveedorController.ObtenerProveedores (Inventarios.API)'
+2025-12-07 00:47:13.565 -06:00 [DBG] Connection id "0HNHLBEL6A00V" completed keep alive response.
+2025-12-07 00:47:13.565 -06:00 [DBG] 'InventariosDbContext' disposed.
+2025-12-07 00:47:13.566 -06:00 [DBG] Disposing connection to database 'Inventarios' on server 'tcp://localhost:5432'.
+2025-12-07 00:47:13.566 -06:00 [DBG] Disposed connection to database 'Inventarios' on server 'tcp://localhost:5432' (0ms).
+2025-12-07 00:47:13.566 -06:00 [INF] Request finished HTTP/1.1 GET http://localhost:5000/api/Proveedor - 200 null application/json; charset=utf-8 14.4832ms
+2025-12-07 00:47:57.994 -06:00 [INF] Request starting HTTP/1.1 POST http://localhost:5000/api/Proveedor - application/json 163
+2025-12-07 00:47:57.994 -06:00 [DBG] 1 candidate(s) found for the request path '/api/Proveedor'
+2025-12-07 00:47:57.994 -06:00 [DBG] Endpoint 'Inventarios.Controllers.ProveedorController.CrearProveedor (Inventarios.API)' with route pattern 'api/Proveedor' is valid for the request path '/api/Proveedor'
+2025-12-07 00:47:57.994 -06:00 [DBG] Request matched endpoint 'Inventarios.Controllers.ProveedorController.CrearProveedor (Inventarios.API)'
+2025-12-07 00:47:57.995 -06:00 [INF] Executing endpoint 'Inventarios.Controllers.ProveedorController.CrearProveedor (Inventarios.API)'
+2025-12-07 00:47:57.995 -06:00 [INF] Route matched with {action = "CrearProveedor", controller = "Proveedor"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] CrearProveedor(Inventarios.DTOs.DTO.Request.ProveedorRequestDto) on controller Inventarios.Controllers.ProveedorController (Inventarios.API).
+2025-12-07 00:47:57.995 -06:00 [DBG] Execution plan of authorization filters (in the following order): ["None"]
+2025-12-07 00:47:57.995 -06:00 [DBG] Execution plan of resource filters (in the following order): ["None"]
+2025-12-07 00:47:57.995 -06:00 [DBG] Execution plan of action filters (in the following order): ["Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter (Order: -3000)","Microsoft.AspNetCore.Mvc.Infrastructure.ModelStateInvalidFilter (Order: -2000)","Inventarios.Filters.LogActionFilter"]
+2025-12-07 00:47:57.995 -06:00 [DBG] Execution plan of exception filters (in the following order): ["None"]
+2025-12-07 00:47:57.995 -06:00 [DBG] Execution plan of result filters (in the following order): ["Microsoft.AspNetCore.Mvc.Infrastructure.ClientErrorResultFilter (Order: -2000)"]
+2025-12-07 00:47:57.995 -06:00 [DBG] Executing controller factory for controller Inventarios.Controllers.ProveedorController (Inventarios.API)
+2025-12-07 00:47:57.996 -06:00 [DBG] Executed controller factory for controller Inventarios.Controllers.ProveedorController (Inventarios.API)
+2025-12-07 00:47:57.996 -06:00 [DBG] Attempting to bind parameter 'proveedorDto' of type 'Inventarios.DTOs.DTO.Request.ProveedorRequestDto' ...
+2025-12-07 00:47:57.996 -06:00 [DBG] Attempting to bind parameter 'proveedorDto' of type 'Inventarios.DTOs.DTO.Request.ProveedorRequestDto' using the name '' in request data ...
+2025-12-07 00:47:57.996 -06:00 [DBG] Selected input formatter 'Microsoft.AspNetCore.Mvc.Formatters.SystemTextJsonInputFormatter' for content type 'application/json'.
+2025-12-07 00:47:57.996 -06:00 [DBG] Connection id "0HNHLBEL6A00V", Request id "0HNHLBEL6A00V:00000003": started reading request body.
+2025-12-07 00:47:57.996 -06:00 [DBG] Connection id "0HNHLBEL6A00V", Request id "0HNHLBEL6A00V:00000003": done reading request body.
+2025-12-07 00:47:57.996 -06:00 [DBG] JSON input formatter succeeded, deserializing to type 'Inventarios.DTOs.DTO.Request.ProveedorRequestDto'
+2025-12-07 00:47:57.996 -06:00 [DBG] Done attempting to bind parameter 'proveedorDto' of type 'Inventarios.DTOs.DTO.Request.ProveedorRequestDto'.
+2025-12-07 00:47:57.996 -06:00 [DBG] Done attempting to bind parameter 'proveedorDto' of type 'Inventarios.DTOs.DTO.Request.ProveedorRequestDto'.
+2025-12-07 00:47:57.996 -06:00 [DBG] Attempting to validate the bound parameter 'proveedorDto' of type 'Inventarios.DTOs.DTO.Request.ProveedorRequestDto' ...
+2025-12-07 00:47:57.997 -06:00 [DBG] Done attempting to validate the bound parameter 'proveedorDto' of type 'Inventarios.DTOs.DTO.Request.ProveedorRequestDto'.
+2025-12-07 00:47:57.998 -06:00 [INF] Ejecutando: Proveedor - CrearProveedor
+2025-12-07 00:47:57.998 -06:00 [INF] Executing action method Inventarios.Controllers.ProveedorController.CrearProveedor (Inventarios.API) - Validation state: "Valid"
+2025-12-07 00:47:57.998 -06:00 [INF] Creando proveedor Sony dasdas.
+2025-12-07 00:47:57.998 -06:00 [DBG] Entity Framework Core 9.0.9 initialized 'InventariosDbContext' using provider 'Npgsql.EntityFrameworkCore.PostgreSQL:9.0.4+fd2380957bee5cd86f336466af36b08c0163f1a5' with options: None
+2025-12-07 00:47:57.999 -06:00 [DBG] 'InventariosDbContext' generated a temporary value for the property 'Proveedor.Id'. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2025-12-07 00:47:57.999 -06:00 [DBG] Context 'InventariosDbContext' started tracking 'Proveedor' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2025-12-07 00:47:57.999 -06:00 [DBG] SaveChanges starting for 'InventariosDbContext'.
+2025-12-07 00:47:57.999 -06:00 [DBG] DetectChanges starting for 'InventariosDbContext'.
+2025-12-07 00:47:57.999 -06:00 [DBG] DetectChanges completed for 'InventariosDbContext'.
+2025-12-07 00:47:58.000 -06:00 [DBG] Creating DbConnection.
+2025-12-07 00:47:58.000 -06:00 [DBG] Created DbConnection. (0ms).
+2025-12-07 00:47:58.000 -06:00 [DBG] Opening connection to database 'Inventarios' on server 'tcp://localhost:5432'.
+2025-12-07 00:47:58.000 -06:00 [DBG] Opened connection to database 'Inventarios' on server 'tcp://localhost:5432'.
+2025-12-07 00:47:58.000 -06:00 [DBG] Creating DbCommand for 'ExecuteReader'.
+2025-12-07 00:47:58.001 -06:00 [DBG] Created DbCommand for 'ExecuteReader' (0ms).
+2025-12-07 00:47:58.001 -06:00 [DBG] Initialized DbCommand for 'ExecuteReader' (0ms).
+2025-12-07 00:47:58.001 -06:00 [DBG] Executing DbCommand [Parameters=[@p0='?', @p1='?' (DbType = DateTime), @p2='?', @p3='?', @p4='?', @p5='?', @p6='?' (DbType = DateTime)], CommandType='"Text"', CommandTimeout='30']
+INSERT INTO "Proveedores" ("Correo", "CreatedAt", "Direccion", "Nombre", "PersonaContacto", "Telefono", "UpdatedAt")
+VALUES (@p0, @p1, @p2, @p3, @p4, @p5, @p6)
+RETURNING "Id";
+2025-12-07 00:47:58.010 -06:00 [INF] Executed DbCommand (10ms) [Parameters=[@p0='?', @p1='?' (DbType = DateTime), @p2='?', @p3='?', @p4='?', @p5='?', @p6='?' (DbType = DateTime)], CommandType='"Text"', CommandTimeout='30']
+INSERT INTO "Proveedores" ("Correo", "CreatedAt", "Direccion", "Nombre", "PersonaContacto", "Telefono", "UpdatedAt")
+VALUES (@p0, @p1, @p2, @p3, @p4, @p5, @p6)
+RETURNING "Id";
+2025-12-07 00:47:58.011 -06:00 [DBG] The foreign key property 'Proveedor.Id' was detected as changed. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see property values.
+2025-12-07 00:47:58.011 -06:00 [DBG] Closing data reader to 'Inventarios' on server 'tcp://localhost:5432'.
+2025-12-07 00:47:58.011 -06:00 [DBG] A data reader for 'Inventarios' on server 'tcp://localhost:5432' is being disposed after spending 0ms reading results.
+2025-12-07 00:47:58.012 -06:00 [DBG] Closing connection to database 'Inventarios' on server 'tcp://localhost:5432'.
+2025-12-07 00:47:58.012 -06:00 [DBG] Closed connection to database 'Inventarios' on server 'tcp://localhost:5432' (0ms).
+2025-12-07 00:47:58.012 -06:00 [DBG] An entity of type 'Proveedor' tracked by 'InventariosDbContext' changed state from '"Added"' to '"Unchanged"'. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2025-12-07 00:47:58.012 -06:00 [DBG] SaveChanges completed for 'InventariosDbContext' with 1 entities written to the database.
+2025-12-07 00:47:58.012 -06:00 [INF] Proveedor agregado: {}
+2025-12-07 00:47:58.012 -06:00 [INF] Executed action method Inventarios.Controllers.ProveedorController.CrearProveedor (Inventarios.API), returned result Microsoft.AspNetCore.Mvc.CreatedAtActionResult in 14.6698ms.
+2025-12-07 00:47:58.013 -06:00 [INF]  --- Completado: Proveedor - CrearProveedor ---
+2025-12-07 00:47:58.013 -06:00 [DBG] List of registered output formatters, in the following order: ["Microsoft.AspNetCore.Mvc.Formatters.HttpNoContentOutputFormatter","Microsoft.AspNetCore.Mvc.Formatters.StringOutputFormatter","Microsoft.AspNetCore.Mvc.Formatters.StreamOutputFormatter","Microsoft.AspNetCore.Mvc.Formatters.SystemTextJsonOutputFormatter"]
+2025-12-07 00:47:58.013 -06:00 [DBG] Attempting to select an output formatter based on Accept header '["text/plain"]'.
+2025-12-07 00:47:58.013 -06:00 [DBG] Could not find an output formatter based on content negotiation. Accepted types were (["text/plain"])
+2025-12-07 00:47:58.013 -06:00 [DBG] Attempting to select an output formatter without using a content type as no explicit content types were specified for the response.
+2025-12-07 00:47:58.013 -06:00 [DBG] Attempting to select the first formatter in the output formatters list which can write the result.
+2025-12-07 00:47:58.014 -06:00 [DBG] Selected output formatter 'Microsoft.AspNetCore.Mvc.Formatters.SystemTextJsonOutputFormatter' and content type 'application/json' to write the response.
+2025-12-07 00:47:58.014 -06:00 [INF] Executing CreatedAtActionResult, writing value of type 'Inventarios.DTOs.DTO.Response.ProveedorResponseDto'.
+2025-12-07 00:47:58.016 -06:00 [DBG] Found the endpoints ["Inventarios.Controllers.ProveedorController.ObtenerProveedorPorId (Inventarios.API)"] for address (id=[30fe4838-69be-41d7-b119-8f1deee674e3],action=[ObtenerProveedorPorId],controller=[Proveedor])
+2025-12-07 00:47:58.017 -06:00 [DBG] Successfully processed template api/Proveedor/{id:guid} for Inventarios.Controllers.ProveedorController.ObtenerProveedorPorId (Inventarios.API) resulting in /api/Proveedor/30fe4838-69be-41d7-b119-8f1deee674e3 and 
+2025-12-07 00:47:58.018 -06:00 [DBG] Link generation succeeded for endpoints ["Inventarios.Controllers.ProveedorController.ObtenerProveedorPorId (Inventarios.API)"] with result /api/Proveedor/30fe4838-69be-41d7-b119-8f1deee674e3
+2025-12-07 00:47:58.018 -06:00 [INF] Executed action Inventarios.Controllers.ProveedorController.CrearProveedor (Inventarios.API) in 22.5439ms
+2025-12-07 00:47:58.018 -06:00 [INF] Executed endpoint 'Inventarios.Controllers.ProveedorController.CrearProveedor (Inventarios.API)'
+2025-12-07 00:47:58.018 -06:00 [DBG] Connection id "0HNHLBEL6A00V" completed keep alive response.
+2025-12-07 00:47:58.018 -06:00 [DBG] 'InventariosDbContext' disposed.
+2025-12-07 00:47:58.018 -06:00 [DBG] Disposing connection to database 'Inventarios' on server 'tcp://localhost:5432'.
+2025-12-07 00:47:58.018 -06:00 [DBG] Disposed connection to database 'Inventarios' on server 'tcp://localhost:5432' (0ms).
+2025-12-07 00:47:58.018 -06:00 [INF] Request finished HTTP/1.1 POST http://localhost:5000/api/Proveedor - 201 null application/json; charset=utf-8 24.4603ms
+2025-12-07 00:48:16.421 -06:00 [INF] Request starting HTTP/1.1 PUT http://localhost:5000/api/Proveedor/30fe4838-69be-41d7-b119-8f1deee674e3 - application/json 126
+2025-12-07 00:48:16.421 -06:00 [DBG] 1 candidate(s) found for the request path '/api/Proveedor/30fe4838-69be-41d7-b119-8f1deee674e3'
+2025-12-07 00:48:16.421 -06:00 [DBG] Endpoint 'Inventarios.Controllers.ProveedorController.ActualizarProveedor (Inventarios.API)' with route pattern 'api/Proveedor/{id:guid}' is valid for the request path '/api/Proveedor/30fe4838-69be-41d7-b119-8f1deee674e3'
+2025-12-07 00:48:16.421 -06:00 [DBG] Request matched endpoint 'Inventarios.Controllers.ProveedorController.ActualizarProveedor (Inventarios.API)'
+2025-12-07 00:48:16.421 -06:00 [INF] Executing endpoint 'Inventarios.Controllers.ProveedorController.ActualizarProveedor (Inventarios.API)'
+2025-12-07 00:48:16.424 -06:00 [INF] Route matched with {action = "ActualizarProveedor", controller = "Proveedor"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] ActualizarProveedor(System.Guid, Inventarios.DTOs.DTO.Request.ProveedorRequestDto) on controller Inventarios.Controllers.ProveedorController (Inventarios.API).
+2025-12-07 00:48:16.424 -06:00 [DBG] Execution plan of authorization filters (in the following order): ["None"]
+2025-12-07 00:48:16.425 -06:00 [DBG] Execution plan of resource filters (in the following order): ["None"]
+2025-12-07 00:48:16.425 -06:00 [DBG] Execution plan of action filters (in the following order): ["Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter (Order: -3000)","Microsoft.AspNetCore.Mvc.Infrastructure.ModelStateInvalidFilter (Order: -2000)","Inventarios.Filters.LogActionFilter"]
+2025-12-07 00:48:16.425 -06:00 [DBG] Execution plan of exception filters (in the following order): ["None"]
+2025-12-07 00:48:16.425 -06:00 [DBG] Execution plan of result filters (in the following order): ["Microsoft.AspNetCore.Mvc.Infrastructure.ClientErrorResultFilter (Order: -2000)"]
+2025-12-07 00:48:16.425 -06:00 [DBG] Executing controller factory for controller Inventarios.Controllers.ProveedorController (Inventarios.API)
+2025-12-07 00:48:16.425 -06:00 [DBG] Executed controller factory for controller Inventarios.Controllers.ProveedorController (Inventarios.API)
+2025-12-07 00:48:16.426 -06:00 [DBG] Attempting to bind parameter 'id' of type 'System.Guid' ...
+2025-12-07 00:48:16.426 -06:00 [DBG] Attempting to bind parameter 'id' of type 'System.Guid' using the name 'id' in request data ...
+2025-12-07 00:48:16.426 -06:00 [DBG] Done attempting to bind parameter 'id' of type 'System.Guid'.
+2025-12-07 00:48:16.426 -06:00 [DBG] Done attempting to bind parameter 'id' of type 'System.Guid'.
+2025-12-07 00:48:16.426 -06:00 [DBG] Attempting to validate the bound parameter 'id' of type 'System.Guid' ...
+2025-12-07 00:48:16.428 -06:00 [DBG] Done attempting to validate the bound parameter 'id' of type 'System.Guid'.
+2025-12-07 00:48:16.428 -06:00 [DBG] Attempting to bind parameter 'proveedorDto' of type 'Inventarios.DTOs.DTO.Request.ProveedorRequestDto' ...
+2025-12-07 00:48:16.428 -06:00 [DBG] Attempting to bind parameter 'proveedorDto' of type 'Inventarios.DTOs.DTO.Request.ProveedorRequestDto' using the name '' in request data ...
+2025-12-07 00:48:16.428 -06:00 [DBG] Selected input formatter 'Microsoft.AspNetCore.Mvc.Formatters.SystemTextJsonInputFormatter' for content type 'application/json'.
+2025-12-07 00:48:16.428 -06:00 [DBG] Connection id "0HNHLBEL6A00V", Request id "0HNHLBEL6A00V:00000004": started reading request body.
+2025-12-07 00:48:16.428 -06:00 [DBG] Connection id "0HNHLBEL6A00V", Request id "0HNHLBEL6A00V:00000004": done reading request body.
+2025-12-07 00:48:16.429 -06:00 [DBG] JSON input formatter succeeded, deserializing to type 'Inventarios.DTOs.DTO.Request.ProveedorRequestDto'
+2025-12-07 00:48:16.429 -06:00 [DBG] Done attempting to bind parameter 'proveedorDto' of type 'Inventarios.DTOs.DTO.Request.ProveedorRequestDto'.
+2025-12-07 00:48:16.429 -06:00 [DBG] Done attempting to bind parameter 'proveedorDto' of type 'Inventarios.DTOs.DTO.Request.ProveedorRequestDto'.
+2025-12-07 00:48:16.429 -06:00 [DBG] Attempting to validate the bound parameter 'proveedorDto' of type 'Inventarios.DTOs.DTO.Request.ProveedorRequestDto' ...
+2025-12-07 00:48:16.429 -06:00 [DBG] Done attempting to validate the bound parameter 'proveedorDto' of type 'Inventarios.DTOs.DTO.Request.ProveedorRequestDto'.
+2025-12-07 00:48:16.429 -06:00 [INF] Ejecutando: Proveedor - ActualizarProveedor
+2025-12-07 00:48:16.429 -06:00 [INF] Executing action method Inventarios.Controllers.ProveedorController.ActualizarProveedor (Inventarios.API) - Validation state: "Valid"
+2025-12-07 00:48:16.431 -06:00 [INF] Actualizando proveedor "30fe4838-69be-41d7-b119-8f1deee674e3"
+2025-12-07 00:48:16.432 -06:00 [DBG] Entity Framework Core 9.0.9 initialized 'InventariosDbContext' using provider 'Npgsql.EntityFrameworkCore.PostgreSQL:9.0.4+fd2380957bee5cd86f336466af36b08c0163f1a5' with options: None
+2025-12-07 00:48:16.453 -06:00 [DBG] Compiling query expression: 
+'DbSet<Proveedor>()
+    .FirstOrDefault(e => object.Equals(
+        objA: EF.Property<object>(e, "Id"), 
+        objB: __p_0))'
+2025-12-07 00:48:16.534 -06:00 [DBG] Generated query execution expression: 
+'queryContext => ShapedQueryCompilingExpressionVisitor.SingleOrDefaultAsync<Proveedor>(
+    asyncEnumerable: SingleQueryingEnumerable.Create<Proveedor>(
+        relationalQueryContext: (RelationalQueryContext)queryContext, 
+        relationalCommandResolver: parameters => [LIFTABLE Constant: RelationalCommandCache.QueryExpression(
+            Projection Mapping:
+                EmptyProjectionMember -> Dictionary<IProperty, int> { [Property: Proveedor.Id (Guid) Required PK AfterSave:Throw ValueGenerated.OnAdd, 0], [Property: Proveedor.Correo (string) Required, 1], [Property: Proveedor.CreatedAt (DateTime) Required ValueGenerated.OnAdd, 2], [Property: Proveedor.Direccion (string) Required, 3], [Property: Proveedor.Nombre (string) Required MaxLength(100), 4], [Property: Proveedor.PersonaContacto (string) Required, 5], [Property: Proveedor.Telefono (string) Required, 6], [Property: Proveedor.UpdatedAt (DateTime?), 7] }
+            SELECT TOP(1) p.Id, p.Correo, p.CreatedAt, p.Direccion, p.Nombre, p.PersonaContacto, p.Telefono, p.UpdatedAt
+            FROM Proveedores AS p
+            WHERE p.Id == @__p_0) | Resolver: c => new RelationalCommandCache(
+            c.Dependencies.MemoryCache, 
+            c.RelationalDependencies.QuerySqlGeneratorFactory, 
+            c.RelationalDependencies.RelationalParameterBasedSqlProcessorFactory, 
+            Projection Mapping:
+                EmptyProjectionMember -> Dictionary<IProperty, int> { [Property: Proveedor.Id (Guid) Required PK AfterSave:Throw ValueGenerated.OnAdd, 0], [Property: Proveedor.Correo (string) Required, 1], [Property: Proveedor.CreatedAt (DateTime) Required ValueGenerated.OnAdd, 2], [Property: Proveedor.Direccion (string) Required, 3], [Property: Proveedor.Nombre (string) Required MaxLength(100), 4], [Property: Proveedor.PersonaContacto (string) Required, 5], [Property: Proveedor.Telefono (string) Required, 6], [Property: Proveedor.UpdatedAt (DateTime?), 7] }
+            SELECT TOP(1) p.Id, p.Correo, p.CreatedAt, p.Direccion, p.Nombre, p.PersonaContacto, p.Telefono, p.UpdatedAt
+            FROM Proveedores AS p
+            WHERE p.Id == @__p_0, 
+            False, 
+            new HashSet<string>(
+                new string[]{ }, 
+                StringComparer.Ordinal
+            )
+        )].GetRelationalCommandTemplate(parameters), 
+        readerColumns: null, 
+        shaper: (queryContext, dataReader, resultContext, resultCoordinator) => 
+        {
+            Proveedor entity;
+            entity = 
+            {
+                MaterializationContext materializationContext1;
+                IEntityType entityType1;
+                Proveedor instance1;
+                InternalEntityEntry entry1;
+                bool hasNullKey1;
+                materializationContext1 = new MaterializationContext(
+                    [LIFTABLE Constant: ValueBuffer | Resolver: _ => (object)ValueBuffer.Empty], 
+                    queryContext.Context
+                );
+                instance1 = default(Proveedor);
+                entry1 = queryContext.TryGetEntry(
+                    key: [LIFTABLE Constant: Key: Proveedor.Id PK | Resolver: c => c.Dependencies.Model.FindEntityType("Inventarios.Entities.Models.Proveedor").FindPrimaryKey()], 
+                    keyValues: new object[]{ (object)dataReader.GetGuid(0) }, 
+                    throwOnNullKey: True, 
+                    hasNullKey: hasNullKey1);
+                !(hasNullKey1) ? entry1 != default(InternalEntityEntry) ? 
+                {
+                    entityType1 = entry1.EntityType;
+                    return instance1 = (Proveedor)entry1.Entity;
+                } : 
+                {
+                    ISnapshot shadowSnapshot1;
+                    shadowSnapshot1 = [LIFTABLE Constant: Snapshot | Resolver: _ => Snapshot.Empty];
+                    entityType1 = [LIFTABLE Constant: EntityType: Proveedor | Resolver: namelessParameter{0} => namelessParameter{0}.Dependencies.Model.FindEntityType("Inventarios.Entities.Models.Proveedor")];
+                    instance1 = switch (entityType1)
+                    {
+                        case [LIFTABLE Constant: EntityType: Proveedor | Resolver: namelessParameter{1} => namelessParameter{1}.Dependencies.Model.FindEntityType("Inventarios.Entities.Models.Proveedor")]: 
+                            {
+                                return 
+                                {
+                                    Proveedor instance;
+                                    instance = new Proveedor();
+                                    instance.<Id>k__BackingField = dataReader.GetGuid(0);
+                                    instance.<Correo>k__BackingField = dataReader.GetString(1);
+                                    instance.<CreatedAt>k__BackingField = dataReader.GetDateTime(2);
+                                    instance.<Direccion>k__BackingField = dataReader.GetString(3);
+                                    instance.<Nombre>k__BackingField = dataReader.GetString(4);
+                                    instance.<PersonaContacto>k__BackingField = dataReader.GetString(5);
+                                    instance.<Telefono>k__BackingField = dataReader.GetString(6);
+                                    instance.<UpdatedAt>k__BackingField = dataReader.IsDBNull(7) ? default(DateTime?) : (DateTime?)dataReader.GetDateTime(7);
+                                    (instance is IInjectableService) ? ((IInjectableService)instance).Injected(
+                                        context: materializationContext1.Context, 
+                                        entity: instance, 
+                                        queryTrackingBehavior: TrackAll, 
+                                        structuralType: [LIFTABLE Constant: EntityType: Proveedor | Resolver: namelessParameter{2} => namelessParameter{2}.Dependencies.Model.FindEntityType("Inventarios.Entities.Models.Proveedor")]) : default(void);
+                                    return instance;
+                                }}
+                        default: 
+                            default(Proveedor)
+                    }
+                    ;
+                    entry1 = entityType1 == default(IEntityType) ? default(InternalEntityEntry) : queryContext.StartTracking(
+                        entityType: entityType1, 
+                        entity: instance1, 
+                        snapshot: shadowSnapshot1);
+                    return instance1;
+                } : default(void);
+                return instance1;
+            };
+            return entity;
+        }, 
+        contextType: Inventarios.Infrastructure.Context.InventariosDbContext, 
+        standAloneStateManager: False, 
+        detailedErrorsEnabled: False, 
+        threadSafetyChecksEnabled: True), 
+    cancellationToken: queryContext.CancellationToken)'
+2025-12-07 00:48:16.543 -06:00 [DBG] Creating DbConnection.
+2025-12-07 00:48:16.543 -06:00 [DBG] Created DbConnection. (0ms).
+2025-12-07 00:48:16.544 -06:00 [DBG] Opening connection to database 'Inventarios' on server 'tcp://localhost:5432'.
+2025-12-07 00:48:16.544 -06:00 [DBG] Opened connection to database 'Inventarios' on server 'tcp://localhost:5432'.
+2025-12-07 00:48:16.544 -06:00 [DBG] Creating DbCommand for 'ExecuteReader'.
+2025-12-07 00:48:16.544 -06:00 [DBG] Created DbCommand for 'ExecuteReader' (0ms).
+2025-12-07 00:48:16.544 -06:00 [DBG] Initialized DbCommand for 'ExecuteReader' (0ms).
+2025-12-07 00:48:16.544 -06:00 [DBG] Executing DbCommand [Parameters=[@__p_0='?' (DbType = Guid)], CommandType='"Text"', CommandTimeout='30']
+SELECT p."Id", p."Correo", p."CreatedAt", p."Direccion", p."Nombre", p."PersonaContacto", p."Telefono", p."UpdatedAt"
+FROM "Proveedores" AS p
+WHERE p."Id" = @__p_0
+LIMIT 1
+2025-12-07 00:48:16.546 -06:00 [INF] Executed DbCommand (2ms) [Parameters=[@__p_0='?' (DbType = Guid)], CommandType='"Text"', CommandTimeout='30']
+SELECT p."Id", p."Correo", p."CreatedAt", p."Direccion", p."Nombre", p."PersonaContacto", p."Telefono", p."UpdatedAt"
+FROM "Proveedores" AS p
+WHERE p."Id" = @__p_0
+LIMIT 1
+2025-12-07 00:48:16.548 -06:00 [DBG] Context 'InventariosDbContext' started tracking 'Proveedor' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2025-12-07 00:48:16.549 -06:00 [DBG] Closing data reader to 'Inventarios' on server 'tcp://localhost:5432'.
+2025-12-07 00:48:16.549 -06:00 [DBG] A data reader for 'Inventarios' on server 'tcp://localhost:5432' is being disposed after spending 3ms reading results.
+2025-12-07 00:48:16.549 -06:00 [DBG] Closing connection to database 'Inventarios' on server 'tcp://localhost:5432'.
+2025-12-07 00:48:16.549 -06:00 [DBG] Closed connection to database 'Inventarios' on server 'tcp://localhost:5432' (0ms).
+2025-12-07 00:48:16.550 -06:00 [DBG] An entity of type 'Proveedor' tracked by 'InventariosDbContext' changed state from '"Unchanged"' to '"Modified"'. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2025-12-07 00:48:16.550 -06:00 [DBG] SaveChanges starting for 'InventariosDbContext'.
+2025-12-07 00:48:16.551 -06:00 [DBG] DetectChanges starting for 'InventariosDbContext'.
+2025-12-07 00:48:16.551 -06:00 [DBG] DetectChanges completed for 'InventariosDbContext'.
+2025-12-07 00:48:16.554 -06:00 [DBG] Opening connection to database 'Inventarios' on server 'tcp://localhost:5432'.
+2025-12-07 00:48:16.554 -06:00 [DBG] Opened connection to database 'Inventarios' on server 'tcp://localhost:5432'.
+2025-12-07 00:48:16.555 -06:00 [DBG] Creating DbCommand for 'ExecuteReader'.
+2025-12-07 00:48:16.555 -06:00 [DBG] Created DbCommand for 'ExecuteReader' (0ms).
+2025-12-07 00:48:16.555 -06:00 [DBG] Initialized DbCommand for 'ExecuteReader' (0ms).
+2025-12-07 00:48:16.555 -06:00 [DBG] Executing DbCommand [Parameters=[@p7='?' (DbType = Guid), @p0='?', @p1='?' (DbType = DateTime), @p2='?', @p3='?', @p4='?', @p5='?', @p6='?' (DbType = DateTime)], CommandType='"Text"', CommandTimeout='30']
+UPDATE "Proveedores" SET "Correo" = @p0, "CreatedAt" = @p1, "Direccion" = @p2, "Nombre" = @p3, "PersonaContacto" = @p4, "Telefono" = @p5, "UpdatedAt" = @p6
+WHERE "Id" = @p7;
+2025-12-07 00:48:16.559 -06:00 [INF] Executed DbCommand (4ms) [Parameters=[@p7='?' (DbType = Guid), @p0='?', @p1='?' (DbType = DateTime), @p2='?', @p3='?', @p4='?', @p5='?', @p6='?' (DbType = DateTime)], CommandType='"Text"', CommandTimeout='30']
+UPDATE "Proveedores" SET "Correo" = @p0, "CreatedAt" = @p1, "Direccion" = @p2, "Nombre" = @p3, "PersonaContacto" = @p4, "Telefono" = @p5, "UpdatedAt" = @p6
+WHERE "Id" = @p7;
+2025-12-07 00:48:16.560 -06:00 [DBG] Closing data reader to 'Inventarios' on server 'tcp://localhost:5432'.
+2025-12-07 00:48:16.560 -06:00 [DBG] A data reader for 'Inventarios' on server 'tcp://localhost:5432' is being disposed after spending 0ms reading results.
+2025-12-07 00:48:16.560 -06:00 [DBG] Closing connection to database 'Inventarios' on server 'tcp://localhost:5432'.
+2025-12-07 00:48:16.560 -06:00 [DBG] Closed connection to database 'Inventarios' on server 'tcp://localhost:5432' (0ms).
+2025-12-07 00:48:16.563 -06:00 [DBG] An entity of type 'Proveedor' tracked by 'InventariosDbContext' changed state from '"Modified"' to '"Unchanged"'. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2025-12-07 00:48:16.563 -06:00 [DBG] SaveChanges completed for 'InventariosDbContext' with 1 entities written to the database.
+2025-12-07 00:48:16.563 -06:00 [INF] Proveedor actualizado: {}
+2025-12-07 00:48:16.563 -06:00 [INF] Executed action method Inventarios.Controllers.ProveedorController.ActualizarProveedor (Inventarios.API), returned result Microsoft.AspNetCore.Mvc.NoContentResult in 134.0432ms.
+2025-12-07 00:48:16.564 -06:00 [INF]  --- Completado: Proveedor - ActualizarProveedor ---
+2025-12-07 00:48:16.564 -06:00 [INF] Executing StatusCodeResult, setting HTTP status code 204
+2025-12-07 00:48:16.564 -06:00 [INF] Executed action Inventarios.Controllers.ProveedorController.ActualizarProveedor (Inventarios.API) in 138.8493ms
+2025-12-07 00:48:16.564 -06:00 [INF] Executed endpoint 'Inventarios.Controllers.ProveedorController.ActualizarProveedor (Inventarios.API)'
+2025-12-07 00:48:16.564 -06:00 [DBG] Connection id "0HNHLBEL6A00V" completed keep alive response.
+2025-12-07 00:48:16.564 -06:00 [DBG] 'InventariosDbContext' disposed.
+2025-12-07 00:48:16.564 -06:00 [DBG] Disposing connection to database 'Inventarios' on server 'tcp://localhost:5432'.
+2025-12-07 00:48:16.564 -06:00 [DBG] Disposed connection to database 'Inventarios' on server 'tcp://localhost:5432' (0ms).
+2025-12-07 00:48:16.565 -06:00 [INF] Request finished HTTP/1.1 PUT http://localhost:5000/api/Proveedor/30fe4838-69be-41d7-b119-8f1deee674e3 - 204 null null 144.0324ms
+2025-12-07 00:48:22.738 -06:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/api/Proveedor/30fe4838-69be-41d7-b119-8f1deee674e3 - null null
+2025-12-07 00:48:22.738 -06:00 [DBG] 1 candidate(s) found for the request path '/api/Proveedor/30fe4838-69be-41d7-b119-8f1deee674e3'
+2025-12-07 00:48:22.738 -06:00 [DBG] Endpoint 'Inventarios.Controllers.ProveedorController.ObtenerProveedorPorId (Inventarios.API)' with route pattern 'api/Proveedor/{id:guid}' is valid for the request path '/api/Proveedor/30fe4838-69be-41d7-b119-8f1deee674e3'
+2025-12-07 00:48:22.739 -06:00 [DBG] Request matched endpoint 'Inventarios.Controllers.ProveedorController.ObtenerProveedorPorId (Inventarios.API)'
+2025-12-07 00:48:22.739 -06:00 [INF] Executing endpoint 'Inventarios.Controllers.ProveedorController.ObtenerProveedorPorId (Inventarios.API)'
+2025-12-07 00:48:22.742 -06:00 [INF] Route matched with {action = "ObtenerProveedorPorId", controller = "Proveedor"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] ObtenerProveedorPorId(System.Guid) on controller Inventarios.Controllers.ProveedorController (Inventarios.API).
+2025-12-07 00:48:22.742 -06:00 [DBG] Execution plan of authorization filters (in the following order): ["None"]
+2025-12-07 00:48:22.742 -06:00 [DBG] Execution plan of resource filters (in the following order): ["None"]
+2025-12-07 00:48:22.742 -06:00 [DBG] Execution plan of action filters (in the following order): ["Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter (Order: -3000)","Microsoft.AspNetCore.Mvc.Infrastructure.ModelStateInvalidFilter (Order: -2000)","Inventarios.Filters.LogActionFilter"]
+2025-12-07 00:48:22.742 -06:00 [DBG] Execution plan of exception filters (in the following order): ["None"]
+2025-12-07 00:48:22.742 -06:00 [DBG] Execution plan of result filters (in the following order): ["Microsoft.AspNetCore.Mvc.Infrastructure.ClientErrorResultFilter (Order: -2000)"]
+2025-12-07 00:48:22.742 -06:00 [DBG] Executing controller factory for controller Inventarios.Controllers.ProveedorController (Inventarios.API)
+2025-12-07 00:48:22.742 -06:00 [DBG] Executed controller factory for controller Inventarios.Controllers.ProveedorController (Inventarios.API)
+2025-12-07 00:48:22.742 -06:00 [DBG] Attempting to bind parameter 'id' of type 'System.Guid' ...
+2025-12-07 00:48:22.743 -06:00 [DBG] Attempting to bind parameter 'id' of type 'System.Guid' using the name 'id' in request data ...
+2025-12-07 00:48:22.743 -06:00 [DBG] Done attempting to bind parameter 'id' of type 'System.Guid'.
+2025-12-07 00:48:22.743 -06:00 [DBG] Done attempting to bind parameter 'id' of type 'System.Guid'.
+2025-12-07 00:48:22.743 -06:00 [DBG] Attempting to validate the bound parameter 'id' of type 'System.Guid' ...
+2025-12-07 00:48:22.743 -06:00 [DBG] Done attempting to validate the bound parameter 'id' of type 'System.Guid'.
+2025-12-07 00:48:22.743 -06:00 [INF] Ejecutando: Proveedor - ObtenerProveedorPorId
+2025-12-07 00:48:22.743 -06:00 [INF] Executing action method Inventarios.Controllers.ProveedorController.ObtenerProveedorPorId (Inventarios.API) - Validation state: "Valid"
+2025-12-07 00:48:22.744 -06:00 [INF] Obteniendo proveedor: "30fe4838-69be-41d7-b119-8f1deee674e3".
+2025-12-07 00:48:22.745 -06:00 [DBG] Entity Framework Core 9.0.9 initialized 'InventariosDbContext' using provider 'Npgsql.EntityFrameworkCore.PostgreSQL:9.0.4+fd2380957bee5cd86f336466af36b08c0163f1a5' with options: None
+2025-12-07 00:48:22.747 -06:00 [DBG] Creating DbConnection.
+2025-12-07 00:48:22.747 -06:00 [DBG] Created DbConnection. (0ms).
+2025-12-07 00:48:22.748 -06:00 [DBG] Opening connection to database 'Inventarios' on server 'tcp://localhost:5432'.
+2025-12-07 00:48:22.748 -06:00 [DBG] Opened connection to database 'Inventarios' on server 'tcp://localhost:5432'.
+2025-12-07 00:48:22.748 -06:00 [DBG] Creating DbCommand for 'ExecuteReader'.
+2025-12-07 00:48:22.748 -06:00 [DBG] Created DbCommand for 'ExecuteReader' (0ms).
+2025-12-07 00:48:22.748 -06:00 [DBG] Initialized DbCommand for 'ExecuteReader' (0ms).
+2025-12-07 00:48:22.748 -06:00 [DBG] Executing DbCommand [Parameters=[@__p_0='?' (DbType = Guid)], CommandType='"Text"', CommandTimeout='30']
+SELECT p."Id", p."Correo", p."CreatedAt", p."Direccion", p."Nombre", p."PersonaContacto", p."Telefono", p."UpdatedAt"
+FROM "Proveedores" AS p
+WHERE p."Id" = @__p_0
+LIMIT 1
+2025-12-07 00:48:22.749 -06:00 [INF] Executed DbCommand (1ms) [Parameters=[@__p_0='?' (DbType = Guid)], CommandType='"Text"', CommandTimeout='30']
+SELECT p."Id", p."Correo", p."CreatedAt", p."Direccion", p."Nombre", p."PersonaContacto", p."Telefono", p."UpdatedAt"
+FROM "Proveedores" AS p
+WHERE p."Id" = @__p_0
+LIMIT 1
+2025-12-07 00:48:22.749 -06:00 [DBG] Context 'InventariosDbContext' started tracking 'Proveedor' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2025-12-07 00:48:22.749 -06:00 [DBG] Closing data reader to 'Inventarios' on server 'tcp://localhost:5432'.
+2025-12-07 00:48:22.749 -06:00 [DBG] A data reader for 'Inventarios' on server 'tcp://localhost:5432' is being disposed after spending 0ms reading results.
+2025-12-07 00:48:22.749 -06:00 [DBG] Closing connection to database 'Inventarios' on server 'tcp://localhost:5432'.
+2025-12-07 00:48:22.750 -06:00 [DBG] Closed connection to database 'Inventarios' on server 'tcp://localhost:5432' (0ms).
+2025-12-07 00:48:22.750 -06:00 [INF] Proveedor encontrado: {}
+2025-12-07 00:48:22.750 -06:00 [INF] Executed action method Inventarios.Controllers.ProveedorController.ObtenerProveedorPorId (Inventarios.API), returned result Microsoft.AspNetCore.Mvc.OkObjectResult in 6.4217ms.
+2025-12-07 00:48:22.750 -06:00 [INF]  --- Completado: Proveedor - ObtenerProveedorPorId ---
+2025-12-07 00:48:22.750 -06:00 [DBG] List of registered output formatters, in the following order: ["Microsoft.AspNetCore.Mvc.Formatters.HttpNoContentOutputFormatter","Microsoft.AspNetCore.Mvc.Formatters.StringOutputFormatter","Microsoft.AspNetCore.Mvc.Formatters.StreamOutputFormatter","Microsoft.AspNetCore.Mvc.Formatters.SystemTextJsonOutputFormatter"]
+2025-12-07 00:48:22.750 -06:00 [DBG] Attempting to select an output formatter based on Accept header '["text/plain"]'.
+2025-12-07 00:48:22.750 -06:00 [DBG] Could not find an output formatter based on content negotiation. Accepted types were (["text/plain"])
+2025-12-07 00:48:22.750 -06:00 [DBG] Attempting to select an output formatter without using a content type as no explicit content types were specified for the response.
+2025-12-07 00:48:22.750 -06:00 [DBG] Attempting to select the first formatter in the output formatters list which can write the result.
+2025-12-07 00:48:22.750 -06:00 [DBG] Selected output formatter 'Microsoft.AspNetCore.Mvc.Formatters.SystemTextJsonOutputFormatter' and content type 'application/json' to write the response.
+2025-12-07 00:48:22.750 -06:00 [INF] Executing OkObjectResult, writing value of type 'Inventarios.DTOs.DTO.Response.ProveedorResponseDto'.
+2025-12-07 00:48:22.751 -06:00 [INF] Executed action Inventarios.Controllers.ProveedorController.ObtenerProveedorPorId (Inventarios.API) in 8.9201ms
+2025-12-07 00:48:22.751 -06:00 [INF] Executed endpoint 'Inventarios.Controllers.ProveedorController.ObtenerProveedorPorId (Inventarios.API)'
+2025-12-07 00:48:22.751 -06:00 [DBG] Connection id "0HNHLBEL6A00V" completed keep alive response.
+2025-12-07 00:48:22.751 -06:00 [DBG] 'InventariosDbContext' disposed.
+2025-12-07 00:48:22.751 -06:00 [DBG] Disposing connection to database 'Inventarios' on server 'tcp://localhost:5432'.
+2025-12-07 00:48:22.752 -06:00 [DBG] Disposed connection to database 'Inventarios' on server 'tcp://localhost:5432' (0ms).
+2025-12-07 00:48:22.752 -06:00 [INF] Request finished HTTP/1.1 GET http://localhost:5000/api/Proveedor/30fe4838-69be-41d7-b119-8f1deee674e3 - 200 null application/json; charset=utf-8 13.5063ms
+2025-12-07 00:48:29.078 -06:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/api/Proveedor - null null
+2025-12-07 00:48:29.079 -06:00 [DBG] 1 candidate(s) found for the request path '/api/Proveedor'
+2025-12-07 00:48:29.079 -06:00 [DBG] Endpoint 'Inventarios.Controllers.ProveedorController.ObtenerProveedores (Inventarios.API)' with route pattern 'api/Proveedor' is valid for the request path '/api/Proveedor'
+2025-12-07 00:48:29.079 -06:00 [DBG] Request matched endpoint 'Inventarios.Controllers.ProveedorController.ObtenerProveedores (Inventarios.API)'
+2025-12-07 00:48:29.079 -06:00 [INF] Executing endpoint 'Inventarios.Controllers.ProveedorController.ObtenerProveedores (Inventarios.API)'
+2025-12-07 00:48:29.079 -06:00 [INF] Route matched with {action = "ObtenerProveedores", controller = "Proveedor"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] ObtenerProveedores() on controller Inventarios.Controllers.ProveedorController (Inventarios.API).
+2025-12-07 00:48:29.079 -06:00 [DBG] Execution plan of authorization filters (in the following order): ["None"]
+2025-12-07 00:48:29.080 -06:00 [DBG] Execution plan of resource filters (in the following order): ["None"]
+2025-12-07 00:48:29.080 -06:00 [DBG] Execution plan of action filters (in the following order): ["Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter (Order: -3000)","Microsoft.AspNetCore.Mvc.Infrastructure.ModelStateInvalidFilter (Order: -2000)","Inventarios.Filters.LogActionFilter"]
+2025-12-07 00:48:29.080 -06:00 [DBG] Execution plan of exception filters (in the following order): ["None"]
+2025-12-07 00:48:29.080 -06:00 [DBG] Execution plan of result filters (in the following order): ["Microsoft.AspNetCore.Mvc.Infrastructure.ClientErrorResultFilter (Order: -2000)"]
+2025-12-07 00:48:29.081 -06:00 [DBG] Executing controller factory for controller Inventarios.Controllers.ProveedorController (Inventarios.API)
+2025-12-07 00:48:29.081 -06:00 [DBG] Executed controller factory for controller Inventarios.Controllers.ProveedorController (Inventarios.API)
+2025-12-07 00:48:29.081 -06:00 [INF] Ejecutando: Proveedor - ObtenerProveedores
+2025-12-07 00:48:29.081 -06:00 [INF] Executing action method Inventarios.Controllers.ProveedorController.ObtenerProveedores (Inventarios.API) - Validation state: "Valid"
+2025-12-07 00:48:29.081 -06:00 [INF] Obteniendo proveedores.
+2025-12-07 00:48:29.082 -06:00 [DBG] Entity Framework Core 9.0.9 initialized 'InventariosDbContext' using provider 'Npgsql.EntityFrameworkCore.PostgreSQL:9.0.4+fd2380957bee5cd86f336466af36b08c0163f1a5' with options: None
+2025-12-07 00:48:29.082 -06:00 [DBG] Creating DbConnection.
+2025-12-07 00:48:29.082 -06:00 [DBG] Created DbConnection. (0ms).
+2025-12-07 00:48:29.082 -06:00 [DBG] Opening connection to database 'Inventarios' on server 'tcp://localhost:5432'.
+2025-12-07 00:48:29.082 -06:00 [DBG] Opened connection to database 'Inventarios' on server 'tcp://localhost:5432'.
+2025-12-07 00:48:29.082 -06:00 [DBG] Creating DbCommand for 'ExecuteReader'.
+2025-12-07 00:48:29.083 -06:00 [DBG] Created DbCommand for 'ExecuteReader' (0ms).
+2025-12-07 00:48:29.083 -06:00 [DBG] Initialized DbCommand for 'ExecuteReader' (0ms).
+2025-12-07 00:48:29.083 -06:00 [DBG] Executing DbCommand [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT p."Id", p."Correo", p."CreatedAt", p."Direccion", p."Nombre", p."PersonaContacto", p."Telefono", p."UpdatedAt"
+FROM "Proveedores" AS p
+2025-12-07 00:48:29.083 -06:00 [INF] Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT p."Id", p."Correo", p."CreatedAt", p."Direccion", p."Nombre", p."PersonaContacto", p."Telefono", p."UpdatedAt"
+FROM "Proveedores" AS p
+2025-12-07 00:48:29.084 -06:00 [DBG] Closing data reader to 'Inventarios' on server 'tcp://localhost:5432'.
+2025-12-07 00:48:29.084 -06:00 [DBG] A data reader for 'Inventarios' on server 'tcp://localhost:5432' is being disposed after spending 0ms reading results.
+2025-12-07 00:48:29.084 -06:00 [DBG] Closing connection to database 'Inventarios' on server 'tcp://localhost:5432'.
+2025-12-07 00:48:29.084 -06:00 [DBG] Closed connection to database 'Inventarios' on server 'tcp://localhost:5432' (0ms).
+2025-12-07 00:48:29.084 -06:00 [INF] Proveedores encontrados: {}
+2025-12-07 00:48:29.084 -06:00 [INF] Executed action method Inventarios.Controllers.ProveedorController.ObtenerProveedores (Inventarios.API), returned result Microsoft.AspNetCore.Mvc.OkObjectResult in 2.9728ms.
+2025-12-07 00:48:29.084 -06:00 [INF]  --- Completado: Proveedor - ObtenerProveedores ---
+2025-12-07 00:48:29.085 -06:00 [DBG] List of registered output formatters, in the following order: ["Microsoft.AspNetCore.Mvc.Formatters.HttpNoContentOutputFormatter","Microsoft.AspNetCore.Mvc.Formatters.StringOutputFormatter","Microsoft.AspNetCore.Mvc.Formatters.StreamOutputFormatter","Microsoft.AspNetCore.Mvc.Formatters.SystemTextJsonOutputFormatter"]
+2025-12-07 00:48:29.085 -06:00 [DBG] Attempting to select an output formatter based on Accept header '["text/plain"]'.
+2025-12-07 00:48:29.085 -06:00 [DBG] Could not find an output formatter based on content negotiation. Accepted types were (["text/plain"])
+2025-12-07 00:48:29.085 -06:00 [DBG] Attempting to select an output formatter without using a content type as no explicit content types were specified for the response.
+2025-12-07 00:48:29.085 -06:00 [DBG] Attempting to select the first formatter in the output formatters list which can write the result.
+2025-12-07 00:48:29.085 -06:00 [DBG] Selected output formatter 'Microsoft.AspNetCore.Mvc.Formatters.SystemTextJsonOutputFormatter' and content type 'application/json' to write the response.
+2025-12-07 00:48:29.085 -06:00 [INF] Executing OkObjectResult, writing value of type 'System.Linq.Enumerable+ListSelectIterator`2[[Inventarios.Entities.Models.Proveedor, Inventarios.Models, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null],[Inventarios.DTOs.DTO.Response.ProveedorResponseDto, Inventarios.DTOs, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2025-12-07 00:48:29.085 -06:00 [INF] Executed action Inventarios.Controllers.ProveedorController.ObtenerProveedores (Inventarios.API) in 4.8026ms
+2025-12-07 00:48:29.085 -06:00 [INF] Executed endpoint 'Inventarios.Controllers.ProveedorController.ObtenerProveedores (Inventarios.API)'
+2025-12-07 00:48:29.086 -06:00 [DBG] Connection id "0HNHLBEL6A00V" completed keep alive response.
+2025-12-07 00:48:29.086 -06:00 [DBG] 'InventariosDbContext' disposed.
+2025-12-07 00:48:29.086 -06:00 [DBG] Disposing connection to database 'Inventarios' on server 'tcp://localhost:5432'.
+2025-12-07 00:48:29.086 -06:00 [DBG] Disposed connection to database 'Inventarios' on server 'tcp://localhost:5432' (0ms).
+2025-12-07 00:48:29.086 -06:00 [INF] Request finished HTTP/1.1 GET http://localhost:5000/api/Proveedor - 200 null application/json; charset=utf-8 7.7733ms
+2025-12-07 00:48:38.868 -06:00 [INF] Request starting HTTP/1.1 DELETE http://localhost:5000/api/Proveedor/30fe4838-69be-41d7-b119-8f1deee674e3 - null null
+2025-12-07 00:48:38.869 -06:00 [DBG] 1 candidate(s) found for the request path '/api/Proveedor/30fe4838-69be-41d7-b119-8f1deee674e3'
+2025-12-07 00:48:38.869 -06:00 [DBG] Endpoint 'Inventarios.Controllers.ProveedorController.EliminarProveedor (Inventarios.API)' with route pattern 'api/Proveedor/{id:guid}' is valid for the request path '/api/Proveedor/30fe4838-69be-41d7-b119-8f1deee674e3'
+2025-12-07 00:48:38.869 -06:00 [DBG] Request matched endpoint 'Inventarios.Controllers.ProveedorController.EliminarProveedor (Inventarios.API)'
+2025-12-07 00:48:38.869 -06:00 [INF] Executing endpoint 'Inventarios.Controllers.ProveedorController.EliminarProveedor (Inventarios.API)'
+2025-12-07 00:48:38.873 -06:00 [INF] Route matched with {action = "EliminarProveedor", controller = "Proveedor"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] EliminarProveedor(System.Guid) on controller Inventarios.Controllers.ProveedorController (Inventarios.API).
+2025-12-07 00:48:38.873 -06:00 [DBG] Execution plan of authorization filters (in the following order): ["None"]
+2025-12-07 00:48:38.873 -06:00 [DBG] Execution plan of resource filters (in the following order): ["None"]
+2025-12-07 00:48:38.873 -06:00 [DBG] Execution plan of action filters (in the following order): ["Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter (Order: -3000)","Microsoft.AspNetCore.Mvc.Infrastructure.ModelStateInvalidFilter (Order: -2000)","Inventarios.Filters.LogActionFilter"]
+2025-12-07 00:48:38.874 -06:00 [DBG] Execution plan of exception filters (in the following order): ["None"]
+2025-12-07 00:48:38.874 -06:00 [DBG] Execution plan of result filters (in the following order): ["Microsoft.AspNetCore.Mvc.Infrastructure.ClientErrorResultFilter (Order: -2000)"]
+2025-12-07 00:48:38.874 -06:00 [DBG] Executing controller factory for controller Inventarios.Controllers.ProveedorController (Inventarios.API)
+2025-12-07 00:48:38.874 -06:00 [DBG] Executed controller factory for controller Inventarios.Controllers.ProveedorController (Inventarios.API)
+2025-12-07 00:48:38.874 -06:00 [DBG] Attempting to bind parameter 'id' of type 'System.Guid' ...
+2025-12-07 00:48:38.874 -06:00 [DBG] Attempting to bind parameter 'id' of type 'System.Guid' using the name 'id' in request data ...
+2025-12-07 00:48:38.875 -06:00 [DBG] Done attempting to bind parameter 'id' of type 'System.Guid'.
+2025-12-07 00:48:38.875 -06:00 [DBG] Done attempting to bind parameter 'id' of type 'System.Guid'.
+2025-12-07 00:48:38.875 -06:00 [DBG] Attempting to validate the bound parameter 'id' of type 'System.Guid' ...
+2025-12-07 00:48:38.875 -06:00 [DBG] Done attempting to validate the bound parameter 'id' of type 'System.Guid'.
+2025-12-07 00:48:38.875 -06:00 [INF] Ejecutando: Proveedor - EliminarProveedor
+2025-12-07 00:48:38.875 -06:00 [INF] Executing action method Inventarios.Controllers.ProveedorController.EliminarProveedor (Inventarios.API) - Validation state: "Valid"
+2025-12-07 00:48:38.876 -06:00 [WRN] Eliminando proveedor "30fe4838-69be-41d7-b119-8f1deee674e3"
+2025-12-07 00:48:38.877 -06:00 [DBG] Entity Framework Core 9.0.9 initialized 'InventariosDbContext' using provider 'Npgsql.EntityFrameworkCore.PostgreSQL:9.0.4+fd2380957bee5cd86f336466af36b08c0163f1a5' with options: None
+2025-12-07 00:48:38.878 -06:00 [DBG] Creating DbConnection.
+2025-12-07 00:48:38.878 -06:00 [DBG] Created DbConnection. (0ms).
+2025-12-07 00:48:38.878 -06:00 [DBG] Opening connection to database 'Inventarios' on server 'tcp://localhost:5432'.
+2025-12-07 00:48:38.878 -06:00 [DBG] Opened connection to database 'Inventarios' on server 'tcp://localhost:5432'.
+2025-12-07 00:48:38.878 -06:00 [DBG] Creating DbCommand for 'ExecuteReader'.
+2025-12-07 00:48:38.878 -06:00 [DBG] Created DbCommand for 'ExecuteReader' (0ms).
+2025-12-07 00:48:38.879 -06:00 [DBG] Initialized DbCommand for 'ExecuteReader' (0ms).
+2025-12-07 00:48:38.879 -06:00 [DBG] Executing DbCommand [Parameters=[@__p_0='?' (DbType = Guid)], CommandType='"Text"', CommandTimeout='30']
+SELECT p."Id", p."Correo", p."CreatedAt", p."Direccion", p."Nombre", p."PersonaContacto", p."Telefono", p."UpdatedAt"
+FROM "Proveedores" AS p
+WHERE p."Id" = @__p_0
+LIMIT 1
+2025-12-07 00:48:38.879 -06:00 [INF] Executed DbCommand (1ms) [Parameters=[@__p_0='?' (DbType = Guid)], CommandType='"Text"', CommandTimeout='30']
+SELECT p."Id", p."Correo", p."CreatedAt", p."Direccion", p."Nombre", p."PersonaContacto", p."Telefono", p."UpdatedAt"
+FROM "Proveedores" AS p
+WHERE p."Id" = @__p_0
+LIMIT 1
+2025-12-07 00:48:38.880 -06:00 [DBG] Context 'InventariosDbContext' started tracking 'Proveedor' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2025-12-07 00:48:38.880 -06:00 [DBG] Closing data reader to 'Inventarios' on server 'tcp://localhost:5432'.
+2025-12-07 00:48:38.880 -06:00 [DBG] A data reader for 'Inventarios' on server 'tcp://localhost:5432' is being disposed after spending 0ms reading results.
+2025-12-07 00:48:38.880 -06:00 [DBG] Closing connection to database 'Inventarios' on server 'tcp://localhost:5432'.
+2025-12-07 00:48:38.880 -06:00 [DBG] Closed connection to database 'Inventarios' on server 'tcp://localhost:5432' (0ms).
+2025-12-07 00:48:38.882 -06:00 [DBG] An entity of type 'Proveedor' tracked by 'InventariosDbContext' changed state from '"Unchanged"' to '"Deleted"'. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2025-12-07 00:48:38.884 -06:00 [DBG] SaveChanges starting for 'InventariosDbContext'.
+2025-12-07 00:48:38.884 -06:00 [DBG] DetectChanges starting for 'InventariosDbContext'.
+2025-12-07 00:48:38.885 -06:00 [DBG] DetectChanges completed for 'InventariosDbContext'.
+2025-12-07 00:48:38.888 -06:00 [DBG] Opening connection to database 'Inventarios' on server 'tcp://localhost:5432'.
+2025-12-07 00:48:38.888 -06:00 [DBG] Opened connection to database 'Inventarios' on server 'tcp://localhost:5432'.
+2025-12-07 00:48:38.888 -06:00 [DBG] Creating DbCommand for 'ExecuteReader'.
+2025-12-07 00:48:38.888 -06:00 [DBG] Created DbCommand for 'ExecuteReader' (0ms).
+2025-12-07 00:48:38.888 -06:00 [DBG] Initialized DbCommand for 'ExecuteReader' (0ms).
+2025-12-07 00:48:38.889 -06:00 [DBG] Executing DbCommand [Parameters=[@p0='?' (DbType = Guid)], CommandType='"Text"', CommandTimeout='30']
+DELETE FROM "Proveedores"
+WHERE "Id" = @p0;
+2025-12-07 00:48:38.891 -06:00 [INF] Executed DbCommand (3ms) [Parameters=[@p0='?' (DbType = Guid)], CommandType='"Text"', CommandTimeout='30']
+DELETE FROM "Proveedores"
+WHERE "Id" = @p0;
+2025-12-07 00:48:38.891 -06:00 [DBG] Closing data reader to 'Inventarios' on server 'tcp://localhost:5432'.
+2025-12-07 00:48:38.891 -06:00 [DBG] A data reader for 'Inventarios' on server 'tcp://localhost:5432' is being disposed after spending 0ms reading results.
+2025-12-07 00:48:38.892 -06:00 [DBG] Closing connection to database 'Inventarios' on server 'tcp://localhost:5432'.
+2025-12-07 00:48:38.892 -06:00 [DBG] Closed connection to database 'Inventarios' on server 'tcp://localhost:5432' (0ms).
+2025-12-07 00:48:38.894 -06:00 [DBG] An entity of type 'Proveedor' tracked by 'InventariosDbContext' changed state from '"Deleted"' to '"Detached"'. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2025-12-07 00:48:38.894 -06:00 [DBG] SaveChanges completed for 'InventariosDbContext' with 1 entities written to the database.
+2025-12-07 00:48:38.894 -06:00 [INF] Proveedor eliminado: {}
+2025-12-07 00:48:38.894 -06:00 [INF] Executed action method Inventarios.Controllers.ProveedorController.EliminarProveedor (Inventarios.API), returned result Microsoft.AspNetCore.Mvc.NoContentResult in 18.5271ms.
+2025-12-07 00:48:38.894 -06:00 [INF]  --- Completado: Proveedor - EliminarProveedor ---
+2025-12-07 00:48:38.894 -06:00 [INF] Executing StatusCodeResult, setting HTTP status code 204
+2025-12-07 00:48:38.894 -06:00 [INF] Executed action Inventarios.Controllers.ProveedorController.EliminarProveedor (Inventarios.API) in 20.4438ms
+2025-12-07 00:48:38.894 -06:00 [INF] Executed endpoint 'Inventarios.Controllers.ProveedorController.EliminarProveedor (Inventarios.API)'
+2025-12-07 00:48:38.894 -06:00 [DBG] Connection id "0HNHLBEL6A00V" completed keep alive response.
+2025-12-07 00:48:38.895 -06:00 [DBG] 'InventariosDbContext' disposed.
+2025-12-07 00:48:38.895 -06:00 [DBG] Disposing connection to database 'Inventarios' on server 'tcp://localhost:5432'.
+2025-12-07 00:48:38.895 -06:00 [DBG] Disposed connection to database 'Inventarios' on server 'tcp://localhost:5432' (0ms).
+2025-12-07 00:48:38.895 -06:00 [INF] Request finished HTTP/1.1 DELETE http://localhost:5000/api/Proveedor/30fe4838-69be-41d7-b119-8f1deee674e3 - 204 null null 26.501ms
+2025-12-07 00:48:41.453 -06:00 [INF] Request starting HTTP/1.1 DELETE http://localhost:5000/api/Proveedor/30fe4838-69be-41d7-b119-8f1deee674e3 - null null
+2025-12-07 00:48:41.453 -06:00 [DBG] 1 candidate(s) found for the request path '/api/Proveedor/30fe4838-69be-41d7-b119-8f1deee674e3'
+2025-12-07 00:48:41.453 -06:00 [DBG] Endpoint 'Inventarios.Controllers.ProveedorController.EliminarProveedor (Inventarios.API)' with route pattern 'api/Proveedor/{id:guid}' is valid for the request path '/api/Proveedor/30fe4838-69be-41d7-b119-8f1deee674e3'
+2025-12-07 00:48:41.453 -06:00 [DBG] Request matched endpoint 'Inventarios.Controllers.ProveedorController.EliminarProveedor (Inventarios.API)'
+2025-12-07 00:48:41.454 -06:00 [INF] Executing endpoint 'Inventarios.Controllers.ProveedorController.EliminarProveedor (Inventarios.API)'
+2025-12-07 00:48:41.454 -06:00 [INF] Route matched with {action = "EliminarProveedor", controller = "Proveedor"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] EliminarProveedor(System.Guid) on controller Inventarios.Controllers.ProveedorController (Inventarios.API).
+2025-12-07 00:48:41.454 -06:00 [DBG] Execution plan of authorization filters (in the following order): ["None"]
+2025-12-07 00:48:41.454 -06:00 [DBG] Execution plan of resource filters (in the following order): ["None"]
+2025-12-07 00:48:41.454 -06:00 [DBG] Execution plan of action filters (in the following order): ["Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter (Order: -3000)","Microsoft.AspNetCore.Mvc.Infrastructure.ModelStateInvalidFilter (Order: -2000)","Inventarios.Filters.LogActionFilter"]
+2025-12-07 00:48:41.454 -06:00 [DBG] Execution plan of exception filters (in the following order): ["None"]
+2025-12-07 00:48:41.454 -06:00 [DBG] Execution plan of result filters (in the following order): ["Microsoft.AspNetCore.Mvc.Infrastructure.ClientErrorResultFilter (Order: -2000)"]
+2025-12-07 00:48:41.454 -06:00 [DBG] Executing controller factory for controller Inventarios.Controllers.ProveedorController (Inventarios.API)
+2025-12-07 00:48:41.455 -06:00 [DBG] Executed controller factory for controller Inventarios.Controllers.ProveedorController (Inventarios.API)
+2025-12-07 00:48:41.455 -06:00 [DBG] Attempting to bind parameter 'id' of type 'System.Guid' ...
+2025-12-07 00:48:41.455 -06:00 [DBG] Attempting to bind parameter 'id' of type 'System.Guid' using the name 'id' in request data ...
+2025-12-07 00:48:41.455 -06:00 [DBG] Done attempting to bind parameter 'id' of type 'System.Guid'.
+2025-12-07 00:48:41.455 -06:00 [DBG] Done attempting to bind parameter 'id' of type 'System.Guid'.
+2025-12-07 00:48:41.455 -06:00 [DBG] Attempting to validate the bound parameter 'id' of type 'System.Guid' ...
+2025-12-07 00:48:41.455 -06:00 [DBG] Done attempting to validate the bound parameter 'id' of type 'System.Guid'.
+2025-12-07 00:48:41.455 -06:00 [INF] Ejecutando: Proveedor - EliminarProveedor
+2025-12-07 00:48:41.456 -06:00 [INF] Executing action method Inventarios.Controllers.ProveedorController.EliminarProveedor (Inventarios.API) - Validation state: "Valid"
+2025-12-07 00:48:41.456 -06:00 [WRN] Eliminando proveedor "30fe4838-69be-41d7-b119-8f1deee674e3"
+2025-12-07 00:48:41.456 -06:00 [DBG] Entity Framework Core 9.0.9 initialized 'InventariosDbContext' using provider 'Npgsql.EntityFrameworkCore.PostgreSQL:9.0.4+fd2380957bee5cd86f336466af36b08c0163f1a5' with options: None
+2025-12-07 00:48:41.457 -06:00 [DBG] Creating DbConnection.
+2025-12-07 00:48:41.457 -06:00 [DBG] Created DbConnection. (0ms).
+2025-12-07 00:48:41.457 -06:00 [DBG] Opening connection to database 'Inventarios' on server 'tcp://localhost:5432'.
+2025-12-07 00:48:41.457 -06:00 [DBG] Opened connection to database 'Inventarios' on server 'tcp://localhost:5432'.
+2025-12-07 00:48:41.457 -06:00 [DBG] Creating DbCommand for 'ExecuteReader'.
+2025-12-07 00:48:41.457 -06:00 [DBG] Created DbCommand for 'ExecuteReader' (0ms).
+2025-12-07 00:48:41.457 -06:00 [DBG] Initialized DbCommand for 'ExecuteReader' (0ms).
+2025-12-07 00:48:41.457 -06:00 [DBG] Executing DbCommand [Parameters=[@__p_0='?' (DbType = Guid)], CommandType='"Text"', CommandTimeout='30']
+SELECT p."Id", p."Correo", p."CreatedAt", p."Direccion", p."Nombre", p."PersonaContacto", p."Telefono", p."UpdatedAt"
+FROM "Proveedores" AS p
+WHERE p."Id" = @__p_0
+LIMIT 1
+2025-12-07 00:48:41.458 -06:00 [INF] Executed DbCommand (1ms) [Parameters=[@__p_0='?' (DbType = Guid)], CommandType='"Text"', CommandTimeout='30']
+SELECT p."Id", p."Correo", p."CreatedAt", p."Direccion", p."Nombre", p."PersonaContacto", p."Telefono", p."UpdatedAt"
+FROM "Proveedores" AS p
+WHERE p."Id" = @__p_0
+LIMIT 1
+2025-12-07 00:48:41.459 -06:00 [DBG] Closing data reader to 'Inventarios' on server 'tcp://localhost:5432'.
+2025-12-07 00:48:41.459 -06:00 [DBG] A data reader for 'Inventarios' on server 'tcp://localhost:5432' is being disposed after spending 0ms reading results.
+2025-12-07 00:48:41.459 -06:00 [DBG] Closing connection to database 'Inventarios' on server 'tcp://localhost:5432'.
+2025-12-07 00:48:41.459 -06:00 [DBG] Closed connection to database 'Inventarios' on server 'tcp://localhost:5432' (0ms).
+2025-12-07 00:48:41.460 -06:00 [WRN]  --- Falló: Proveedor - EliminarProveedor ---
+Inventarios.Business.Exceptions.NotFoundException: Proveedor no encontrado con el Id: 30fe4838-69be-41d7-b119-8f1deee674e3
+   at Inventarios.Business.Service.ProveedorService.EliminarProveedor(Guid id) in /home/apolo/Escritorio/Programacion/Inventarios/Inventarios_backend/Inventarios/Inventarios.Business/Service/ProveedorService.cs:line 67
+   at Inventarios.Controllers.ProveedorController.EliminarProveedor(Guid id) in /home/apolo/Escritorio/Programacion/Inventarios/Inventarios_backend/Inventarios/Inventarios.API/Controllers/ProveedorController.cs:line 107
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.TaskOfIActionResultExecutor.Execute(ActionContext actionContext, IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Logged|12_1(ControllerActionInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+2025-12-07 00:48:41.461 -06:00 [INF] Executed action Inventarios.Controllers.ProveedorController.EliminarProveedor (Inventarios.API) in 6.3681ms
+2025-12-07 00:48:41.461 -06:00 [INF] Executed endpoint 'Inventarios.Controllers.ProveedorController.EliminarProveedor (Inventarios.API)'
+2025-12-07 00:48:41.461 -06:00 [ERR] Ocurrió una excepción no controlada.
+Inventarios.Business.Exceptions.NotFoundException: Proveedor no encontrado con el Id: 30fe4838-69be-41d7-b119-8f1deee674e3
+   at Inventarios.Business.Service.ProveedorService.EliminarProveedor(Guid id) in /home/apolo/Escritorio/Programacion/Inventarios/Inventarios_backend/Inventarios/Inventarios.Business/Service/ProveedorService.cs:line 67
+   at Inventarios.Controllers.ProveedorController.EliminarProveedor(Guid id) in /home/apolo/Escritorio/Programacion/Inventarios/Inventarios_backend/Inventarios/Inventarios.API/Controllers/ProveedorController.cs:line 107
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.TaskOfIActionResultExecutor.Execute(ActionContext actionContext, IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Logged|12_1(ControllerActionInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeInnerFilterAsync>g__Awaited|13_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|7_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Inventarios.Middleware.ExceptionHandlingMiddleware.InvokeAsync(HttpContext httpContext) in /home/apolo/Escritorio/Programacion/Inventarios/Inventarios_backend/Inventarios/Inventarios.API/Middleware/ExceptionHandlingMiddleware.cs:line 33
+2025-12-07 00:48:41.462 -06:00 [DBG] Connection id "0HNHLBEL6A00V" completed keep alive response.
+2025-12-07 00:48:41.462 -06:00 [DBG] 'InventariosDbContext' disposed.
+2025-12-07 00:48:41.462 -06:00 [DBG] Disposing connection to database 'Inventarios' on server 'tcp://localhost:5432'.
+2025-12-07 00:48:41.462 -06:00 [DBG] Disposed connection to database 'Inventarios' on server 'tcp://localhost:5432' (0ms).
+2025-12-07 00:48:41.463 -06:00 [INF] Request finished HTTP/1.1 DELETE http://localhost:5000/api/Proveedor/30fe4838-69be-41d7-b119-8f1deee674e3 - 404 null application/json 9.6766ms
+2025-12-07 00:49:38.413 -06:00 [INF] Application is shutting down...
+2025-12-07 00:49:38.414 -06:00 [DBG] Hosting stopping
+2025-12-07 00:49:38.418 -06:00 [DBG] Connection id "0HNHLBEL6A00V" disconnecting.
+2025-12-07 00:49:38.419 -06:00 [DBG] Connection id "0HNHLBEL6A00V" stopped.
+2025-12-07 00:49:38.419 -06:00 [DBG] Connection id "0HNHLBEL6A00V" sending FIN because: "The Socket transport's send loop completed gracefully."
+2025-12-07 00:49:38.422 -06:00 [DBG] Hosting stopped

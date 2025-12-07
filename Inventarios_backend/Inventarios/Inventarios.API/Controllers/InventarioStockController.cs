@@ -1,5 +1,5 @@
-using Inventarios.Bussiness.Exceptions;
-using Inventarios.Bussiness.Interface.Services;
+using Inventarios.Business.Exceptions;
+using Inventarios.Business.Interface.Services;
 using Inventarios.DTOs.DTO.Request;
 using Inventarios.DTOs.DTO.Response;
 using Microsoft.AspNetCore.Http;

@@ -1,4 +1,4 @@
-using Inventarios.Bussiness.Interface.Services;
+using Inventarios.Business.Interface.Services;
 using Inventarios.DTOs.DTO.Request;
 using Inventarios.DTOs.DTO.Response;
 using Microsoft.AspNetCore.Http;
@@ -34,23 +34,13 @@ public class CategoriaController : ControllerBase
     /// <returns>Una lista de categorias</returns>
     [HttpGet]
     [ProducesResponseType(StatusCodes.Status200OK, Type = typeof(IEnumerable<CategoriaResponseDto>))]
-    [ProducesResponseType(StatusCodes.Status500InternalServerError)]
     [ProducesResponseType(StatusCodes.Status401Unauthorized)]
+    [ProducesResponseType(StatusCodes.Status500InternalServerError)]
     public async Task<IActionResult> ObtenerCategorias()
     {
-        _logger.LogInformation("Obteniendo categorias.");
-        try
-        {
-            IEnumerable<CategoriaResponseDto> categorias = await _service.ObtenerCategorias();
-            
-            _logger.LogInformation("Categorias obtenidas: {}",  categorias.Count());
-            return Ok(categorias);
-        }
-        catch (Exception ex)
-        {
-            _logger.LogError(ex, "Ocurrió un error inesperado al obtener las categorías.");
-            return StatusCode(500, new { error = "Ocurrió un error interno. Por favor, intente más tarde." });
-        }
+        IEnumerable<CategoriaResponseDto> categorias = await _service.ObtenerCategorias();
+        _logger.LogInformation("Categorias obtenidas: {}",  categorias.Count());
+        return Ok(categorias);
     }
 
     /// <summary>
@@ -65,18 +55,10 @@ public class CategoriaController : ControllerBase
     public async Task<IActionResult> ObtenerCategoriaPorId(int id)
     {
         _logger.LogInformation("Obteniendo categoria con el Id: {}.", id);
-        try
-        {
-            CategoriaResponseDto categoria = await _service.ObtenerCategoriaPorId(id); 
-            
-            _logger.LogInformation("Categoria con el Id: {} encontrada.", id);
-            return Ok(categoria);
-        }
-        catch (Exception ex)
-        {
-            _logger.LogError(ex, "Ocurrió un error inesperado al obtener la categoría: {}.", id);
-            return StatusCode(500, new { error = "Ocurrió un error interno. Por favor, intente más tarde." });
-        }
+        CategoriaResponseDto categoria = await _service.ObtenerCategoriaPorId(id); 
+        _logger.LogInformation("Categoria con el Id: {} encontrada.", id);
+        
+        return Ok(categoria);
     }
 
     /// <summary>
@@ -92,18 +74,10 @@ public class CategoriaController : ControllerBase
     public async Task<IActionResult> CrearCategorias(CategoriaRequestDto categoriaRequestDto)
     {
         _logger.LogInformation("Creando categoria: {}", categoriaRequestDto.Nombre);
-        try
-        { 
-            var categoriaDto = await _service.AgregarCategoria(categoriaRequestDto);
+        var categoriaDto = await _service.AgregarCategoria(categoriaRequestDto);
             
-            _logger.LogInformation("Categoria agregada: ID {categoriaId} - Nombre {categoriaNombre}.", categoriaDto.Id, categoriaDto.Nombre);
-            return CreatedAtAction(nameof(ObtenerCategoriaPorId), new { id = categoriaDto.Id }, categoriaDto);
-        }
-        catch (Exception ex)
-        {
-            _logger.LogError(ex, "Ocurrio un error inesperado al agregar la Categoria");
-             return StatusCode(500, new { error = "Ocurrió un error interno. Por favor, intente más tarde." });
-        }
+        _logger.LogInformation("Categoria agregada: ID {categoriaId} - Nombre {categoriaNombre}.", categoriaDto.Id, categoriaDto.Nombre);
+        return CreatedAtAction(nameof(ObtenerCategoriaPorId), new { id = categoriaDto.Id }, categoriaDto);
     }
 
     /// <summary>
@@ -121,24 +95,10 @@ public class CategoriaController : ControllerBase
     public async Task<IActionResult> ActualizarCategorias(int id, CategoriaRequestDto categoriaDto)
     {
         _logger.LogInformation("Actualizando categoria: Id: {id} - {nombre}", id, categoriaDto.Nombre);
-        try
-        {
-            if (id == 0)
-            {
-                _logger.LogWarning("Id inválido.");
-                return BadRequest("Error al intentar actualizar la Categoria.");
-            }
-            
-            await _service.ActualizarCategoria(id, categoriaDto);
+        await _service.ActualizarCategoria(id, categoriaDto);
 
-            _logger.LogInformation("Categoria {} actualizada.", categoriaDto.Nombre);
-            return NoContent();
-        }
-        catch (Exception ex)
-        {
-                _logger.LogError(ex, "Ocurrio un error inesperado al actualizar la Categoria");
-                return StatusCode(500, new { error = "Ocurrió un error interno. Por favor, intente más tarde." });
-        }
+        _logger.LogInformation("Categoria {} actualizada.", categoriaDto.Nombre);
+        return NoContent();
     }
 
     /// <summary>
@@ -154,17 +114,9 @@ public class CategoriaController : ControllerBase
     public async Task<IActionResult> EliminarCategorias(int id)
     {
         _logger.LogInformation("Ejecutando método: {}", nameof(EliminarCategorias));
-        try
-        {
-            await _service.EliminarCategoria(id);
+        await _service.EliminarCategoria(id);
         
-            _logger.LogInformation("Categoria {Id} eliminada.", id);
-            return NoContent();
-        }
-        catch (Exception ex)
-        {
-            _logger.LogError(ex, "Ocurrio un error inesperado al eliminar la Categoria");
-            return StatusCode(500, new { error = "Ocurrió un error interno. Por favor, intente más tarde." });
-        }
+        _logger.LogInformation("Categoria {Id} eliminada.", id);
+        return NoContent();
     }
 }

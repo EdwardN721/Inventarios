@@ -25,7 +25,7 @@
     </ItemGroup>
 
     <ItemGroup>
-      <ProjectReference Include="..\Inventarios.Bussiness\Inventarios.Bussiness.csproj" />
+      <ProjectReference Include="..\Inventarios.Business\Inventarios.Business.csproj" />
       <ProjectReference Include="..\Inventarios.Models\Inventarios.Models.csproj" />
     </ItemGroup>
 

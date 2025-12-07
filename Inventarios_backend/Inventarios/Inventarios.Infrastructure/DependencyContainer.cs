@@ -1,6 +1,6 @@
+using Inventarios.Business.Interface.Services;
+using Inventarios.Business.Service;
 using Inventarios.Bussiness.Interface.Repository;
-using Inventarios.Bussiness.Interface.Services;
-using Inventarios.Bussiness.Service;
 using Inventarios.Infrastructure.Context;
 using Inventarios.Infrastructure.Repository;
 using Microsoft.EntityFrameworkCore;
@@ -32,6 +32,10 @@ public static class DependencyContainer
     {
         services.AddScoped<ICategoriaService, CategoriaService>();
         services.AddScoped<IInventarioStockService, InventarioStockService>();
+        services.AddScoped<IInventarioMovimientoService, InventarioMovimientoService>();
+        services.AddScoped<IProductoService, ProductoService>();
+        services.AddScoped<IProveedorService, ProveedorService>();
+        services.AddScoped<ITipoMovimientoService, TipoMovimientoService>();
         
         return services;
     }
