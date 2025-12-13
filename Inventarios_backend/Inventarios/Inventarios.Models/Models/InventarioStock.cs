@@ -10,5 +10,5 @@ public class InventarioStock
     
     // Relación uno a uno
     public Guid ProductoId { get; set; }
-    public Producto? Producto { get; set; } // <- Propiedades de navegación
+    public virtual Producto? Producto { get; set; } // <- Propiedades de navegación
 }

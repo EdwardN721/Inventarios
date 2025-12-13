@@ -1,11 +1,11 @@
-using Inventarios.Business.Exceptions;
 using Inventarios.Entities.Models;
 using Microsoft.Extensions.Logging;
 using Inventarios.DTOs.DTO.Request;
 using Inventarios.Business.Mappers;
 using Inventarios.DTOs.DTO.Response;
+using Inventarios.Business.Exceptions;
 using Inventarios.Business.Interface.Services;
-using Inventarios.Bussiness.Interface.Repository;
+using Inventarios.Business.Interface.Repository;
 
 namespace Inventarios.Business.Service;
 

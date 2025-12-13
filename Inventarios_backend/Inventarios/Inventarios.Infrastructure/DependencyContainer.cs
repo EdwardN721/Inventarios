@@ -1,11 +1,11 @@
-using Inventarios.Business.Interface.Services;
 using Inventarios.Business.Service;
-using Inventarios.Bussiness.Interface.Repository;
-using Inventarios.Infrastructure.Context;
-using Inventarios.Infrastructure.Repository;
 using Microsoft.EntityFrameworkCore;
+using Inventarios.Infrastructure.Context;
 using Microsoft.Extensions.Configuration;
+using Inventarios.Infrastructure.Repository;
+using Inventarios.Business.Interface.Services;
 using Microsoft.Extensions.DependencyInjection;
+using Inventarios.Business.Interface.Repository;
 
 namespace Inventarios.Infrastructure;
 

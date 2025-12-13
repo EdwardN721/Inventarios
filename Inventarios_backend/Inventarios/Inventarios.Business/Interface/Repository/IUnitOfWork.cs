@@ -1,4 +1,4 @@
-namespace Inventarios.Bussiness.Interface.Repository;
+namespace Inventarios.Business.Interface.Repository;
 
 public interface IUnitOfWork : IDisposable
 {

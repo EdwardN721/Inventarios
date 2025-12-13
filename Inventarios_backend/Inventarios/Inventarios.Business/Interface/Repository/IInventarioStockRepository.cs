@@ -1,5 +1,5 @@
 using Inventarios.Entities.Models;
-namespace Inventarios.Bussiness.Interface.Repository;
+namespace Inventarios.Business.Interface.Repository;
 
 public interface IInventarioStockRepository : IBaseRepository<InventarioStock>
 {

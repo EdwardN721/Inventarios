@@ -1,6 +1,6 @@
 using Inventarios.Entities.Models;
 
-namespace Inventarios.Bussiness.Interface.Repository;
+namespace Inventarios.Business.Interface.Repository;
 
 public interface IInventarioMovimientosRepository : IBaseRepository<InventarioMovimiento>
 {

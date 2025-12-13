@@ -1,4 +1,4 @@
-namespace Inventarios.Bussiness.Interface.Repository;
+namespace Inventarios.Business.Interface.Repository;
 
 public interface IBaseRepository<T>
 where T : class // Donde T es una clase
@@ -38,5 +38,10 @@ where T : class // Donde T es una clase
     /// Marca una entidad para ser eliminada
     /// </summary>
     void EliminarRegistro(T entidad);
-    
+
+    /// <summary>
+    /// Existe el Id
+    /// </summary>
+    public Task<bool> ExistsAsync(Object id);
+
 }
