@@ -1,3 +1,5 @@
+using System.Linq.Expressions;
+
 namespace Inventarios.Business.Interface.Repository;
 
 public interface IBaseRepository<T>
@@ -42,6 +44,13 @@ where T : class // Donde T es una clase
     /// <summary>
     /// Existe el Id
     /// </summary>
-    public Task<bool> ExistsAsync(Object id);
+    Task<bool> ExistsAsync(Object id);
+    
+    /// <summary>
+    /// Busca en Bd distinto al Id
+    /// </summary>
+    /// <param name="predicate"></param>
+    /// <returns></returns>
+    Task<T?> EnconcontrarPrimero(Expression<Func<T, bool>> predicate);
 
 }

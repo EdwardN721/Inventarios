@@ -1,3 +1,4 @@
+using System.Linq.Expressions;
 using Microsoft.EntityFrameworkCore;
 using Inventarios.Infrastructure.Context;
 using Inventarios.Business.Interface.Repository;
@@ -54,5 +55,10 @@ where T : class
     public async Task<bool> ExistsAsync(Object id)
     {
         return await _dbSet.FindAsync(id) != null;
+    }
+
+    public async Task<T?> EnconcontrarPrimero(Expression<Func<T, bool>> predicate)
+    {
+        return await _dbSet.FirstOrDefaultAsync(predicate);
     }
 }
