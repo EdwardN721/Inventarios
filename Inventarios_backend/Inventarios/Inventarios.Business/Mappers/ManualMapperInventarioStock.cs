@@ -17,6 +17,7 @@ public static class ManualMapperInventarioStock
         {
             Cantidad = inventarioStockRequestDto.Cantidad,
             Ubicacion = inventarioStockRequestDto.Ubicacion,
+            ProductoId = inventarioStockRequestDto.ProductoId
         };
     }
 
@@ -30,6 +31,7 @@ public static class ManualMapperInventarioStock
     {
         inventarioStockExistente.Cantidad = inventarioStockRequestDto.Cantidad;
         inventarioStockExistente.Ubicacion = inventarioStockRequestDto.Ubicacion;
+        inventarioStockExistente.ProductoId = inventarioStockRequestDto.ProductoId;
         inventarioStockExistente.UpdatedAt = DateTime.UtcNow;
     }
 
@@ -40,14 +42,13 @@ public static class ManualMapperInventarioStock
     /// <returns>Una entidad para el usuario final</returns>
     public static InventarioStockResponseDto ToDto(this InventarioStock inventarioStock)
     {
-        return new InventarioStockResponseDto()
-        {
-            Id = inventarioStock.Id,
-            Cantidad = inventarioStock.Cantidad,
-            Ubicacion = inventarioStock.Ubicacion,
-            CreatedAt = inventarioStock.CreatedAt,
-            UpdatedAt = inventarioStock.UpdatedAt
-        };
+        return new InventarioStockResponseDto(
+            inventarioStock.Id,
+            inventarioStock.Cantidad,
+            inventarioStock.Ubicacion,
+            inventarioStock.CreatedAt,
+            inventarioStock.UpdatedAt,
+            inventarioStock.ProductoId);
     }
 
     /// <summary>

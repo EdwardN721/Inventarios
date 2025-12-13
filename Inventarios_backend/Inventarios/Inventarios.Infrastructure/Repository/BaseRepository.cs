@@ -1,6 +1,6 @@
-using Inventarios.Bussiness.Interface.Repository;
-using Inventarios.Infrastructure.Context;
 using Microsoft.EntityFrameworkCore;
+using Inventarios.Infrastructure.Context;
+using Inventarios.Business.Interface.Repository;
 
 namespace Inventarios.Infrastructure.Repository;
 
@@ -49,5 +49,10 @@ where T : class
     public void EliminarRegistro(T entidad)
     {
         _dbSet.Remove(entidad);
+    }
+    
+    public async Task<bool> ExistsAsync(Object id)
+    {
+        return await _dbSet.FindAsync(id) != null;
     }
 }

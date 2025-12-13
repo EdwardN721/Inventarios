@@ -36,6 +36,7 @@ public class ProductosController : ControllerBase
     [ProducesResponseType(StatusCodes.Status200OK, Type = typeof(IEnumerable<ProductoResponseDto>))]
     public async Task<IActionResult> ObtenerProductos()
     {
+        _logger.LogInformation("Obteniendo Productos.");
         IEnumerable<ProductoResponseDto> productos = await _service.ObtenerProductos(); 
         return Ok(productos);
     }
@@ -52,6 +53,7 @@ public class ProductosController : ControllerBase
     [ProducesResponseType(StatusCodes.Status500InternalServerError)]
     public async Task<IActionResult> ObtenerProductoPorId([FromRoute] Guid id)
     {
+        _logger.LogInformation("Obteniendo Producto {Id}.", id);
         ProductoResponseDto prducto = await _service.ObtenerProductoPorId(id);
         return Ok(prducto);
     }
@@ -68,6 +70,7 @@ public class ProductosController : ControllerBase
     [ProducesResponseType(StatusCodes.Status500InternalServerError)]
     public async Task<IActionResult> AgregarProducto([FromBody] ProductoRequestDto productoRequestDto)
     {
+        _logger.LogInformation("Agregando Producto. {Nombre}", productoRequestDto.Nombre);
         ProductoResponseDto nuevoProducto = await _service.AgregarProducto(productoRequestDto);
         return CreatedAtAction(nameof(ObtenerProductoPorId), new {id = nuevoProducto.Id}, nuevoProducto);
     }
@@ -86,6 +89,7 @@ public class ProductosController : ControllerBase
     public async Task<IActionResult> ActualizarProducto([FromRoute] Guid id,
         [FromBody] ProductoRequestDto productoRequestDto)
     {
+        _logger.LogInformation("Actualizando Producto. {Nombre}", productoRequestDto.Nombre);
         await _service.ActualizarProducto(id, productoRequestDto);
         return NoContent();
     }
@@ -102,6 +106,7 @@ public class ProductosController : ControllerBase
     [ProducesResponseType(StatusCodes.Status500InternalServerError)]
     public async Task<IActionResult> EliminarProducto([FromRoute] Guid id)
     {
+        _logger.LogInformation("Eliminando Producto. {Id}", id);
         await _service.EliminarProducto(id);
         return NoContent();
     }

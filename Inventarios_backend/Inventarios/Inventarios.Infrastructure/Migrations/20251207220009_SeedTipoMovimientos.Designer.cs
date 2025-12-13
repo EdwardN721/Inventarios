@@ -3,6 +3,7 @@ using System;
 using Inventarios.Infrastructure.Context;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 using Npgsql.EntityFrameworkCore.PostgreSQL.Metadata;
 
@@ -11,9 +12,11 @@ using Npgsql.EntityFrameworkCore.PostgreSQL.Metadata;
 namespace Inventarios.Infrastructure.Migrations
 {
     [DbContext(typeof(InventariosDbContext))]
-    partial class InventariosDbContextModelSnapshot : ModelSnapshot
+    [Migration("20251207220009_SeedTipoMovimientos")]
+    partial class SeedTipoMovimientos
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        /// <inheritdoc />
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder
